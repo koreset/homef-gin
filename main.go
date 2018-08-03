@@ -10,6 +10,8 @@ import (
 	"html/template"
 	"github.com/koreset/gtf"
 	"github.com/koreset/homef-gin/controllers"
+	"flag"
+	"fmt"
 )
 
 var db *gorm.DB
@@ -47,8 +49,13 @@ func SetupDB() {
 }
 
 func main() {
+	port := flag.String("port", "4000", "The port the app will listen to")
+	host := flag.String("host", "0.0.0.0", "The ip address to listen on")
+	flag.Parse()
+
 	SetupDB()
 	defer db.Close()
 	r := SetupRouter()
-	r.Run(":3000")
+	fmt.Println(*host, *port)
+	r.Run(fmt.Sprintf("%s:%s", *host, *port))
 }
