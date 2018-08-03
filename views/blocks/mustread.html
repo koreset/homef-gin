@@ -1,0 +1,26 @@
+{{ define "mustread"}}
+  <div class="col-sm-16 wow fadeInLeft animated" data-wow-delay="0.5s">
+      <div class="main-title-outer pull-left">
+          <div class="main-title">must read</div>
+      </div>
+      <ul class="list-unstyled  top-bordered ex-top-padding">
+        {{ range . }}
+          <li><a href="#">
+              <div class="row">
+                  <div class="col-sm-16">
+                      <h4>{{ .Title }}</h4>
+                      <div class="text-danger sub-info">
+                          <div class="time"><span class="ion-android-data icon"></span>Dec 16 2014</div>
+                          <div class="comments"><span class="ion-chatbubbles icon"></span>351</div>
+                          <div class="stars"><span class="ion-ios7-star"></span><span
+                                  class="ion-ios7-star"></span><span class="ion-ios7-star"></span><span
+                                  class="ion-ios7-star"></span><span class="ion-ios7-star-half"></span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </a></li>
+          {{ end }}
+      </ul>
+  </div>
+{{ end }}

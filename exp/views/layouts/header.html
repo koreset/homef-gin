@@ -1,0 +1,75 @@
+{{define "header_layout"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{.title}}</title>
+    <link rel="shortcut icon" href="/public/images/content-logo.png" type="image/x-icon">
+    <link rel="icon" href="/public/images/content-logo.png" type="image/x-icon">
+    <!-- bootstrap styles-->
+    <link href="/public/css/bootstrap.min.css" rel="stylesheet">
+    <!-- google font -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
+    <!-- ionicons font -->
+    <link href="/public/css/ionicons.min.css" rel="stylesheet">
+    <!-- animation styles -->
+    <link rel="stylesheet" href="/public/css/animate.css" />
+    <!-- custom styles -->
+    <link href="/public/css/custom-green.css" rel="stylesheet" id="style">
+    <!-- owl carousel styles-->
+    <link rel="stylesheet" href="/public/css/owl.carousel.css">
+    <link rel="stylesheet" href="/public/css/owl.transitions.css">
+    <!-- magnific popup styles -->
+    <link rel="stylesheet" href="/public/css/magnific-popup.css">
+    {{range .moreStyles}}
+        <link rel="stylesheet" type="text/css" href="/public/{{.}}">
+    {{end}}
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    {{range .moreScripts}}
+        <script src="/public/{{.}}" type="text/javascript" charset="utf-8"></script>
+    {{end}}
+</head>
+<body>
+<!-- wrapper start -->
+<div class="wrapper">
+    <!-- sticky header start -->
+    <div class="sticky-header">
+        <!-- header start -->
+        <div class="container header homef-header">
+            <div class="row">
+                <div class="col-sm-5 col-md-5 wow fadeInUpLeft animated"><a class="navbar-brand" href="index.html">globalnews</a></div>
+                <!-- <div class="col-sm-11 col-md-11 hidden-xs text-right"><img src="/public/images/ads/468-60-ad.gif" width="468" height="60" alt=""/></div> -->
+            </div>
+        </div>
+        <!-- header end -->
+        <!-- nav and search start -->
+        <div class="nav-search-outer">
+            <!-- nav start -->
+
+            {{ template "navigation"}}
+                <!-- nav end -->
+                <!-- search start -->
+
+                <div class="search-container ">
+                    <div class="container">
+                        <form action="" method="" role="search">
+                            <input id="search-bar" placeholder="Type & Hit Enter.." autocomplete="off">
+                        </form>
+                    </div>
+                </div>
+                <!-- search end -->
+            </nav>
+            <!--nav end-->
+        </div>
+        <!-- nav and search end-->
+    </div>
+    <!-- sticky header end -->
+{{ end }}

@@ -1,0 +1,46 @@
+{{define "home_page"}}
+
+{{template "header_layout" .}}
+
+<h1>{{ .content}}</h1>
+<!--data start -->
+<div class="container blogging-style">
+    <div class="row">
+        <!-- mid sec start -->
+        <div class="col-lg-3 col-md-4 col-sm-5 mid-sec top-margin pull-left">
+            <div class="row">
+                <!-- menu start -->
+            {{ template "sidemenu" . }}
+                <!-- menu end -->
+                <!-- videos start -->
+            {{ template "videos" .videos}}
+                <!-- videos start -->
+                <!-- must read start -->
+            {{ template "mustread" .latestArticles}}
+                <!-- must read start -->
+            </div>
+        </div>
+        <!-- mid sec end -->
+
+        <!-- left sec start -->
+        <div class="col-lg-8 col-md-7 col-sm-6 col-xs-16 pull-left">
+            <div class="row">
+                <!-- big thumbs start -->
+            {{ range .posts }}
+                {{ template "activity_card" .}}
+              {{ end }}
+            </div>
+        </div>
+        <!-- left sec end -->
+
+        <!-- right sec start -->
+        <div class="col-sm-5 hidden-xs right-sec top-margin">
+        {{ template "right-sec" .}}
+        </div>
+
+        <!-- right sec end -->
+    </div>
+</div>
+<!-- data end -->
+{{template "footer_layout" .}}
+{{ end }}

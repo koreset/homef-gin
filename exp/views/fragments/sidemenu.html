@@ -1,0 +1,9 @@
+{{ define "sidemenu"}}
+  <div class="col-sm-16 wow fadeInLeft animated" data-wow-delay="0.5s">
+      <ul class="list-group">
+        {{ range .menuItems}}
+          <li class="list-group-item"><a href="#"> {{.Type | replace_underscore "_" | title }} <span class="badge">{{ .Count }}</span> </a></li>
+        {{ end }}
+      </ul>
+  </div>
+{{ end }}

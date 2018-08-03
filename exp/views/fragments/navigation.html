@@ -1,0 +1,26 @@
+{{ define "navigation"}}
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-16"> <a href="javascript:;" class="toggle-search pull-right"><span class="ion-ios7-search"></span></a>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav text-uppercase main-nav ">
+                        <li class="active"><a href="/">home</a></li>
+                        <li class="dropdown"> <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">resources<span class="ion-ios7-arrow-down nav-icn"></span></a>
+                            <ul class="dropdown-menu text-capitalize" role="menu">
+                                <li><a href="/publications"><span class="ion-ios7-arrow-right nav-sub-icn"></span>Publications</a></li>
+                                <li><a href="javascript:void(0)"><span class="ion-ios7-arrow-right nav-sub-icn"></span>Annual Reports</a></li>
+                                <li><a href="javascript:void(0)"><span class="ion-ios7-arrow-right nav-sub-icn"></span>Videos</a></li>
+                            </ul>
+                        </li>
+                        <li> <a href="javascript:void(0)">About</a></li>
+                        <li> <a href="javascript:void(0)">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{ end }}

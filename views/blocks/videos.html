@@ -1,0 +1,23 @@
+{{ define "videos"}}
+    <div class="col-sm-16 wow fadeInLeft animated" data-wow-delay="0.5s">
+        <div class="main-title-outer pull-left">
+            <div class="main-title">videos</div>
+        </div>
+        <div class="vid-thumb-outer">
+            {{ range . }}
+                {{ $length := len .Videos }}
+                {{ if ne $length 0 }}
+                    <div class="vid-thumb"><a href="http://www.dailymotion.com/embed/video/x48h0za"
+                                              class="popup-youtube">
+                        <div class="vid-box  pull-left"><span class="ion-ios7-film"></span><img
+                                class="img-thumbnail" src="/public/content/{{(index .Images 0).Url }}" width="250"
+                                height="143" alt=""/></div>
+                        <h4>{{ .Title}}</h4>
+                    </a></div>
+                {{ end }}
+            {{ end }}
+        </div>
+    </div>
+{{ end }}
+
+http://blip.tv/play/AYLzh2UC.html?p=1

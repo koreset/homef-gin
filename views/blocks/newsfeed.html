@@ -1,0 +1,26 @@
+{{ define "newsfeed"}}
+  <div class="col-sm-16 bt-space wow fadeInUp animated" data-wow-delay="1s" data-wow-offset="50">
+    <a href="#" class="sponsored">news feed</a>
+  </div>
+  <div class="col-sm-16 bt-space wow fadeInUp animated" data-wow-delay="1s" data-wow-offset="130">
+      <!-- Nav tabs -->
+      {{ range .}}
+      <div class="row">
+          <div class="col-sm-5 col-md-4"><img class="img-thumbnail pull-left"
+                                              src="/public/images/popular/pop-1.jpg"
+                                              width="164" height="152" alt=""/></div>
+          <div class="col-sm-11 col-md-12">
+              <a href="{{ .Link}} " target="_blank"><h4>{{.Title}}</h4></a>
+              <div class="text-danger sub-info">
+                  <div class="time"><span class="ion-android-data icon"></span>
+                      {{.CreatedAt | displayDateString }}
+                  </div>
+                  {{/*<div class="comments"><span class="ion-chatbubbles icon"></span>351*/}}
+                  {{/*</div>*/}}
+              </div>
+          </div>
+      </div>
+      {{ end }}
+  </div>
+
+{{ end }}

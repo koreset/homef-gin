@@ -1,0 +1,71 @@
+{{ template "header.html" .}}
+
+<div class="container">
+
+    <!-- bage header start -->
+    <div class="page-header">
+        <h1>publications</h1>
+        <ol class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">pages</a></li>
+            <li class="active">publications</li>
+        </ol>
+    </div>
+
+    <!-- bage header end -->
+
+</div>
+
+<!-- data start -->
+<section>
+    <div class="container ">
+        <div class="row ">
+            <!-- left sec start -->
+            <div class="col-md-11 col-sm-11">
+                <div class="row">
+                {{ range .publications}}
+                    <div class="sec-topic col-sm-16 col-md-8 wow fadeInDown animated " data-wow-delay="0.05s"><a
+                            href="/publications/{{ .ID }}"><img alt="" src="/public/content/{{ (index .Images 0).Url }}"
+                                          class="img-thumbnail pub-img-thumbnail">
+                        <div class="sec-info">
+                            <h3>{{ .Title }}</h3>
+                            <div class="text-danger sub-info-bordered">
+                                <div class="time"><span class="ion-android-data icon"></span>Dec 9 2014</div>
+                                <div class="comments"><span class="ion-chatbubbles icon"></span>204</div>
+                                <div class="stars"><span class="ion-ios7-star"></span><span
+                                        class="ion-ios7-star"></span><span class="ion-ios7-star"></span><span
+                                        class="ion-ios7-star"></span><span class="ion-ios7-star-half"></span></div>
+                            </div>
+                        </div>
+                    </a>
+                        <p>{{ .Body | truncatechars 300 | stripSummaryTags | unsafeHtml}}</p>
+                    </div>
+
+                {{ end}}
+                    <div class="col-sm-16">
+                        <hr>
+                        <ul class="pagination">
+                            <li><a href="#">&laquo;</a></li>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">&raquo;</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- left sec end -->
+
+            <!-- right sec start -->
+            <div class="right-sec col-sm-5 hidden-xs">
+            {{ template "right-sec" .}}
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- data end -->
+
+{{ template "footer.html" .}}
