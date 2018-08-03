@@ -12,6 +12,8 @@ import (
 	"github.com/koreset/homef-gin/controllers"
 	"flag"
 	"fmt"
+	"github.com/qor/admin"
+	"net/http"
 )
 
 var db *gorm.DB
@@ -19,6 +21,14 @@ var funcMaps template.FuncMap
 
 
 func SetupRouter() *gin.Engine {
+	mux := http.NewServeMux()
+
+	Admin := admin.New(&admin.AdminConfig{DB: db})
+
+	Admin.MountTo("/admin", mux)
+
+	Admin.AddResource(&models.Content{})
+
 	router := gin.Default()
 	router.SetFuncMap(setupTemplatFuncs())
 	router.LoadHTMLGlob("views/**/*")
@@ -28,6 +38,7 @@ func SetupRouter() *gin.Engine {
 
 
 	router.Static("/public", "./public")
+	router.Any("/admin/*resources", gin.WrapH(mux))
 
 	return router
 }
