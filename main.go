@@ -14,11 +14,20 @@ import (
 	"fmt"
 	"github.com/qor/admin"
 	"net/http"
+	"github.com/qor/media/asset_manager"
+	"github.com/qor/media/media_library"
+	"github.com/qor/media"
 )
 
 var db *gorm.DB
 var funcMaps template.FuncMap
 
+// AutoMigrate run auto migration
+func AutoMigrate(values ...interface{}) {
+	for _, value := range values {
+		db.AutoMigrate(value)
+	}
+}
 
 func SetupRouter() *gin.Engine {
 	mux := http.NewServeMux()
@@ -27,7 +36,15 @@ func SetupRouter() *gin.Engine {
 
 	Admin.MountTo("/admin", mux)
 
-	Admin.AddResource(&models.Content{})
+	assetManager := Admin.AddResource(&asset_manager.AssetManager{}, &admin.Config{Invisible: true})
+	// Add Media Library
+	Admin.AddResource(&media_library.MediaLibrary{}, &admin.Config{Menu: []string{"Site Management"}})
+
+	post := Admin.AddResource(&models.Post{}, &admin.Config{Name:"Posts", Menu:[]string{"Content Management"}})
+	post.IndexAttrs("ID", "Title", "Body", "Summary", "Images", "Videos", "Links", "Type")
+	post.NewAttrs("Title", "Body", "Summary", "Images", "Videos", "Links", "Type")
+
+	post.Meta(&admin.Meta{Name: "Body", Config:&admin.RichEditorConfig{AssetManager:assetManager}})
 
 	router := gin.Default()
 	router.SetFuncMap(setupTemplatFuncs())
@@ -56,7 +73,10 @@ func setupTemplatFuncs() template.FuncMap{
 
 func SetupDB() {
 	db = services.Init()
-	db.AutoMigrate(&models.Content{})
+	db.AutoMigrate(&models.Post{}, &models.Video{}, &models.Image{}, &models.Link{}, &models.FeedItem{})
+	media.RegisterCallbacks(db)
+
+
 }
 
 func main() {

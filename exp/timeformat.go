@@ -13,4 +13,6 @@ func main() {
 	then := time.Unix(setTime, 0)
 
 	fmt.Println(then.Format("02 January, 2006"))
+
+	fmt.Println(time.Now().Unix())
 }

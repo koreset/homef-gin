@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
-	"github.com/koreset/homefnew/app/models"
-	"github.com/koreset/homefnew/app/utils"
+	"github.com/koreset/homef-gin/models"
+	"github.com/koreset/homef-gin/utils"
 	"strings"
 )
 
@@ -40,6 +40,9 @@ func populateArticleBody() {
 		}
 
 		v.Body = utils.CleanHtmlBody(v.Body)
+
+		fmt.Println("ID: ", v.ID)
+		fmt.Println("Body: ", v.Body)
 
 		newDB.Save(&v)
 	}
