@@ -3,7 +3,6 @@ package utils
 import (
 	"time"
 	"html/template"
-	"github.com/koreset/homefnew/app/utils"
 )
 
 func UnsafeHtml(s string) template.HTML {
@@ -12,13 +11,14 @@ func UnsafeHtml(s string) template.HTML {
 }
 
 func StripSummaryTags(s string) string {
-	return utils.RemoveAllTags(s)
+	return RemoveAllTags(s)
 }
 
 func DisplayDateString(s time.Time) string {
-	return utils.DisplayDateWithTime(s)
+	return DisplayDateWithTime(s)
 }
 
 func DisplayDateV2(s int32) string {
-	return utils.DisplayDate(int64(s))
+	return DisplayDate(int64(s))
 }
+

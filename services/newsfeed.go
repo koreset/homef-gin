@@ -3,7 +3,7 @@ package services
 import (
 	"fmt"
 
-	"github.com/koreset/homefnew/app/models"
+	"github.com/koreset/homef-gin/models"
 )
 
 func GetNewsFeed() []models.FeedItem {

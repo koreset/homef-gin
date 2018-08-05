@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/jinzhu/gorm"
-	"github.com/koreset/homefnew/app/utils"
+	"github.com/koreset/homef-gin/utils"
 	"github.com/mmcdole/gofeed"
 	"github.com/revel/modules/jobs/app/jobs"
 	gr "github.com/revel/modules/orm/gorm/app"

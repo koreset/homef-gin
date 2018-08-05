@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/koreset/homefnew/app/services"
+	"github.com/koreset/homef-gin/services"
 )
 
 func main() {

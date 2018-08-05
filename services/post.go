@@ -1,7 +1,7 @@
 package services
 
 import (
-	"github.com/koreset/homefnew/app/models"
+	"github.com/koreset/homef-gin/models"
 	"github.com/kennygrant/sanitize"
 	"fmt"
 )
@@ -16,6 +16,10 @@ func GetPosts(start, limit int) []models.Post {
 	// Lets sanitize the html output and strip off MSOffice tags
 	for _, post := range posts {
 		post.Body, _ = sanitize.HTMLAllowing(post.Body, defaultTags, defaultAttributes)
+		for _, v := range post.Images {
+			fmt.Println("Image: ", v)
+			fmt.Println(v.ImageFile.Url)
+		}
 	}
 	return posts
 }
@@ -40,7 +44,7 @@ func GetPublications() []models.Post {
 	GetDB().Where("type = 'publication'").Preload("Images").Preload("Links").Order("created desc").Find(&publications)
 
 	for _, pub := range publications {
-		fmt.Println(pub.Images[0].Url, pub.ID)
+		fmt.Println(pub.Images[0].ImageFile.Url, pub.ID)
 	}
 	return publications
 }
