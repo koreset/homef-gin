@@ -31,16 +31,16 @@ func Init() *gorm.DB {
 
 
 	var post models.Post
-	//var video []models.Video
+	var video []models.Video
 	var image []models.Image
-	//var link []models.Link
+	var link []models.Link
 
 
 	DB.AutoMigrate(&models.Post{}, &models.Video{}, &models.Image{}, &models.Link{}, &models.FeedItem{})
 
-	//DB.Model(&post).Related(&video)
+	DB.Model(&post).Related(&video)
 	DB.Model(&post).Related(&image)
-	//DB.Model(&post).Related(&link)
+	DB.Model(&post).Related(&link)
 	return DB
 }
 

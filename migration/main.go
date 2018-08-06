@@ -7,6 +7,12 @@ import (
 	"github.com/koreset/homef-gin/models"
 	"github.com/koreset/homef-gin/utils"
 	"strings"
+	"github.com/gosimple/slug"
+	"strconv"
+	"os"
+	"github.com/qor/oss/filesystem"
+	"github.com/qor/media/oss"
+	"github.com/qor/media"
 )
 
 var newDB *gorm.DB
@@ -48,23 +54,56 @@ func populateArticleBody() {
 	}
 }
 
+type TempImage struct {
+	ID       uint
+	FileName string
+	Url      string
+}
+
+func transformString(file string) string {
+	parts := strings.Split(file, ".")
+	extension := parts[len(parts)-1]
+	filename := strings.TrimSuffix(file, "."+extension)
+	modFileName := slug.MakeLang(filename, "en") + "." + extension
+
+	return modFileName
+
+}
+
 func populateImages() {
+	storage := filesystem.New("./public")
 	var posts []models.Post
 	newDB.Find(&posts)
-
+	workDirectory := "/Users/jome/projects/homef/files/"
 	for _, v := range posts {
 
 		rows, _ := homefDB.Raw("select entity_id as id, filename as file_name, uri as url from field_data_field_image, file_managed where field_image_fid = fid and entity_id = ?", v.ID).Rows()
 
 		for rows.Next() {
-			var image models.Image
+			var image TempImage
+			var imageItem models.Image
+
 			homefDB.ScanRows(rows, &image)
 			image.Url = strings.Replace(image.Url, "public://", "", -1)
-			v.Images = append(v.Images, image)
+			filePath := workDirectory + image.Url
+			theFile, _ := os.Open(filePath)
+			newFileName := transformString(image.FileName)
+			newPath := "/content/images/" + strconv.Itoa(int(v.ID)) + "/" + newFileName
+			storage.Put(newPath, theFile)
+
+			imageItem = models.Image{
+				PostID: v.ID,
+				ImageFile: oss.OSS{
+					media.Base{
+						FileName:newFileName,
+						Url: newPath,
+					},
+				},
+			}
+			v.Images = append(v.Images, imageItem)
 		}
 		newDB.Save(&v)
 	}
-
 }
 
 func populateVideoItems() {
@@ -130,15 +169,11 @@ func main() {
 	newDB.Model(&post).Related(&link)
 	newDB.AutoMigrate(&models.Post{}, &models.Video{}, &models.Image{}, &models.Link{})
 
-	baseMigration()
-
-	populateArticleBody()
-
+	//baseMigration()
+	//populateArticleBody()
 	populateImages()
-
-	populateVideoItems()
-
-	populateLinks()
+	//populateVideoItems()
+	//populateLinks()
 
 	//Populate article qu
 

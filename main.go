@@ -74,8 +74,6 @@ func SetupDB() {
 	db = services.Init()
 	db.AutoMigrate(&models.Post{}, &models.Video{}, &models.Image{}, &models.Link{}, &models.FeedItem{})
 	media.RegisterCallbacks(db)
-
-
 }
 
 func main() {

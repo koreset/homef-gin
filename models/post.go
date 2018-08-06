@@ -8,7 +8,7 @@ import (
 )
 
 type Link struct {
-	ID       uint `gorm:"primary_key"`
+	gorm.Model
 	Url      string
 	Title    string
 	ImageUrl string
@@ -16,7 +16,7 @@ type Link struct {
 }
 
 type Video struct {
-	ID          uint `gorm:"primary_key"`
+	gorm.Model
 	Url         string
 	Value       string
 	Description string
@@ -32,8 +32,9 @@ type Video struct {
 
 type Image struct {
 	gorm.Model
-	ImageFile oss.OSS
-	PostID uint
+	ImageFile oss.OSS `sql:"size:4294967295;" media_library:"url:/content/{{class}}/{{primary_key}}/{{column}}.{{extension}};path:./public"`
+	//ImageFile oss.OSS
+	PostID    uint
 }
 
 type Post struct {
@@ -42,15 +43,14 @@ type Post struct {
 	Body    string `gorm:"type:longtext"`
 	Summary string `gorm:"type:longtext"`
 	Images  []Image
-	//Videos  []Video
-	//Links   []Link
+	Videos  []Video
+	Links   []Link
 	Type    string
 	Created int32
 	Updated int32
 }
 
-
-func (p *Post) BeforeCreate() (err error){
+func (p *Post) BeforeCreate() (err error) {
 	fmt.Println(p.Body)
 	if p.Created == 0 {
 		p.Created = int32(time.Now().Unix())
