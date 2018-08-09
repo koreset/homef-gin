@@ -42,6 +42,7 @@ func (Image) GetSizes() map[string]*media.Size {
 		"small":  {Width: 320, Height: 320},
 		"middle": {Width: 640, Height: 640},
 		"big":    {Width: 1280, Height: 1280},
+		"article_preview": {Width:390, Height:300},
 		"preview": {Width:200, Height:200},
 	}
 }

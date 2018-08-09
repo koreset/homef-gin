@@ -51,6 +51,7 @@ func SetupRouter() *gin.Engine {
 
 
 	router.GET("/", controllers.Home)
+	router.GET("posts/:id", controllers.GetPost)
 	router.Static("/public", "./public")
 	router.Any("/admin/*resources", gin.WrapH(mux))
 

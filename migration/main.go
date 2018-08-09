@@ -166,8 +166,8 @@ func main() {
 
 	//baseMigration()
 	//populateArticleBody()
-	//populateImages()
-	populateVideoItems()
-	populateLinks()
+	populateImages()
+	//populateVideoItems()
+	//populateLinks()
 
 }

@@ -1,0 +1,119 @@
+{{ define "content_not_found"}}
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 8)]><!-->
+<html lang="en-US" class="cmsms_html">
+<!--<![endif]-->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		<link rel="shortcut icon" href="/public/img/favicon-2.jpg" type="image/x-icon" />
+
+		<title>Page not found | Eco Nature</title>
+
+		<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato:100,300,regular,700,900%7COpen+Sans:300%7CIndie+Flower:regular%7COswald:300,regular,700&#038;subset=latin,latin-ext' type='text/css' media='all' />
+		<link rel='stylesheet' href='/public/css/style.css' type='text/css' media='screen, print' />
+		<link rel='stylesheet' href='/public/css/adaptive.css' type='text/css' media='screen, print' />
+		<link rel='stylesheet' href='/public/css/retina.css' type='text/css' media='screen' />
+		<link rel='stylesheet' href='/public/css/cmsms-events-adaptive.css' type='text/css' media='screen' />
+		<link rel='stylesheet' href='/public/css/fontello.css' type='text/css' media='screen' />
+		<link rel='stylesheet' href='/public/css/animate.css' type='text/css' media='screen' />
+		<!--[if lte IE 9]>
+			<link rel='stylesheet' href='/public/css/ie.css' type='text/css' media='screen' />
+			<link rel='stylesheet' href='/public/css/econature_fonts.css' type='text/css' media='screen' />
+			<link rel='stylesheet' href='/public/css/econature_colors_primary.css' type='text/css' media='screen' />
+			<link rel='stylesheet' href='/public/css/econature_colors_secondary.css' type='text/css' media='screen' />
+		<![endif]-->
+		<link rel='stylesheet' href='/public/css/econature.css' />
+		<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Oxygen%3A300%2C400%2C700&#038;ver=4.2.1' type='text/css' media='all' />
+
+		<script type='text/javascript' src='/public/js/jquery.js'></script>
+		<script type='text/javascript' src='/public/js/jquery-migrate.min.js'></script>
+
+		<style type="text/css">
+			.cmsms_dynamic_cart .widget_shopping_cart_content .cart_list {
+				overflow-y:auto;
+			}
+
+			.header_mid_inner .logo {
+				position:static;
+			}
+			#footer.cmsms_footer_default .footer_inner {
+				min-height:450px;
+			}
+
+			.fixed_footer #main {
+				margin-bottom:450px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- _________________________ Start Page _________________________ -->
+		<div id="page" class="csstransition cmsms_liquid fixed_header hfeed site">
+			<!-- _________________________ Start Main _________________________ -->
+			<div id="main">
+			<!-- _________________________ Start Header _________________________ -->
+				{{ template "header_layout"}}
+				<!-- _________________________ Finish Header _________________________ -->
+				<!-- _________________________ Start Middle _________________________ -->
+				<section id="middle" class="error_page">
+					<div class="middle_inner">
+					<!-- _________________________ Start Content _________________________ -->
+						<div class="entry">
+							<div class="error">
+								<div class="error_bg" style="background:rgba(61, 61, 61, 1);">
+									<div class="error_inner" style=""><h1 class="error_title">404</h1></div>
+								</div>
+							</div>
+						</div>
+						<section class="content_wrap fullwidth">
+							<div class="error">
+								<h2 class="error_subtitle">We&#039;re sorry, but the page you were looking for doesn&#039;t exist.</h2>
+								<div class="search_bar_wrap">
+									<form method="get">
+										<p>
+											<input name="s" placeholder="enter keywords" value="" type="text" />
+											<button type="submit" class="cmsms-icon-search-7"></button>
+										</p>
+									</form>
+								</div>
+							</div>
+						<!-- _________________________ Finish Content _________________________ -->
+						</section>
+					</div>
+				</section>
+				<!-- _________________________ Finish Middle _________________________ -->
+				<a href="javascript:void(0);" id="slide_top" class="cmsms-icon-up-open-mini"></a>
+			</div>
+			<!-- _________________________ Finish Main _________________________ -->
+			<!-- _________________________ Start Footer _________________________ -->
+			<footer id="footer" class="cmsms_color_scheme_footer cmsms_footer_small">
+				<div class="footer_bg">
+					<div class="footer_inner">
+						<div class="social_wrap">
+							<div class="social_wrap_inner">
+								<ul>
+									<li><a href="#" class="cmsms-icon-twitter-circled" title="Twitter" target="_blank"></a></li>
+									<li><a href="#" class="cmsms-icon-facebook-circled" title="Facebook" target="_blank"></a></li>
+									<li><a href="#" class="cmsms-icon-gplus-circled" title="Google+" target="_blank"></a></li>
+									<li><a href="#" class="cmsms-icon-vimeo-circled" title="Vimeo" target="_blank"></a></li>
+									<li><a href="#" class="cmsms-icon-skype-circled" title="Skype" target="_blank"></a></li>
+								</ul>
+							</div>
+						</div>
+						<span class="copyright">EcoNature &copy; 2015 | All Rights Reserved</span>
+					</div>
+				</div>
+			</footer>
+			<!-- _________________________ Finish Footer _________________________ -->
+		</div>
+		<!-- _________________________ Finish Page _________________________ -->
+		<script src='/public/js/jsLibraries.min.js'></script>
+		<script type='text/javascript' src='/public/js/jqueryLibraries.min.js'></script>
+		<script type='text/javascript' src='/public/js/jquery.script.js'></script>
+		<script type='text/javascript' src='/public/js/jquery.tweet.min.js'></script>
+	</body>
+</html>
+{{ end }}
