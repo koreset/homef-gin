@@ -43,7 +43,6 @@ func SetupRouter() *gin.Engine {
 	post := Admin.AddResource(&models.Post{}, &admin.Config{Name:"Posts", Menu:[]string{"Content Management"}})
 	post.IndexAttrs("ID", "Title", "Body", "Summary", "Images", "Videos", "Links", "Type")
 	post.NewAttrs("Title", "Body", "Summary", "Images", "Videos", "Links", "Type")
-
 	post.Meta(&admin.Meta{Name: "Body", Config:&admin.RichEditorConfig{AssetManager:assetManager}})
 
 	router := gin.Default()
@@ -52,7 +51,6 @@ func SetupRouter() *gin.Engine {
 
 
 	router.GET("/", controllers.Home)
-
 	router.Static("/public", "./public")
 	router.Any("/admin/*resources", gin.WrapH(mux))
 

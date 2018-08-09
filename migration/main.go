@@ -8,10 +8,7 @@ import (
 	"github.com/koreset/homef-gin/utils"
 	"strings"
 	"github.com/gosimple/slug"
-	"strconv"
 	"os"
-	"github.com/qor/oss/filesystem"
-	"github.com/qor/media/oss"
 	"github.com/qor/media"
 )
 
@@ -71,7 +68,7 @@ func transformString(file string) string {
 }
 
 func populateImages() {
-	storage := filesystem.New("./public")
+	//storage := filesystem.New("./public")
 	var posts []models.Post
 	newDB.Find(&posts)
 	workDirectory := "/Users/jome/projects/homef/files/"
@@ -87,19 +84,16 @@ func populateImages() {
 			image.Url = strings.Replace(image.Url, "public://", "", -1)
 			filePath := workDirectory + image.Url
 			theFile, _ := os.Open(filePath)
-			newFileName := transformString(image.FileName)
-			newPath := "/content/images/" + strconv.Itoa(int(v.ID)) + "/" + newFileName
-			storage.Put(newPath, theFile)
+			//newFileName := transformString(image.FileName)
+			//newPath := "/content/images/" + strconv.Itoa(int(v.ID)) + "/" + newFileName
+			//storage.Put(newPath, theFile)
 
 			imageItem = models.Image{
 				PostID: v.ID,
-				ImageFile: oss.OSS{
-					media.Base{
-						FileName:newFileName,
-						Url: newPath,
-					},
-				},
 			}
+
+			imageItem.File.Sizes = imageItem.GetSizes()
+			imageItem.File.Scan(theFile)
 			v.Images = append(v.Images, imageItem)
 		}
 		newDB.Save(&v)
@@ -168,45 +162,12 @@ func main() {
 	newDB.Model(&post).Related(&image)
 	newDB.Model(&post).Related(&link)
 	newDB.AutoMigrate(&models.Post{}, &models.Video{}, &models.Image{}, &models.Link{})
+	media.RegisterCallbacks(newDB)
 
 	//baseMigration()
 	//populateArticleBody()
-	populateImages()
-	//populateVideoItems()
-	//populateLinks()
-
-	//Populate article qu
-
-	// for rows.Next() {
-	// 	var result models.Content
-	// 	homefDB.ScanRows(rows, &result)
-	// 	newDB.Save(result)
-	// 	// count++
-	// 	// fmt.Println(count)
-	// }
-	// defer rows.Close()
-	//var imageQuery string = `
-	//select  field_data_field_image.bundle,
-	//field_data_field_image.entity_id,
-	//field_data_field_image.field_image_fid,
-	//field_data_field_image.field_image_width,
-	//field_data_field_image.field_image_height,
-	//file_managed.filename,
-	//file_managed.uri
-	//from field_data_field_image, file_managed
-	//where field_data_field_image.field_image_fid = file_managed.fid
-	//`
-	//rows, dbError := homefDB.Raw(imageQuery).Rows()
-	//
-	//if dbError != nil {
-	//	panic(dbError)
-	//}
-	//
-	//for rows.Next() {
-	//	var media models.Media
-	//	homefDB.ScanRows(rows, &media)
-	//	media.Uri = strings.Replace(media.Uri, "public://", "", -1)
-	//	newDB.Save(&media)
-	//}
+	//populateImages()
+	populateVideoItems()
+	populateLinks()
 
 }

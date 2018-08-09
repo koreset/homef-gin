@@ -16,7 +16,9 @@ func GetPosts(start, limit int) []models.Post {
 	// Lets sanitize the html output and strip off MSOffice tags
 	for _, post := range posts {
 		post.Body, _ = sanitize.HTMLAllowing(post.Body, defaultTags, defaultAttributes)
+		fmt.Println(post.Images[0].File.OSS.URL("large"))
 	}
+
 	return posts
 }
 

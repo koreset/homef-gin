@@ -4,7 +4,8 @@ import (
 	"fmt"
 	"time"
 	"github.com/jinzhu/gorm"
-	"github.com/qor/media/oss"
+	"github.com/qor/media/media_library"
+	"github.com/qor/media"
 )
 
 type Link struct {
@@ -32,10 +33,19 @@ type Video struct {
 
 type Image struct {
 	gorm.Model
-	ImageFile oss.OSS `sql:"size:4294967295;" media_library:"url:/content/{{class}}/{{primary_key}}/{{column}}.{{extension}};path:./public"`
-	//ImageFile oss.OSS
+	File media_library.MediaLibraryStorage `gorm:"type:longtext" sql:"size:4294967295;" media_library:"url:/content/{{class}}/{{primary_key}}/{{column}}.{{extension}};path:./public"`
 	PostID    uint
 }
+
+func (Image) GetSizes() map[string]*media.Size {
+	return map[string]*media.Size{
+		"small":  {Width: 320, Height: 320},
+		"middle": {Width: 640, Height: 640},
+		"big":    {Width: 1280, Height: 1280},
+		"preview": {Width:200, Height:200},
+	}
+}
+
 
 type Post struct {
 	ID      uint   `gorm:"primary_key"`

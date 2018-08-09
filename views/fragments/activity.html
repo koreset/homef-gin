@@ -3,9 +3,9 @@
 <div class="col-sm-16 business">
 {{ $length := len .Images }}
 {{ if ne $length 0 }}
-    <a class="popup-img" href="/public{{ (index .Images 0).ImageFile.Url }}">
+    <a class="popup-img" href="/public{{ (index .Images 0).File.URL "original" }}">
         <div class="thumb-box"><span class="ion-arrow-expand"></span>
-            <img class="img-thumbnail" src="/public{{ (index .Images 0).ImageFile.Url }}" alt=""/>
+            <img class="img-thumbnail" src="/public{{(index .Images 0).File.URL "big" }}" alt=""/>
 
         </div>
     </a>
