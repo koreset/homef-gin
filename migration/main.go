@@ -10,6 +10,10 @@ import (
 	"github.com/gosimple/slug"
 	"os"
 	"github.com/qor/media"
+	"net/url"
+	"path/filepath"
+	"net/http"
+	"io"
 )
 
 var newDB *gorm.DB
@@ -137,6 +141,74 @@ func populateLinks() {
 
 }
 
+func populatePublications() {
+	var posts []models.Post
+	newDB.Where("type = ?", "publication").Find(&posts)
+	for _, v := range posts {
+		rows, _ := homefDB.Raw("select field_url_url as url, field_url_title as title from field_data_field_url where entity_id = ?", v.ID).Rows()
+		for rows.Next() {
+			var link models.Link
+			homefDB.ScanRows(rows, &link)
+			fmt.Println(link.Url)
+			file, err := openFileByURL(link.Url)
+
+			if err != nil {
+				fmt.Println(err)
+			} else {
+				fmt.Println(file.Name())
+
+				document := models.Document{}
+
+				document.File.Scan(file)
+				v.Documents = append(v.Documents, document)
+			}
+		}
+
+		newDB.Save(&v)
+	}
+
+}
+
+func openFileByURL(rawURL string) (*os.File, error) {
+	if fileURL, err := url.Parse(rawURL); err != nil {
+		return nil, err
+	} else {
+		path := fileURL.Path
+		segments := strings.Split(path, "/")
+		fileName := segments[len(segments)-1]
+
+		filePath := filepath.Join(os.TempDir(), fileName)
+
+		if _, err := os.Stat(filePath); err == nil {
+			return os.Open(filePath)
+		}
+
+		file, err := os.Create(filePath)
+		if err != nil {
+			return file, err
+		}
+
+		check := http.Client{
+			CheckRedirect: func(r *http.Request, via []*http.Request) error {
+				r.URL.Opaque = r.URL.Path
+				return nil
+			},
+		}
+		resp, err := check.Get(rawURL) // add a filter to check redirect
+		if err != nil {
+			return file, err
+		}
+		defer resp.Body.Close()
+		fmt.Printf("----> Downloaded %v\n", rawURL)
+
+		_, err = io.Copy(file, resp.Body)
+		if err != nil {
+			return file, err
+		}
+		return file, nil
+	}
+}
+
 func main() {
 	//awsConnection := "homef:wordpass15@tcp(rds-mysql-homef.cb44dbuhyviz.eu-west-2.rds.amazonaws.com:3306)/homef?charset=utf8&parseTime=True&loc=Local"
 	localConnection := "root:wordpass15@tcp(localhost:3306)/homef?charset=utf8&parseTime=True&loc=Local"
@@ -150,24 +222,27 @@ func main() {
 		panic(dbError)
 	}
 
-	newDB.LogMode(true)
-	homefDB.LogMode(true)
+	//newDB.LogMode(true)
+	//homefDB.LogMode(true)
 
 	var post models.Post
 	var video []models.Video
 	var image []models.Image
 	var link []models.Link
+	var documents []models.Document
 
 	newDB.Model(&post).Related(&video)
 	newDB.Model(&post).Related(&image)
 	newDB.Model(&post).Related(&link)
-	newDB.AutoMigrate(&models.Post{}, &models.Video{}, &models.Image{}, &models.Link{})
+	newDB.Model(&post).Related(&documents)
+	newDB.AutoMigrate(&models.Post{}, &models.Document{}, &models.Video{}, &models.Image{}, &models.Link{})
 	media.RegisterCallbacks(newDB)
 
 	//baseMigration()
 	//populateArticleBody()
-	populateImages()
+	//populateImages()
 	//populateVideoItems()
 	//populateLinks()
+	populatePublications()
 
 }

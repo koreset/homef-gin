@@ -53,7 +53,7 @@ func main() {
 	newmedia.File.Sizes = newmedia.GetSizes()
 	newmedia.File.Scan(file)
 
-	post = Post{Name: "Post 4"}
+	post = Post{Name: "TestPost 4"}
 	post.Files = append(post.Files, newmedia)
 
 	db.Save(&post)

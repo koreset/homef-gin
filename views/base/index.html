@@ -6,40 +6,7 @@
 <!--[if !(IE 8)]><!-->
 <html lang="en-US" class="cmsms_html">
 <!--<![endif]-->
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-		<link rel="shortcut icon" href="/public/img/favicon-2.jpg" type="image/x-icon" />
-
-		<title>Eco Nature | Home</title>
-
-		<link rel='stylesheet' href='/public/LayerSlider/css/layerslider.css' type='text/css' media='all' />
-		<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato:100,300,regular,700,900%7COpen+Sans:300%7CIndie+Flower:regular%7COswald:300,regular,700&#038;subset=latin,latin-ext' type='text/css' media='all' />
-		<link rel="stylesheet" type="text/css" href="/public/css/settings.css" media="screen" />
-		<link rel='stylesheet' href='/public/css/style.css' />
-		<link rel='stylesheet' href='/public/css/adaptive.css' />
-		<link rel='stylesheet' href='/public/css/retina.css' />
-		<link rel='stylesheet' href='/public/css/ilightbox.css' />
-		<link rel='stylesheet' href='/public/css/ilightbox-skins/dark-skin.css' />
-		<link rel='stylesheet' href='/public/css/cmsms-events-style.css' />
-		<link rel='stylesheet' href='/public/css/cmsms-events-adaptive.css' />
-		<link rel='stylesheet' href='/public/css/fontello.css' />
-		<link rel='stylesheet' href='/public/css/animate.css' />
-		<!--[if lte IE 9]>
-			<link rel='stylesheet' href='/public/css/ie.css' type='text/css' media='screen' />
-			<link rel='stylesheet' href='/public/css/econature_fonts.css' type='text/css' media='screen' />
-			<link rel='stylesheet' href='/public/css/econature_colors_primary.css' type='text/css' media='screen' />
-			<link rel='stylesheet' href='/public/css/econature_colors_secondary.css' type='text/css' media='screen' />
-		<![endif]-->
-		<link rel='stylesheet' href='/public/css/econature.css' />
-		<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Oxygen%3A300%2C400%2C700&#038;ver=4.2' type='text/css' media='all' />
-		<link rel='stylesheet' href='/public/css/jquery.isotope.css' type='text/css' media='screen' />
-        <link rel='stylesheet' href='/public/css/homepage.css' />
-
-
-        <script type='text/javascript' src='/public/js/jquery.js'></script>
-		<script type='text/javascript' src='/public/js/jquery-migrate.min.js'></script>
-	</head>
+	{{template "head"}}
 	<body>
 	<!-- _________________________ Start Page _________________________ -->
 		<div id="page" class="csstransition cmsms_liquid fixed_header hfeed site">
@@ -53,49 +20,7 @@
 					<div class="middle_inner">
 	<!--_________________________ Start Content _________________________ -->
 						<div id="cmsms_row_1" class="cmsms_row cmsms_color_scheme_default">
-							<div class="cmsms_row_outer_parent">
-								<div class="cmsms_row_outer">
-									<div class="cmsms_row_inner cmsms_row_fullwidth">
-										<div class="cmsms_row_margin">
-											<div class="cmsms_column one_first">
-												<div class="cmsms_slider">
-													<script type="text/javascript">var lsjQuery = jQuery;</script>
-													<script type="text/javascript">
-														lsjQuery(document).ready(function() {
-															if(typeof lsjQuery.fn.layerSlider == "undefined") { lsShowNotice('layerslider_1','jquery'); }
-															else { lsjQuery("#layerslider_1").layerSlider({
-																navStartStop: false,
-																navButtons: false,
-																skinsPath: '/public/LayerSlider/assets/skins/'
-															})}
-														});
-													</script>
-													<div id="layerslider_1" class="ls-wp-container" style="width:1920px;height:670px;margin:0 auto;">
-                                                        {{ template "carousel_item"}}
-                                                        <div class="ls-slide" data-ls="slidedelay:3500; transition2d: all;">
-															<img src="/public/LayerSlider/img/blank.gif" data-src="/public/LayerSlider/img/bg-blur-2.jpg" class="ls-bg" alt="bg-blur-2" />
-															<img class="ls-l" style="top:0px;left:0px;white-space: nowrap;" data-ls="offsetxin:0;durationin:800;delayin:200;offsetxout:0;durationout:1000;parallaxlevel:1;" src="/public/LayerSlider/img/blank.gif" data-src="/public/LayerSlider/img/bg-2.jpg" alt="">
-															<p class="ls-l" style="top:195px;left:510px;font-weight:300;font-family:open sans;font-size:180px;color:#ffffff;white-space: nowrap;" data-ls="offsetxin:0;delayin:400;offsetxout:0;durationout:0;">10 000 000</p>
-															<p class="ls-l" style="top:526px;left:711px;font-weight:500;font-family:open sans;font-size:28px;color:#ffffff;white-space: nowrap;" data-ls="offsetxin:0;delayin:1000;offsetxout:0;">Are spilled in the ocean waters annually</p>
-															<img class="ls-l" style="top:161px;left:934px;font-weight:300;font-family:open sans;font-size:40px;color:#ffffff;white-space: nowrap;" data-ls="offsetxin:0;durationin:2000;delayin:800;rotatexin:180;rotateyin:180;offsetxout:0;" src="/public/LayerSlider/img/blank.gif" data-src="/public/LayerSlider/img/wave.png" alt="">
-															<p class="ls-l" style="top:398px;left:838px;font-weight:300;font-family:open sans;font-size:60px;color:#ffffff;white-space: nowrap;" data-ls="offsetxin:0;delayin:600;offsetxout:0;durationout:0;">tons of oil</p>
-														</div>
-														<div class="ls-slide" data-ls="slidedelay:3800; transition2d: all;">
-															<img src="/public/LayerSlider/img/blank.gif" data-src="/public/LayerSlider/img/bg-blur-3.jpg" class="ls-bg" alt="bg-blur-3" />
-															<img class="ls-l" style="top:0px;left:1px;white-space: nowrap;" data-ls="offsetxin:0;durationin:800;delayin:200;offsetxout:0;durationout:1000;parallaxlevel:1;" src="/public/LayerSlider/img/blank.gif" data-src="/public/LayerSlider/img/bg-3.jpg" alt="">
-															<p class="ls-l" style="top:125px;left:373px;font-weight:300;font-family:open sans;font-size:240px;color:#ffffff;white-space: nowrap;" data-ls="offsetxin:0;durationin:800;delayin:400;offsetxout:0;durationout:0;">Sun</p>
-															<img class="ls-l" style="top:153px;left:791px;font-weight:300;font-family:open sans;font-size:44px;color:#ffffff;white-space: nowrap;" data-ls="offsetxin:-160;offsetyin:250;durationin:1500;delayin:800;rotatein:60;rotatexin:60;rotateyin:60;offsetxout:160;offsetyout:-250;durationout:600;" src="/public/LayerSlider/img/blank.gif" data-src="/public/LayerSlider/img/plan.png" alt="">
-															<p class="ls-l" style="top:407px;left:382px;font-weight:300;font-family:open sans;font-size:36px;color:#ffffff;white-space: nowrap;" data-ls="offsetxin:0;durationin:1500;delayin:800;offsetxout:0;">Gives us clean energy</p>
-															<p class="ls-l" style="top:456px;left:381px;font-weight:300;font-family:open sans;font-size:36px;color:#ffffff;white-space: nowrap;" data-ls="offsetxin:0;durationin:1500;delayin:800;offsetxout:0;">Every day</p>
-															<p class="ls-l" style="top:508px;left:380px;font-weight:300;font-family:open sans;font-size:36px;color:#ffffff;white-space: nowrap;" data-ls="offsetxin:0;durationin:1500;delayin:800;offsetxout:0;">100% Free</p>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
+							{{ template "layer_slider"}}
 						</div>
 						<div id="cmsms_row_2" class="cmsms_row cmsms_color_scheme_default">
 							<div class="cmsms_row_outer_parent">
@@ -135,7 +60,58 @@
 								</div>
 							</div>
 						</div>
-						<div id="cmsms_row_7" class="cmsms_row cmsms_color_scheme_default" data-stellar-background-ratio="0.5">
+                        <div id="cmsms_row_10" class="cmsms_row cmsms_color_scheme_default">
+                            <div class="cmsms_row_outer_parent">
+                                <div class="cmsms_row_outer">
+                                    <div class="cmsms_row_inner">
+                                        <div class="cmsms_row_margin">
+                                            <div class="cmsms_column one_first">
+                                                <h2 id="cmsms_heading_553e49e81fcae" class="cmsms_heading">Latest News</h2>
+                                                <div class="cmsms_posts_slider" >
+                                                    <script type="text/javascript">
+                                                        jQuery(document).ready(function () {
+                                                            var container = jQuery('.cmsms_slider_553e49e81fd81');
+                                                            containerWidth = container.width(),
+                                                                    firstPost = container.find('article'),
+                                                                    postMinWidth = Number(firstPost.css('minWidth').replace('px', '')),
+                                                                    postThreeColumns = (postMinWidth * 4) - 1;
+                                                            postTwoColumns = (postMinWidth * 3) - 1;
+                                                            postOneColumns = (postMinWidth * 2) - 1;
+
+
+                                                            jQuery('.cmsms_slider_553e49e81fd81').owlCarousel( {
+                                                                items : 4,
+                                                                itemsDesktop : false,
+                                                                itemsDesktopSmall : [postThreeColumns,3],
+                                                                itemsTablet : [postTwoColumns,2],
+                                                                itemsMobile : [postOneColumns,1],
+                                                                transitionStyle : false,
+                                                                rewindNav : true,
+                                                                slideSpeed : 200,
+                                                                paginationSpeed : 800,
+                                                                rewindSpeed : 1000, autoPlay : 7000, stopOnHover : true,
+                                                                autoHeight : true,
+                                                                addClassActive : true,
+                                                                responsiveBaseWidth : '.cmsms_slider_553e49e81fd81',
+                                                                pagination : false,
+                                                                navigation : true,
+                                                                navigationText : [ "<span class=\"cmsms_prev_arrow\"></span>", "<span class=\"cmsms_next_arrow\"></span>" ]
+                                                            } );
+                                                        } );
+                                                    </script>
+                                                    <div id="cmsms_owl_carousel_553e49e81fd81" class="cmsms_owl_slider cmsms_slider_553e49e81fd81">
+													{{ range .posts}}
+															{{ template "article_item" .}}
+														{{ end }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="cmsms_row_7" class="cmsms_row cmsms_color_scheme_default" data-stellar-background-ratio="0.5">
 							<div class="cmsms_row_outer_parent">
 								<div class="cmsms_row_outer">
 									<div class="cmsms_row_inner cmsms_row_fullwidth">
@@ -258,124 +234,7 @@
 								</div>
 							</div>
 						</div>
-						<div id="cmsms_row_10" class="cmsms_row cmsms_color_scheme_default">
-							<div class="cmsms_row_outer_parent">
-								<div class="cmsms_row_outer">
-									<div class="cmsms_row_inner">
-										<div class="cmsms_row_margin">
-											<div class="cmsms_column one_first">
-												<h2 id="cmsms_heading_553e49e81fcae" class="cmsms_heading">Latest News</h2>
-												<div class="cmsms_posts_slider" >
-													<script type="text/javascript">
-														jQuery(document).ready(function () {
-															var container = jQuery('.cmsms_slider_553e49e81fd81');
-																containerWidth = container.width(),
-																firstPost = container.find('article'),
-																postMinWidth = Number(firstPost.css('minWidth').replace('px', '')),
-																postThreeColumns = (postMinWidth * 4) - 1;
-																postTwoColumns = (postMinWidth * 3) - 1;
-																postOneColumns = (postMinWidth * 2) - 1;
 
-
-															jQuery('.cmsms_slider_553e49e81fd81').owlCarousel( {
-																items : 4,
-																itemsDesktop : false,
-																itemsDesktopSmall : [postThreeColumns,3],
-																itemsTablet : [postTwoColumns,2],
-																itemsMobile : [postOneColumns,1],
-																transitionStyle : false,
-																rewindNav : true,
-																slideSpeed : 200,
-																paginationSpeed : 800,
-																rewindSpeed : 1000, autoPlay : 7000, stopOnHover : true,
-																autoHeight : true,
-																addClassActive : true,
-																responsiveBaseWidth : '.cmsms_slider_553e49e81fd81',
-																pagination : false,
-																navigation : true,
-																navigationText : [ "<span class=\"cmsms_prev_arrow\"></span>", "<span class=\"cmsms_next_arrow\"></span>" ]
-															} );
-														} );
-													</script>
-													<div id="cmsms_owl_carousel_553e49e81fd81" class="cmsms_owl_slider cmsms_slider_553e49e81fd81">
-														{{ range .posts}}
-															{{ template "article_item" .}}
-														{{ end }}
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div id="cmsms_row_12" class="cmsms_row cmsms_color_scheme_first" data-stellar-background-ratio="0.5">
-							<div class="cmsms_row_outer_parent">
-								<div class="cmsms_row_outer">
-									<div class="cmsms_row_inner">
-										<div class="cmsms_row_margin">
-											<div class="cmsms_column one_first">
-												<div class="cmsms_sidebar sidebar_layout_14141414">
-													<aside class="widget widget_text">
-														<h3 class="widgettitle">Services</h3>
-														<div class="textwidget">
-															<ul>
-																<li><a href="#">Ocean Turtle</a></li>
-																<li><a href="#">White Tiger</a></li>
-																<li><a href="#">Social Ecology</a></li>
-																<li><a href="#">Loneliness</a></li>
-																<li><a href="#">Beauty of Life</a></li>
-																<li><a href="#">Present for You</a></li>
-															</ul>
-														</div>
-													</aside>
-													<aside class="widget widget_text">
-														<h3 class="widgettitle">Volunteer</h3>
-														<div class="textwidget">
-															<ul>
-																<li><a href="#">Karen Dawson</a></li>
-																<li><a href="#">Jack Simmons</a></li>
-																<li><a href="#">Michael Linden</a></li>
-																<li><a href="#">Simon Green</a></li>
-																<li><a href="#">Natalie Channing</a></li>
-																<li><a href="#">Caroline Gerwig</a></li>
-															</ul>
-														</div>
-													</aside>
-													<aside class="widget widget_text">
-														<h3 class="widgettitle">About Us</h3>
-														<div class="textwidget">
-															<ul>
-																<li><a href="#">Our Team</a></li>
-																<li><a href="#">Mission</a></li>
-																<li><a href="#">Philisophy</a></li>
-																<li><a href="#">Actions</a></li>
-																<li><a href="#">Support</a></li>
-																<li><a href="#">Biology</a></li>
-															</ul>
-														</div>
-													</aside>
-													<aside class="widget widget_text">
-														<h3 class="widgettitle">Blog</h3>
-														<div class="textwidget">
-															<ul>
-																<li><a href="#">Bear Population</a></li>
-																<li><a href="#">The Ozone Layer</a></li>
-																<li><a href="#">Spring Melody</a></li>
-																<li><a href="#">Save Tropic Forests</a></li>
-																<li><a href="#">Ecology Team</a></li>
-																<li><a href="#">Save Ocean</a></li>
-															</ul>
-														</div>
-													</aside>
-													<div class="cl"></div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
 						<div class="cl"></div>
 	<!-- _________________________ Finish Content _________________________ -->
 					</div>
@@ -385,72 +244,12 @@
 			</div>
 	<!-- _________________________ Finish Main _________________________ -->
 	<!-- _________________________ Start Footer _________________________ -->
-			<footer id="footer" class="cmsms_color_scheme_footer cmsms_footer_small">
-				<div class="footer_bg">
-					<div class="footer_inner">
-						<div class="social_wrap">
-							<div class="social_wrap_inner">
-								<ul>
-									<li><a href="#" class="cmsms-icon-twitter-circled" title="Twitter" target="_blank"></a></li>
-									<li><a href="#" class="cmsms-icon-facebook-circled" title="Facebook" target="_blank"></a></li>
-									<li><a href="#" class="cmsms-icon-gplus-circled" title="Google+" target="_blank"></a></li>
-									<li><a href="#" class="cmsms-icon-vimeo-circled" title="Vimeo" target="_blank"></a></li>
-									<li><a href="#" class="cmsms-icon-skype-circled" title="Skype" target="_blank"></a></li>
-								</ul>
-							</div>
-						</div>
-						<span class="copyright">EcoNature &copy; 2015 | All Rights Reserved</span>
-					</div>
-				</div>
-			</footer>
+		{{template "footer_content"}}
+		{{template "base_footer"}}
 	<!-- _________________________ Finish Footer _________________________ -->
 		</div>
 	<!-- _________________________ Finish Page _________________________ -->
-		<script type='text/javascript' src='/public/LayerSlider/js/layerslider.kreaturamedia.jquery.js'></script>
-		<script type='text/javascript' src='/public/LayerSlider/js/greensock.js'></script>
-		<script type='text/javascript' src='/public/LayerSlider/js/layerslider.transitions.js'></script>
-		<script type='text/javascript' src='/public/js/jsLibraries.min.js'></script>
-		<script type='text/javascript' src='/public/js/jquery.iLightBox.min.js'></script>
-		<script type='text/javascript' src='/public/js/jqueryLibraries.min.js'></script>
-		<script type='text/javascript'>
-		/* <![CDATA[ */
-			var cmsms_script = {
-				"ilightbox_skin":"dark",
-				"ilightbox_path":"vertical",
-				"ilightbox_infinite":"0",
-				"ilightbox_aspect_ratio":"1",
-				"ilightbox_mobile_optimizer":"1",
-				"ilightbox_max_scale":"1",
-				"ilightbox_min_scale":"0.2",
-				"ilightbox_inner_toolbar":"0",
-				"ilightbox_smart_recognition":"0",
-				"ilightbox_fullscreen_one_slide":"0",
-				"ilightbox_fullscreen_viewport":"center",
-				"ilightbox_controls_toolbar":"1",
-				"ilightbox_controls_arrows":"0",
-				"ilightbox_controls_fullscreen":"1",
-				"ilightbox_controls_thumbnail":"1",
-				"ilightbox_controls_keyboard":"1",
-				"ilightbox_controls_mousewheel":"1",
-				"ilightbox_controls_swipe":"1",
-				"ilightbox_controls_slideshow":"0",
-				"ilightbox_close_text":"Close",
-				"ilightbox_enter_fullscreen_text":"Enter Fullscreen (Shift+Enter)",
-				"ilightbox_exit_fullscreen_text":"Exit Fullscreen (Shift+Enter)",
-				"ilightbox_slideshow_text":"Slideshow",
-				"ilightbox_next_text":"Next",
-				"ilightbox_previous_text":"Previous",
-				"ilightbox_load_image_error":"An error occurred when trying to load photo.",
-				"ilightbox_load_contents_error":"An error occurred when trying to load contents.",
-				"ilightbox_missing_plugin_error":"The content your are attempting to view requires the <a href='{pluginspage}' target='_blank'>{type} plugin<\\\/a>."
-			};
-		/* ]]> */
-		</script>
-		<script type='text/javascript' src='/public/js/jquery.easing.min.js?ver=1.3.0'></script>
-		<script type='text/javascript' src='/public/js/jquery.script.js'></script>
-		<script type='text/javascript' src='/public/js/jquery.tweet.min.js'></script>
-		<script type='text/javascript' src='/public/js/jquery.isotope.min.js'></script>
-		<script type='text/javascript' src='/public/js/jquery.isotope.mode.js'></script>
+	{{ template "base_scripts"}}
 	</body>
 </html>
 {{ end }}
