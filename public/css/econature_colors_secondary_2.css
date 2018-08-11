@@ -1,0 +1,2162 @@
+/**
+ * @package 	WordPress
+ * @subpackage 	EcoNature
+ * @version 	1.1.1
+ * 
+ * Theme Secondary Color Schemes Rules
+ * Created by CMSMasters
+ * 
+ */
+
+
+/***************** Start Default WooCommerce Color Scheme Rules ******************/
+
+	/* Start Main Content Font Color */
+	.cmsms_products .product .product_outer .product_inner .cmsms_product_cat, 
+	.cmsms_products .product .product_outer .product_inner .cmsms_product_cat a, 
+	.cmsms_products .product .product_outer .product_inner .cmsms_product_info .price del, 
+	.cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a, 
+	.cmsms_single_product .cmsms_product_right_column .price del, 
+	#order_review .shop_table td.product-name, 
+	#order_review .shop_table td.product-name *, 
+	.shop_table.order_details td.product-name, 
+	.shop_table.order_details td.product-name *, 
+	.cmsms_dynamic_cart .cmsms_dynamic_cart_button, 
+	.widget_shopping_cart_content .cart_list li .quantity, 
+	.product_list_widget li del .amount, 
+	.quantity .text {
+		color:#423932; color:rgba(66, 57, 50, 1);
+	}
+	/* Finish Main Content Font Color */
+	
+	
+	/* Start Primary Color */
+	.cmsms_products .product .product_outer .product_inner .cmsms_product_cat a:hover, 
+	.cmsms_products .product .product_outer .product_inner .cmsms_product_info .price, 
+	.cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a:hover, 
+	.cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a:hover:before, 
+	.cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a.cmsms_add_to_cart_button.loading, 
+	.cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a.cmsms_add_to_cart_button.loading:before, 
+	.cmsms_single_product .cmsms_product_right_column .price, 
+	.required, 
+	.shop_table .product-name a:hover, 
+	.shop_table td.product-subtotal, 
+	.cart_totals table tr.cart-subtotal td, 
+	.cart_totals table tr.order-total td, 
+	#order_review .shop_table tr.order-total th, 
+	#order_review .shop_table tr.order-total td, 
+	.shop_table.order_details td.product-name a:hover, 
+	.shop_table.order_details tfoot tr:last-child th, 
+	.shop_table.order_details tfoot tr:last-child td, 
+	.cmsms_dynamic_cart .cmsms_dynamic_cart_button:hover, 
+	.cmsms_dynamic_cart:hover .cmsms_dynamic_cart_button, 
+	.widget_shopping_cart_content .cart_list li a:hover, 
+	.widget_shopping_cart_content .cart_list li .quantity .amount, 
+	.widget_shopping_cart_content .total .amount, 
+	.product_list_widget li > a:hover, 
+	.product_list_widget li .amount {
+		color:#61a93e; color:rgba(97, 169, 62, 1);
+	}
+	
+	.onsale {
+		background-color:#61a93e; background-color:rgba(97, 169, 62, 1);
+	}
+	/* Finish Primary Color */
+	
+	
+	/* Start Highlight Color */
+	.input-checkbox + label:after, 
+	.input-radio + label:after, 
+	.shipping_method + label:after {
+		background-color:#423932; background-color:rgba(66, 57, 50, 1);
+	}
+	/* Finish Highlight Color */
+	
+	
+	/* Start Headings Color */
+	.cmsms_single_product .cmsms_product_right_column .product_meta strong, 
+	.cmsms_single_product .cmsms_woo_tabs .shop_attributes th, 
+	.shop_table thead th, 
+	.shop_table td.product-remove .remove, 
+	.shop_table td.product-name, 
+	.shop_table td.product-name a, 
+	.cart_totals table tr.cart-subtotal th, 
+	.cart_totals table tr.order-total th, 
+	#order_review .shop_table tr.cart-subtotal th, 
+	#order_review .shop_table tr.cart-subtotal td, 
+	ul.order_details li > span, 
+	.shop_table.order_details tfoot tr:first-child th, 
+	.shop_table.order_details tfoot tr:first-child td, 
+	.widget_shopping_cart_content .cart_list li a, 
+	.widget_shopping_cart_content .total strong, 
+	.cmsms_added_product_info .cmsms_added_product_info_text, 
+	.product_list_widget li > a {
+		color:#423932; color:rgba(66, 57, 50, 1);
+	}
+	
+	.out-of-stock {
+		background-color:#423932; background-color:rgba(66, 57, 50, 1);
+	}
+	
+	.cmsms_single_product .cmsms_product_images .cmsms_product_thumbs .cmsms_product_thumb:hover {
+		border-color:#423932; border-color:rgba(66, 57, 50, 1);
+	}
+	/* Finish Headings Color */
+	
+	
+	/* Start Main Background Color */
+	.onsale, 
+	.out-of-stock {
+		color:#fcfaf6; color:rgba(252, 250, 246, 1);
+	}
+	
+	.quantity .text, 
+	.woocommerce-message, 
+	.woocommerce-info, 
+	#order_review #payment, 
+	.cmsms_dynamic_cart .widget_shopping_cart_content, 
+	.cmsms_added_product_info, 
+	.widget_price_filter .price_slider_wrapper .price_slider {
+		background-color:#fcfaf6; background-color:rgba(252, 250, 246, 1);
+	}
+	
+	.cmsms_dynamic_cart .widget_shopping_cart_content:after, 
+	.cmsms_added_product_info:after {
+		border-left-color:#fcfaf6; border-left-color:rgba(252, 250, 246, 1);
+	}
+	/* Finish Main Background Color */
+	
+	
+	/* Start Alternate Background Color */
+	.cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a:hover, 
+	.shop_table thead th, 
+	.shop_table td.product-remove .remove, 
+	.shop_table td.actions, 
+	.cart_totals table tr.cart-subtotal th, 
+	.cart_totals table tr.cart-subtotal td, 
+	.cart_totals table tr.order-total th, 
+	.cart_totals table tr.order-total td, 
+	.input-checkbox + label:before,
+	.input-radio + label:before, 
+	.shipping_method + label:before, 
+	#order_review .shop_table tr.cart-subtotal th, 
+	#order_review .shop_table tr.cart-subtotal td, 
+	#order_review .shop_table tr.order-total th, 
+	#order_review .shop_table tr.order-total td, 
+	#order_review #payment .payment_methods .payment_box, 
+	ul.order_details li > span, 
+	.shop_table.order_details tfoot tr:first-child th, 
+	.shop_table.order_details tfoot tr:last-child th, 
+	.shop_table.order_details tfoot tr:first-child td, 
+	.shop_table.order_details tfoot tr:last-child td, 
+	.cmsms_dynamic_cart .cmsms_dynamic_cart_button, 
+	.widget_price_filter .price_slider_wrapper .price_slider .ui-slider-range {
+		background-color:#fcfaf6; background-color:rgba(252, 250, 246, 1);
+	}
+	
+	#order_review #payment .payment_methods .payment_box:after {
+		border-bottom-color:#fcfaf6; border-bottom-color:rgba(252, 250, 246, 1);
+	}
+	/* Finish Alternate Background Color */
+	
+	
+	/* Start Borders Color */
+	.cmsms_star_rating .cmsms_star, 
+	.comment-form-rating .stars > span, 
+	.comment-form-rating .stars > span a:hover, 
+	.comment-form-rating .stars > span a.active, 
+	.cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a:before {
+		color:#e0e0e0; color:rgba(224, 224, 224, 1);
+	}
+	
+	.widget_price_filter .price_slider_wrapper .price_slider .ui-slider-handle {
+		background-color:#e0e0e0; background-color:rgba(224, 224, 224, 1);
+	}
+	
+	.cmsms_products .product .product_outer .product_inner, 
+	.cmsms_products .product .product_outer .product_inner .cmsms_product_footer, 
+	.cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a.cmsms_add_to_cart_button + .cmsms_details_button, 	
+	.cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a.added_to_cart + .cmsms_details_button, 
+	.cmsms_single_product .cmsms_product_images .cmsms_product_image, 
+	.cmsms_single_product .cmsms_product_images .cmsms_product_thumbs .cmsms_product_thumb, 
+	.cmsms_single_product .cmsms_woo_tabs .shop_attributes th, 
+	.cmsms_single_product .cmsms_woo_tabs .shop_attributes td, 
+	.cmsms_single_product .cmsms_woo_tabs #reviews #comments .commentlist, 
+	.cmsms_single_product .cmsms_woo_tabs #reviews #comments .commentlist .comment .comment_container .comment-text, 
+	.woocommerce-message, 
+	.woocommerce-info, 
+	.shop_table, 
+	.shop_table th, 
+	.shop_table td, 
+	.shop_table td.product-remove .remove, 
+	.shop_table td.product-thumbnail img, 
+	.cart_totals table, 
+	.cart_totals table tr th, 
+	.cart_totals table tr td, 
+	.input-checkbox + label:before,
+	.input-radio + label:before, 
+	.shipping_method + label:before, 
+	#order_review #payment, 
+	#order_review #payment .payment_methods .payment_box, 
+	ul.order_details, 
+	ul.order_details li, 
+	ul.order_details li > span, 
+	.cmsms_dynamic_cart .cmsms_dynamic_cart_button, 
+	.cmsms_dynamic_cart .widget_shopping_cart_content, 
+	.cmsms_added_product_info, 
+	.widget_shopping_cart_content .cart_list li, 
+	.cmsms_added_product_info .cmsms_added_product_info_img, 
+	.widget_price_filter .price_slider_wrapper .price_slider, 
+	.product_list_widget li, 
+	.product_list_widget li img, 
+	.quantity .text {
+		border-color:#e0e0e0; border-color:rgba(224, 224, 224, 1);
+	}
+	
+	#order_review #payment .payment_methods .payment_box:before {
+		border-bottom-color:#e0e0e0; border-bottom-color:rgba(224, 224, 224, 1);
+	}
+	
+	.cmsms_dynamic_cart .widget_shopping_cart_content:before, 
+	.cmsms_added_product_info:before {
+		border-left-color:#e0e0e0; border-left-color:rgba(224, 224, 224, 1);
+	}
+	/* Finish Borders Color */
+
+/***************** Finish Default WooCommerce Color Scheme Rules ******************/
+
+
+
+/***************** Start Footer WooCommerce Color Scheme Rules ******************/
+
+	/* Start Main Content Font Color */
+	html .cmsms_color_scheme_footer .cmsms_products .product .product_outer .product_inner .cmsms_product_cat, 
+	html .cmsms_color_scheme_footer .cmsms_products .product .product_outer .product_inner .cmsms_product_cat a, 
+	html .cmsms_color_scheme_footer .cmsms_products .product .product_outer .product_inner .cmsms_product_info .price del, 
+	html .cmsms_color_scheme_footer .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a, 
+	html .cmsms_color_scheme_footer .cmsms_single_product .cmsms_product_right_column .price del, 
+	html .cmsms_color_scheme_footer #order_review .shop_table td.product-name, 
+	html .cmsms_color_scheme_footer #order_review .shop_table td.product-name *, 
+	html .cmsms_color_scheme_footer .shop_table.order_details td.product-name, 
+	html .cmsms_color_scheme_footer .shop_table.order_details td.product-name *, 
+	html .cmsms_color_scheme_footer .cmsms_dynamic_cart .cmsms_dynamic_cart_button, 
+	html .cmsms_color_scheme_footer .widget_shopping_cart_content .cart_list li .quantity, 
+	html .cmsms_color_scheme_footer .product_list_widget li del .amount, 
+	html .cmsms_color_scheme_footer .quantity .text {
+		color:#707070; color:rgba(112, 112, 112, 1);
+	}
+	/* Finish Main Content Font Color */
+	
+	
+	/* Start Primary Color */
+	html .cmsms_color_scheme_footer .cmsms_products .product .product_outer .product_inner .cmsms_product_cat a:hover, 
+	html .cmsms_color_scheme_footer .cmsms_products .product .product_outer .product_inner .cmsms_product_info .price, 
+	html .cmsms_color_scheme_footer .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a:hover, 
+	html .cmsms_color_scheme_footer .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a:hover:before, 
+	html .cmsms_color_scheme_footer .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a.cmsms_add_to_cart_button.loading, 
+	html .cmsms_color_scheme_footer .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a.cmsms_add_to_cart_button.loading:before, 
+	html .cmsms_color_scheme_footer .cmsms_single_product .cmsms_product_right_column .price, 
+	html .cmsms_color_scheme_footer .required, 
+	html .cmsms_color_scheme_footer .shop_table .product-name a:hover, 
+	html .cmsms_color_scheme_footer .shop_table td.product-subtotal, 
+	html .cmsms_color_scheme_footer .cart_totals table tr.cart-subtotal td, 
+	html .cmsms_color_scheme_footer .cart_totals table tr.order-total td, 
+	html .cmsms_color_scheme_footer #order_review .shop_table tr.order-total th, 
+	html .cmsms_color_scheme_footer #order_review .shop_table tr.order-total td, 
+	html .cmsms_color_scheme_footer .shop_table.order_details td.product-name a:hover, 
+	html .cmsms_color_scheme_footer .shop_table.order_details tfoot tr:last-child th, 
+	html .cmsms_color_scheme_footer .shop_table.order_details tfoot tr:last-child td, 
+	html .cmsms_color_scheme_footer .cmsms_dynamic_cart .cmsms_dynamic_cart_button:hover, 
+	html .cmsms_color_scheme_footer .cmsms_dynamic_cart:hover .cmsms_dynamic_cart_button, 
+	html .cmsms_color_scheme_footer .widget_shopping_cart_content .cart_list li a:hover, 
+	html .cmsms_color_scheme_footer .widget_shopping_cart_content .cart_list li .quantity .amount, 
+	html .cmsms_color_scheme_footer .widget_shopping_cart_content .total .amount, 
+	html .cmsms_color_scheme_footer .product_list_widget li > a:hover, 
+	html .cmsms_color_scheme_footer .product_list_widget li .amount {
+		color:#ffffff; color:rgba(255, 255, 255, 1);
+	}
+	
+	html .cmsms_color_scheme_footer .onsale {
+		background-color:#ffffff; background-color:rgba(255, 255, 255, 1);
+	}
+	/* Finish Primary Color */
+	
+	
+	/* Start Highlight Color */
+	html .cmsms_color_scheme_footer .input-checkbox + label:after, 
+	html .cmsms_color_scheme_footer .input-radio + label:after, 
+	html .cmsms_color_scheme_footer .shipping_method + label:after {
+		background-color:#61a93e; background-color:rgba(97, 169, 62, 1);
+	}
+	/* Finish Highlight Color */
+	
+	
+	/* Start Headings Color */
+	html .cmsms_color_scheme_footer .cmsms_single_product .cmsms_product_right_column .product_meta strong, 
+	html .cmsms_color_scheme_footer .cmsms_single_product .cmsms_woo_tabs .shop_attributes th, 
+	html .cmsms_color_scheme_footer .shop_table thead th, 
+	html .cmsms_color_scheme_footer .shop_table td.product-remove .remove, 
+	html .cmsms_color_scheme_footer .shop_table td.product-name, 
+	html .cmsms_color_scheme_footer .shop_table td.product-name a, 
+	html .cmsms_color_scheme_footer .cart_totals table tr.cart-subtotal th, 
+	html .cmsms_color_scheme_footer .cart_totals table tr.order-total th, 
+	html .cmsms_color_scheme_footer #order_review .shop_table tr.cart-subtotal th, 
+	html .cmsms_color_scheme_footer #order_review .shop_table tr.cart-subtotal td, 
+	html .cmsms_color_scheme_footer ul.order_details li > span, 
+	html .cmsms_color_scheme_footer .shop_table.order_details tfoot tr:first-child th, 
+	html .cmsms_color_scheme_footer .shop_table.order_details tfoot tr:first-child td, 
+	html .cmsms_color_scheme_footer .widget_shopping_cart_content .cart_list li a, 
+	html .cmsms_color_scheme_footer .widget_shopping_cart_content .total strong, 
+	html .cmsms_color_scheme_footer .cmsms_added_product_info .cmsms_added_product_info_text, 
+	html .cmsms_color_scheme_footer .product_list_widget li > a {
+		color:#ffffff; color:rgba(255, 255, 255, 1);
+	}
+	
+	html .cmsms_color_scheme_footer .out-of-stock {
+		background-color:#ffffff; background-color:rgba(255, 255, 255, 1);
+	}
+	
+	html .cmsms_color_scheme_footer .cmsms_single_product .cmsms_product_images .cmsms_product_thumbs .cmsms_product_thumb:hover {
+		border-color:#ffffff; border-color:rgba(255, 255, 255, 1);
+	}
+	/* Finish Headings Color */
+	
+	
+	/* Start Main Background Color */
+	html .cmsms_color_scheme_footer .onsale, 
+	html .cmsms_color_scheme_footer .out-of-stock {
+		color:#423932; color:rgba(66, 57, 50, 1);
+	}
+	
+	html .cmsms_color_scheme_footer .quantity .text, 
+	html .cmsms_color_scheme_footer .woocommerce-message, 
+	html .cmsms_color_scheme_footer .woocommerce-info, 
+	html .cmsms_color_scheme_footer #order_review #payment, 
+	html .cmsms_color_scheme_footer .cmsms_dynamic_cart .widget_shopping_cart_content, 
+	html .cmsms_color_scheme_footer .cmsms_added_product_info, 
+	html .cmsms_color_scheme_footer .widget_price_filter .price_slider_wrapper .price_slider {
+		background-color:#423932; background-color:rgba(66, 57, 50, 1);
+	}
+	
+	html .cmsms_color_scheme_footer .cmsms_dynamic_cart .widget_shopping_cart_content:after, 
+	html .cmsms_color_scheme_footer .cmsms_added_product_info:after {
+		border-left-color:#423932; border-left-color:rgba(66, 57, 50, 1);
+	}
+	/* Finish Main Background Color */
+	
+	
+	/* Start Alternate Background Color */
+	html .cmsms_color_scheme_footer .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a:hover, 
+	html .cmsms_color_scheme_footer .shop_table thead th, 
+	html .cmsms_color_scheme_footer .shop_table td.product-remove .remove, 
+	html .cmsms_color_scheme_footer .shop_table td.actions, 
+	html .cmsms_color_scheme_footer .cart_totals table tr.cart-subtotal th, 
+	html .cmsms_color_scheme_footer .cart_totals table tr.cart-subtotal td, 
+	html .cmsms_color_scheme_footer .cart_totals table tr.order-total th, 
+	html .cmsms_color_scheme_footer .cart_totals table tr.order-total td, 
+	html .cmsms_color_scheme_footer .input-checkbox + label:before,
+	html .cmsms_color_scheme_footer .input-radio + label:before, 
+	html .cmsms_color_scheme_footer .shipping_method + label:before, 
+	html .cmsms_color_scheme_footer #order_review .shop_table tr.cart-subtotal th, 
+	html .cmsms_color_scheme_footer #order_review .shop_table tr.cart-subtotal td, 
+	html .cmsms_color_scheme_footer #order_review .shop_table tr.order-total th, 
+	html .cmsms_color_scheme_footer #order_review .shop_table tr.order-total td, 
+	html .cmsms_color_scheme_footer #order_review #payment .payment_methods .payment_box, 
+	html .cmsms_color_scheme_footer ul.order_details li > span, 
+	html .cmsms_color_scheme_footer .shop_table.order_details tfoot tr:first-child th, 
+	html .cmsms_color_scheme_footer .shop_table.order_details tfoot tr:last-child th, 
+	html .cmsms_color_scheme_footer .shop_table.order_details tfoot tr:first-child td, 
+	html .cmsms_color_scheme_footer .shop_table.order_details tfoot tr:last-child td, 
+	html .cmsms_color_scheme_footer .cmsms_dynamic_cart .cmsms_dynamic_cart_button, 
+	html .cmsms_color_scheme_footer .widget_price_filter .price_slider_wrapper .price_slider .ui-slider-range {
+		background-color:#423932; background-color:rgba(66, 57, 50, 1);
+	}
+	
+	html .cmsms_color_scheme_footer #order_review #payment .payment_methods .payment_box:after {
+		border-bottom-color:#423932; border-bottom-color:rgba(66, 57, 50, 1);
+	}
+	/* Finish Alternate Background Color */
+	
+	
+	/* Start Borders Color */
+	html .cmsms_color_scheme_footer .cmsms_star_rating .cmsms_star, 
+	html .cmsms_color_scheme_footer .comment-form-rating .stars > span, 
+	html .cmsms_color_scheme_footer .comment-form-rating .stars > span a:hover, 
+	html .cmsms_color_scheme_footer .comment-form-rating .stars > span a.active, 
+	html .cmsms_color_scheme_footer .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a:before {
+		color:#5a5a5a; color:rgba(90, 90, 90, 1);
+	}
+	
+	html .cmsms_color_scheme_footer .widget_price_filter .price_slider_wrapper .price_slider .ui-slider-handle {
+		background-color:#5a5a5a; background-color:rgba(90, 90, 90, 1);
+	}
+	
+	html .cmsms_color_scheme_footer .cmsms_products .product .product_outer .product_inner, 
+	html .cmsms_color_scheme_footer .cmsms_products .product .product_outer .product_inner .cmsms_product_footer, 
+	html .cmsms_color_scheme_footer .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a.cmsms_add_to_cart_button + .cmsms_details_button, 	
+	html .cmsms_color_scheme_footer .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a.added_to_cart + .cmsms_details_button, 
+	html .cmsms_color_scheme_footer .cmsms_single_product .cmsms_product_images .cmsms_product_image, 
+	html .cmsms_color_scheme_footer .cmsms_single_product .cmsms_product_images .cmsms_product_thumbs .cmsms_product_thumb, 
+	html .cmsms_color_scheme_footer .cmsms_single_product .cmsms_woo_tabs .shop_attributes th, 
+	html .cmsms_color_scheme_footer .cmsms_single_product .cmsms_woo_tabs .shop_attributes td, 
+	html .cmsms_color_scheme_footer .cmsms_single_product .cmsms_woo_tabs #reviews #comments .commentlist, 
+	html .cmsms_color_scheme_footer .cmsms_single_product .cmsms_woo_tabs #reviews #comments .commentlist .comment .comment_container .comment-text, 
+	html .cmsms_color_scheme_footer .woocommerce-message, 
+	html .cmsms_color_scheme_footer .woocommerce-info, 
+	html .cmsms_color_scheme_footer .shop_table, 
+	html .cmsms_color_scheme_footer .shop_table th, 
+	html .cmsms_color_scheme_footer .shop_table td, 
+	html .cmsms_color_scheme_footer .shop_table td.product-remove .remove, 
+	html .cmsms_color_scheme_footer .shop_table td.product-thumbnail img, 
+	html .cmsms_color_scheme_footer .cart_totals table, 
+	html .cmsms_color_scheme_footer .cart_totals table tr th, 
+	html .cmsms_color_scheme_footer .cart_totals table tr td, 
+	html .cmsms_color_scheme_footer .input-checkbox + label:before,
+	html .cmsms_color_scheme_footer .input-radio + label:before, 
+	html .cmsms_color_scheme_footer .shipping_method + label:before, 
+	html .cmsms_color_scheme_footer #order_review #payment, 
+	html .cmsms_color_scheme_footer #order_review #payment .payment_methods .payment_box, 
+	html .cmsms_color_scheme_footer ul.order_details, 
+	html .cmsms_color_scheme_footer ul.order_details li, 
+	html .cmsms_color_scheme_footer ul.order_details li > span, 
+	html .cmsms_color_scheme_footer .cmsms_dynamic_cart .cmsms_dynamic_cart_button, 
+	html .cmsms_color_scheme_footer .cmsms_dynamic_cart .widget_shopping_cart_content, 
+	html .cmsms_color_scheme_footer .cmsms_added_product_info, 
+	html .cmsms_color_scheme_footer .widget_shopping_cart_content .cart_list li, 
+	html .cmsms_color_scheme_footer .cmsms_added_product_info .cmsms_added_product_info_img, 
+	html .cmsms_color_scheme_footer .widget_price_filter .price_slider_wrapper .price_slider, 
+	html .cmsms_color_scheme_footer .product_list_widget li, 
+	html .cmsms_color_scheme_footer .product_list_widget li img, 
+	html .cmsms_color_scheme_footer .quantity .text {
+		border-color:#5a5a5a; border-color:rgba(90, 90, 90, 1);
+	}
+	
+	html .cmsms_color_scheme_footer #order_review #payment .payment_methods .payment_box:before {
+		border-bottom-color:#5a5a5a; border-bottom-color:rgba(90, 90, 90, 1);
+	}
+	
+	html .cmsms_color_scheme_footer .cmsms_dynamic_cart .widget_shopping_cart_content:before, 
+	html .cmsms_color_scheme_footer .cmsms_added_product_info:before {
+		border-left-color:#5a5a5a; border-left-color:rgba(90, 90, 90, 1);
+	}
+	/* Finish Borders Color */
+
+/***************** Finish Footer WooCommerce Color Scheme Rules ******************/
+
+
+
+/***************** Start Custom 1 WooCommerce Color Scheme Rules ******************/
+
+	/* Start Main Content Font Color */
+	html .cmsms_color_scheme_first .cmsms_products .product .product_outer .product_inner .cmsms_product_cat, 
+	html .cmsms_color_scheme_first .cmsms_products .product .product_outer .product_inner .cmsms_product_cat a, 
+	html .cmsms_color_scheme_first .cmsms_products .product .product_outer .product_inner .cmsms_product_info .price del, 
+	html .cmsms_color_scheme_first .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a, 
+	html .cmsms_color_scheme_first .cmsms_single_product .cmsms_product_right_column .price del, 
+	html .cmsms_color_scheme_first #order_review .shop_table td.product-name, 
+	html .cmsms_color_scheme_first #order_review .shop_table td.product-name *, 
+	html .cmsms_color_scheme_first .shop_table.order_details td.product-name, 
+	html .cmsms_color_scheme_first .shop_table.order_details td.product-name *, 
+	html .cmsms_color_scheme_first .cmsms_dynamic_cart .cmsms_dynamic_cart_button, 
+	html .cmsms_color_scheme_first .widget_shopping_cart_content .cart_list li .quantity, 
+	html .cmsms_color_scheme_first .product_list_widget li del .amount, 
+	html .cmsms_color_scheme_first .quantity .text {
+		color:#ffffff; color:rgba(255, 255, 255, 1);
+	}
+	/* Finish Main Content Font Color */
+	
+	
+	/* Start Primary Color */
+	html .cmsms_color_scheme_first .cmsms_products .product .product_outer .product_inner .cmsms_product_cat a:hover, 
+	html .cmsms_color_scheme_first .cmsms_products .product .product_outer .product_inner .cmsms_product_info .price, 
+	html .cmsms_color_scheme_first .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a:hover, 
+	html .cmsms_color_scheme_first .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a:hover:before, 
+	html .cmsms_color_scheme_first .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a.cmsms_add_to_cart_button.loading, 
+	html .cmsms_color_scheme_first .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a.cmsms_add_to_cart_button.loading:before, 
+	html .cmsms_color_scheme_first .cmsms_single_product .cmsms_product_right_column .price, 
+	html .cmsms_color_scheme_first .required, 
+	html .cmsms_color_scheme_first .shop_table .product-name a:hover, 
+	html .cmsms_color_scheme_first .shop_table td.product-subtotal, 
+	html .cmsms_color_scheme_first .cart_totals table tr.cart-subtotal td, 
+	html .cmsms_color_scheme_first .cart_totals table tr.order-total td, 
+	html .cmsms_color_scheme_first #order_review .shop_table tr.order-total th, 
+	html .cmsms_color_scheme_first #order_review .shop_table tr.order-total td, 
+	html .cmsms_color_scheme_first .shop_table.order_details td.product-name a:hover, 
+	html .cmsms_color_scheme_first .shop_table.order_details tfoot tr:last-child th, 
+	html .cmsms_color_scheme_first .shop_table.order_details tfoot tr:last-child td, 
+	html .cmsms_color_scheme_first .cmsms_dynamic_cart .cmsms_dynamic_cart_button:hover, 
+	html .cmsms_color_scheme_first .cmsms_dynamic_cart:hover .cmsms_dynamic_cart_button, 
+	html .cmsms_color_scheme_first .widget_shopping_cart_content .cart_list li a:hover, 
+	html .cmsms_color_scheme_first .widget_shopping_cart_content .cart_list li .quantity .amount, 
+	html .cmsms_color_scheme_first .widget_shopping_cart_content .total .amount, 
+	html .cmsms_color_scheme_first .product_list_widget li > a:hover, 
+	html .cmsms_color_scheme_first .product_list_widget li .amount {
+		color:#ffffff; color:rgba(255, 255, 255, 1);
+	}
+	
+	html .cmsms_color_scheme_first .onsale {
+		background-color:#ffffff; background-color:rgba(255, 255, 255, 1);
+	}
+	/* Finish Primary Color */
+	
+	
+	/* Start Highlight Color */
+	html .cmsms_color_scheme_first .input-checkbox + label:after, 
+	html .cmsms_color_scheme_first .input-radio + label:after, 
+	html .cmsms_color_scheme_first .shipping_method + label:after {
+		background-color:#49453d; background-color:rgba(73, 69, 61, 1);
+	}
+	/* Finish Highlight Color */
+	
+	
+	/* Start Headings Color */
+	html .cmsms_color_scheme_first .cmsms_single_product .cmsms_product_right_column .product_meta strong, 
+	html .cmsms_color_scheme_first .cmsms_single_product .cmsms_woo_tabs .shop_attributes th, 
+	html .cmsms_color_scheme_first .shop_table thead th, 
+	html .cmsms_color_scheme_first .shop_table td.product-remove .remove, 
+	html .cmsms_color_scheme_first .shop_table td.product-name, 
+	html .cmsms_color_scheme_first .shop_table td.product-name a, 
+	html .cmsms_color_scheme_first .cart_totals table tr.cart-subtotal th, 
+	html .cmsms_color_scheme_first .cart_totals table tr.order-total th, 
+	html .cmsms_color_scheme_first #order_review .shop_table tr.cart-subtotal th, 
+	html .cmsms_color_scheme_first #order_review .shop_table tr.cart-subtotal td, 
+	html .cmsms_color_scheme_first ul.order_details li > span, 
+	html .cmsms_color_scheme_first .shop_table.order_details tfoot tr:first-child th, 
+	html .cmsms_color_scheme_first .shop_table.order_details tfoot tr:first-child td, 
+	html .cmsms_color_scheme_first .widget_shopping_cart_content .cart_list li a, 
+	html .cmsms_color_scheme_first .widget_shopping_cart_content .total strong, 
+	html .cmsms_color_scheme_first .cmsms_added_product_info .cmsms_added_product_info_text, 
+	html .cmsms_color_scheme_first .product_list_widget li > a {
+		color:#ffffff; color:rgba(255, 255, 255, 1);
+	}
+	
+	html .cmsms_color_scheme_first .out-of-stock {
+		background-color:#ffffff; background-color:rgba(255, 255, 255, 1);
+	}
+	
+	html .cmsms_color_scheme_first .cmsms_single_product .cmsms_product_images .cmsms_product_thumbs .cmsms_product_thumb:hover {
+		border-color:#ffffff; border-color:rgba(255, 255, 255, 1);
+	}
+	/* Finish Headings Color */
+	
+	
+	/* Start Main Background Color */
+	html .cmsms_color_scheme_first .onsale, 
+	html .cmsms_color_scheme_first .out-of-stock {
+		color:#61a93e; color:rgba(97, 169, 62, 1);
+	}
+	
+	html .cmsms_color_scheme_first .quantity .text, 
+	html .cmsms_color_scheme_first .woocommerce-message, 
+	html .cmsms_color_scheme_first .woocommerce-info, 
+	html .cmsms_color_scheme_first #order_review #payment, 
+	html .cmsms_color_scheme_first .cmsms_dynamic_cart .widget_shopping_cart_content, 
+	html .cmsms_color_scheme_first .cmsms_added_product_info, 
+	html .cmsms_color_scheme_first .widget_price_filter .price_slider_wrapper .price_slider {
+		background-color:#61a93e; background-color:rgba(97, 169, 62, 1);
+	}
+	
+	html .cmsms_color_scheme_first .cmsms_dynamic_cart .widget_shopping_cart_content:after, 
+	html .cmsms_color_scheme_first .cmsms_added_product_info:after {
+		border-left-color:#61a93e; border-left-color:rgba(97, 169, 62, 1);
+	}
+	/* Finish Main Background Color */
+	
+	
+	/* Start Alternate Background Color */
+	html .cmsms_color_scheme_first .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a:hover, 
+	html .cmsms_color_scheme_first .shop_table thead th, 
+	html .cmsms_color_scheme_first .shop_table td.product-remove .remove, 
+	html .cmsms_color_scheme_first .shop_table td.actions, 
+	html .cmsms_color_scheme_first .cart_totals table tr.cart-subtotal th, 
+	html .cmsms_color_scheme_first .cart_totals table tr.cart-subtotal td, 
+	html .cmsms_color_scheme_first .cart_totals table tr.order-total th, 
+	html .cmsms_color_scheme_first .cart_totals table tr.order-total td, 
+	html .cmsms_color_scheme_first .input-checkbox + label:before,
+	html .cmsms_color_scheme_first .input-radio + label:before, 
+	html .cmsms_color_scheme_first .shipping_method + label:before, 
+	html .cmsms_color_scheme_first #order_review .shop_table tr.cart-subtotal th, 
+	html .cmsms_color_scheme_first #order_review .shop_table tr.cart-subtotal td, 
+	html .cmsms_color_scheme_first #order_review .shop_table tr.order-total th, 
+	html .cmsms_color_scheme_first #order_review .shop_table tr.order-total td, 
+	html .cmsms_color_scheme_first #order_review #payment .payment_methods .payment_box, 
+	html .cmsms_color_scheme_first ul.order_details li > span, 
+	html .cmsms_color_scheme_first .shop_table.order_details tfoot tr:first-child th, 
+	html .cmsms_color_scheme_first .shop_table.order_details tfoot tr:last-child th, 
+	html .cmsms_color_scheme_first .shop_table.order_details tfoot tr:first-child td, 
+	html .cmsms_color_scheme_first .shop_table.order_details tfoot tr:last-child td, 
+	html .cmsms_color_scheme_first .cmsms_dynamic_cart .cmsms_dynamic_cart_button, 
+	html .cmsms_color_scheme_first .widget_price_filter .price_slider_wrapper .price_slider .ui-slider-range {
+		background-color:#ffffff; background-color:rgba(255, 255, 255, 1);
+	}
+	
+	html .cmsms_color_scheme_first #order_review #payment .payment_methods .payment_box:after {
+		border-bottom-color:#ffffff; border-bottom-color:rgba(255, 255, 255, 1);
+	}
+	/* Finish Alternate Background Color */
+	
+	
+	/* Start Borders Color */
+	html .cmsms_color_scheme_first .cmsms_star_rating .cmsms_star, 
+	html .cmsms_color_scheme_first .comment-form-rating .stars > span, 
+	html .cmsms_color_scheme_first .comment-form-rating .stars > span a:hover, 
+	html .cmsms_color_scheme_first .comment-form-rating .stars > span a.active, 
+	html .cmsms_color_scheme_first .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a:before {
+		color:#ffffff; color:rgba(255, 255, 255, 1);
+	}
+	
+	html .cmsms_color_scheme_first .widget_price_filter .price_slider_wrapper .price_slider .ui-slider-handle {
+		background-color:#ffffff; background-color:rgba(255, 255, 255, 1);
+	}
+	
+	html .cmsms_color_scheme_first .cmsms_products .product .product_outer .product_inner, 
+	html .cmsms_color_scheme_first .cmsms_products .product .product_outer .product_inner .cmsms_product_footer, 
+	html .cmsms_color_scheme_first .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a.cmsms_add_to_cart_button + .cmsms_details_button, 	
+	html .cmsms_color_scheme_first .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a.added_to_cart + .cmsms_details_button, 
+	html .cmsms_color_scheme_first .cmsms_single_product .cmsms_product_images .cmsms_product_image, 
+	html .cmsms_color_scheme_first .cmsms_single_product .cmsms_product_images .cmsms_product_thumbs .cmsms_product_thumb, 
+	html .cmsms_color_scheme_first .cmsms_single_product .cmsms_woo_tabs .shop_attributes th, 
+	html .cmsms_color_scheme_first .cmsms_single_product .cmsms_woo_tabs .shop_attributes td, 
+	html .cmsms_color_scheme_first .cmsms_single_product .cmsms_woo_tabs #reviews #comments .commentlist, 
+	html .cmsms_color_scheme_first .cmsms_single_product .cmsms_woo_tabs #reviews #comments .commentlist .comment .comment_container .comment-text, 
+	html .cmsms_color_scheme_first .woocommerce-message, 
+	html .cmsms_color_scheme_first .woocommerce-info, 
+	html .cmsms_color_scheme_first .shop_table, 
+	html .cmsms_color_scheme_first .shop_table th, 
+	html .cmsms_color_scheme_first .shop_table td, 
+	html .cmsms_color_scheme_first .shop_table td.product-remove .remove, 
+	html .cmsms_color_scheme_first .shop_table td.product-thumbnail img, 
+	html .cmsms_color_scheme_first .cart_totals table, 
+	html .cmsms_color_scheme_first .cart_totals table tr th, 
+	html .cmsms_color_scheme_first .cart_totals table tr td, 
+	html .cmsms_color_scheme_first .input-checkbox + label:before,
+	html .cmsms_color_scheme_first .input-radio + label:before, 
+	html .cmsms_color_scheme_first .shipping_method + label:before, 
+	html .cmsms_color_scheme_first #order_review #payment, 
+	html .cmsms_color_scheme_first #order_review #payment .payment_methods .payment_box, 
+	html .cmsms_color_scheme_first ul.order_details, 
+	html .cmsms_color_scheme_first ul.order_details li, 
+	html .cmsms_color_scheme_first ul.order_details li > span, 
+	html .cmsms_color_scheme_first .cmsms_dynamic_cart .cmsms_dynamic_cart_button, 
+	html .cmsms_color_scheme_first .cmsms_dynamic_cart .widget_shopping_cart_content, 
+	html .cmsms_color_scheme_first .cmsms_added_product_info, 
+	html .cmsms_color_scheme_first .widget_shopping_cart_content .cart_list li, 
+	html .cmsms_color_scheme_first .cmsms_added_product_info .cmsms_added_product_info_img, 
+	html .cmsms_color_scheme_first .widget_price_filter .price_slider_wrapper .price_slider, 
+	html .cmsms_color_scheme_first .product_list_widget li, 
+	html .cmsms_color_scheme_first .product_list_widget li img, 
+	html .cmsms_color_scheme_first .quantity .text {
+		border-color:#ffffff; border-color:rgba(255, 255, 255, 1);
+	}
+	
+	html .cmsms_color_scheme_first #order_review #payment .payment_methods .payment_box:before {
+		border-bottom-color:#ffffff; border-bottom-color:rgba(255, 255, 255, 1);
+	}
+	
+	html .cmsms_color_scheme_first .cmsms_dynamic_cart .widget_shopping_cart_content:before, 
+	html .cmsms_color_scheme_first .cmsms_added_product_info:before {
+		border-left-color:#ffffff; border-left-color:rgba(255, 255, 255, 1);
+	}
+	/* Finish Borders Color */
+
+/***************** Finish Custom 1 WooCommerce Color Scheme Rules ******************/
+
+
+
+/***************** Start Custom 2 WooCommerce Color Scheme Rules ******************/
+
+	/* Start Main Content Font Color */
+	html .cmsms_color_scheme_second .cmsms_products .product .product_outer .product_inner .cmsms_product_cat, 
+	html .cmsms_color_scheme_second .cmsms_products .product .product_outer .product_inner .cmsms_product_cat a, 
+	html .cmsms_color_scheme_second .cmsms_products .product .product_outer .product_inner .cmsms_product_info .price del, 
+	html .cmsms_color_scheme_second .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a, 
+	html .cmsms_color_scheme_second .cmsms_single_product .cmsms_product_right_column .price del, 
+	html .cmsms_color_scheme_second #order_review .shop_table td.product-name, 
+	html .cmsms_color_scheme_second #order_review .shop_table td.product-name *, 
+	html .cmsms_color_scheme_second .shop_table.order_details td.product-name, 
+	html .cmsms_color_scheme_second .shop_table.order_details td.product-name *, 
+	html .cmsms_color_scheme_second .cmsms_dynamic_cart .cmsms_dynamic_cart_button, 
+	html .cmsms_color_scheme_second .widget_shopping_cart_content .cart_list li .quantity, 
+	html .cmsms_color_scheme_second .product_list_widget li del .amount, 
+	html .cmsms_color_scheme_second .quantity .text {
+		color:#423932; color:rgba(66, 57, 50, 1);
+	}
+	/* Finish Main Content Font Color */
+	
+	
+	/* Start Primary Color */
+	html .cmsms_color_scheme_second .cmsms_products .product .product_outer .product_inner .cmsms_product_cat a:hover, 
+	html .cmsms_color_scheme_second .cmsms_products .product .product_outer .product_inner .cmsms_product_info .price, 
+	html .cmsms_color_scheme_second .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a:hover, 
+	html .cmsms_color_scheme_second .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a:hover:before, 
+	html .cmsms_color_scheme_second .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a.cmsms_add_to_cart_button.loading, 
+	html .cmsms_color_scheme_second .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a.cmsms_add_to_cart_button.loading:before, 
+	html .cmsms_color_scheme_second .cmsms_single_product .cmsms_product_right_column .price, 
+	html .cmsms_color_scheme_second .required, 
+	html .cmsms_color_scheme_second .shop_table .product-name a:hover, 
+	html .cmsms_color_scheme_second .shop_table td.product-subtotal, 
+	html .cmsms_color_scheme_second .cart_totals table tr.cart-subtotal td, 
+	html .cmsms_color_scheme_second .cart_totals table tr.order-total td, 
+	html .cmsms_color_scheme_second #order_review .shop_table tr.order-total th, 
+	html .cmsms_color_scheme_second #order_review .shop_table tr.order-total td, 
+	html .cmsms_color_scheme_second .shop_table.order_details td.product-name a:hover, 
+	html .cmsms_color_scheme_second .shop_table.order_details tfoot tr:last-child th, 
+	html .cmsms_color_scheme_second .shop_table.order_details tfoot tr:last-child td, 
+	html .cmsms_color_scheme_second .cmsms_dynamic_cart .cmsms_dynamic_cart_button:hover, 
+	html .cmsms_color_scheme_second .cmsms_dynamic_cart:hover .cmsms_dynamic_cart_button, 
+	html .cmsms_color_scheme_second .widget_shopping_cart_content .cart_list li a:hover, 
+	html .cmsms_color_scheme_second .widget_shopping_cart_content .cart_list li .quantity .amount, 
+	html .cmsms_color_scheme_second .widget_shopping_cart_content .total .amount, 
+	html .cmsms_color_scheme_second .product_list_widget li > a:hover, 
+	html .cmsms_color_scheme_second .product_list_widget li .amount {
+		color:#61a93e; color:rgba(97, 169, 62, 1);
+	}
+	
+	html .cmsms_color_scheme_second .onsale {
+		background-color:#61a93e; background-color:rgba(97, 169, 62, 1);
+	}
+	/* Finish Primary Color */
+	
+	
+	/* Start Highlight Color */
+	html .cmsms_color_scheme_second .input-checkbox + label:after, 
+	html .cmsms_color_scheme_second .input-radio + label:after, 
+	html .cmsms_color_scheme_second .shipping_method + label:after {
+		background-color:#61a93e; background-color:rgba(97, 169, 62, 1);
+	}
+	/* Finish Highlight Color */
+	
+	
+	/* Start Headings Color */
+	html .cmsms_color_scheme_second .cmsms_single_product .cmsms_product_right_column .product_meta strong, 
+	html .cmsms_color_scheme_second .cmsms_single_product .cmsms_woo_tabs .shop_attributes th, 
+	html .cmsms_color_scheme_second .shop_table thead th, 
+	html .cmsms_color_scheme_second .shop_table td.product-remove .remove, 
+	html .cmsms_color_scheme_second .shop_table td.product-name, 
+	html .cmsms_color_scheme_second .shop_table td.product-name a, 
+	html .cmsms_color_scheme_second .cart_totals table tr.cart-subtotal th, 
+	html .cmsms_color_scheme_second .cart_totals table tr.order-total th, 
+	html .cmsms_color_scheme_second #order_review .shop_table tr.cart-subtotal th, 
+	html .cmsms_color_scheme_second #order_review .shop_table tr.cart-subtotal td, 
+	html .cmsms_color_scheme_second ul.order_details li > span, 
+	html .cmsms_color_scheme_second .shop_table.order_details tfoot tr:first-child th, 
+	html .cmsms_color_scheme_second .shop_table.order_details tfoot tr:first-child td, 
+	html .cmsms_color_scheme_second .widget_shopping_cart_content .cart_list li a, 
+	html .cmsms_color_scheme_second .widget_shopping_cart_content .total strong, 
+	html .cmsms_color_scheme_second .cmsms_added_product_info .cmsms_added_product_info_text, 
+	html .cmsms_color_scheme_second .product_list_widget li > a {
+		color:#423932; color:rgba(66, 57, 50, 1);
+	}
+	
+	html .cmsms_color_scheme_second .out-of-stock {
+		background-color:#423932; background-color:rgba(66, 57, 50, 1);
+	}
+	
+	html .cmsms_color_scheme_second .cmsms_single_product .cmsms_product_images .cmsms_product_thumbs .cmsms_product_thumb:hover {
+		border-color:#423932; border-color:rgba(66, 57, 50, 1);
+	}
+	/* Finish Headings Color */
+	
+	
+	/* Start Main Background Color */
+	html .cmsms_color_scheme_second .onsale, 
+	html .cmsms_color_scheme_second .out-of-stock {
+		color:#ffffff; color:rgba(255, 255, 255, 1);
+	}
+	
+	html .cmsms_color_scheme_second .quantity .text, 
+	html .cmsms_color_scheme_second .woocommerce-message, 
+	html .cmsms_color_scheme_second .woocommerce-info, 
+	html .cmsms_color_scheme_second #order_review #payment, 
+	html .cmsms_color_scheme_second .cmsms_dynamic_cart .widget_shopping_cart_content, 
+	html .cmsms_color_scheme_second .cmsms_added_product_info, 
+	html .cmsms_color_scheme_second .widget_price_filter .price_slider_wrapper .price_slider {
+		background-color:#ffffff; background-color:rgba(255, 255, 255, 1);
+	}
+	
+	html .cmsms_color_scheme_second .cmsms_dynamic_cart .widget_shopping_cart_content:after, 
+	html .cmsms_color_scheme_second .cmsms_added_product_info:after {
+		border-left-color:#ffffff; border-left-color:rgba(255, 255, 255, 1);
+	}
+	/* Finish Main Background Color */
+	
+	
+	/* Start Alternate Background Color */
+	html .cmsms_color_scheme_second .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a:hover, 
+	html .cmsms_color_scheme_second .shop_table thead th, 
+	html .cmsms_color_scheme_second .shop_table td.product-remove .remove, 
+	html .cmsms_color_scheme_second .shop_table td.actions, 
+	html .cmsms_color_scheme_second .cart_totals table tr.cart-subtotal th, 
+	html .cmsms_color_scheme_second .cart_totals table tr.cart-subtotal td, 
+	html .cmsms_color_scheme_second .cart_totals table tr.order-total th, 
+	html .cmsms_color_scheme_second .cart_totals table tr.order-total td, 
+	html .cmsms_color_scheme_second .input-checkbox + label:before,
+	html .cmsms_color_scheme_second .input-radio + label:before, 
+	html .cmsms_color_scheme_second .shipping_method + label:before, 
+	html .cmsms_color_scheme_second #order_review .shop_table tr.cart-subtotal th, 
+	html .cmsms_color_scheme_second #order_review .shop_table tr.cart-subtotal td, 
+	html .cmsms_color_scheme_second #order_review .shop_table tr.order-total th, 
+	html .cmsms_color_scheme_second #order_review .shop_table tr.order-total td, 
+	html .cmsms_color_scheme_second #order_review #payment .payment_methods .payment_box, 
+	html .cmsms_color_scheme_second ul.order_details li > span, 
+	html .cmsms_color_scheme_second .shop_table.order_details tfoot tr:first-child th, 
+	html .cmsms_color_scheme_second .shop_table.order_details tfoot tr:last-child th, 
+	html .cmsms_color_scheme_second .shop_table.order_details tfoot tr:first-child td, 
+	html .cmsms_color_scheme_second .shop_table.order_details tfoot tr:last-child td, 
+	html .cmsms_color_scheme_second .cmsms_dynamic_cart .cmsms_dynamic_cart_button, 
+	html .cmsms_color_scheme_second .widget_price_filter .price_slider_wrapper .price_slider .ui-slider-range {
+		background-color:#ffffff; background-color:rgba(255, 255, 255, 1);
+	}
+	
+	html .cmsms_color_scheme_second #order_review #payment .payment_methods .payment_box:after {
+		border-bottom-color:#ffffff; border-bottom-color:rgba(255, 255, 255, 1);
+	}
+	/* Finish Alternate Background Color */
+	
+	
+	/* Start Borders Color */
+	html .cmsms_color_scheme_second .cmsms_star_rating .cmsms_star, 
+	html .cmsms_color_scheme_second .comment-form-rating .stars > span, 
+	html .cmsms_color_scheme_second .comment-form-rating .stars > span a:hover, 
+	html .cmsms_color_scheme_second .comment-form-rating .stars > span a.active, 
+	html .cmsms_color_scheme_second .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a:before {
+		color:#dddddd; color:rgba(221, 221, 221, 1);
+	}
+	
+	html .cmsms_color_scheme_second .widget_price_filter .price_slider_wrapper .price_slider .ui-slider-handle {
+		background-color:#dddddd; background-color:rgba(221, 221, 221, 1);
+	}
+	
+	html .cmsms_color_scheme_second .cmsms_products .product .product_outer .product_inner, 
+	html .cmsms_color_scheme_second .cmsms_products .product .product_outer .product_inner .cmsms_product_footer, 
+	html .cmsms_color_scheme_second .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a.cmsms_add_to_cart_button + .cmsms_details_button, 	
+	html .cmsms_color_scheme_second .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a.added_to_cart + .cmsms_details_button, 
+	html .cmsms_color_scheme_second .cmsms_single_product .cmsms_product_images .cmsms_product_image, 
+	html .cmsms_color_scheme_second .cmsms_single_product .cmsms_product_images .cmsms_product_thumbs .cmsms_product_thumb, 
+	html .cmsms_color_scheme_second .cmsms_single_product .cmsms_woo_tabs .shop_attributes th, 
+	html .cmsms_color_scheme_second .cmsms_single_product .cmsms_woo_tabs .shop_attributes td, 
+	html .cmsms_color_scheme_second .cmsms_single_product .cmsms_woo_tabs #reviews #comments .commentlist, 
+	html .cmsms_color_scheme_second .cmsms_single_product .cmsms_woo_tabs #reviews #comments .commentlist .comment .comment_container .comment-text, 
+	html .cmsms_color_scheme_second .woocommerce-message, 
+	html .cmsms_color_scheme_second .woocommerce-info, 
+	html .cmsms_color_scheme_second .shop_table, 
+	html .cmsms_color_scheme_second .shop_table th, 
+	html .cmsms_color_scheme_second .shop_table td, 
+	html .cmsms_color_scheme_second .shop_table td.product-remove .remove, 
+	html .cmsms_color_scheme_second .shop_table td.product-thumbnail img, 
+	html .cmsms_color_scheme_second .cart_totals table, 
+	html .cmsms_color_scheme_second .cart_totals table tr th, 
+	html .cmsms_color_scheme_second .cart_totals table tr td, 
+	html .cmsms_color_scheme_second .input-checkbox + label:before,
+	html .cmsms_color_scheme_second .input-radio + label:before, 
+	html .cmsms_color_scheme_second .shipping_method + label:before, 
+	html .cmsms_color_scheme_second #order_review #payment, 
+	html .cmsms_color_scheme_second #order_review #payment .payment_methods .payment_box, 
+	html .cmsms_color_scheme_second ul.order_details, 
+	html .cmsms_color_scheme_second ul.order_details li, 
+	html .cmsms_color_scheme_second ul.order_details li > span, 
+	html .cmsms_color_scheme_second .cmsms_dynamic_cart .cmsms_dynamic_cart_button, 
+	html .cmsms_color_scheme_second .cmsms_dynamic_cart .widget_shopping_cart_content, 
+	html .cmsms_color_scheme_second .cmsms_added_product_info, 
+	html .cmsms_color_scheme_second .widget_shopping_cart_content .cart_list li, 
+	html .cmsms_color_scheme_second .cmsms_added_product_info .cmsms_added_product_info_img, 
+	html .cmsms_color_scheme_second .widget_price_filter .price_slider_wrapper .price_slider, 
+	html .cmsms_color_scheme_second .product_list_widget li, 
+	html .cmsms_color_scheme_second .product_list_widget li img, 
+	html .cmsms_color_scheme_second .quantity .text {
+		border-color:#dddddd; border-color:rgba(221, 221, 221, 1);
+	}
+	
+	html .cmsms_color_scheme_second #order_review #payment .payment_methods .payment_box:before {
+		border-bottom-color:#dddddd; border-bottom-color:rgba(221, 221, 221, 1);
+	}
+	
+	html .cmsms_color_scheme_second .cmsms_dynamic_cart .widget_shopping_cart_content:before, 
+	html .cmsms_color_scheme_second .cmsms_added_product_info:before {
+		border-left-color:#dddddd; border-left-color:rgba(221, 221, 221, 1);
+	}
+	/* Finish Borders Color */
+
+/***************** Finish Custom 2 WooCommerce Color Scheme Rules ******************/
+
+
+
+/***************** Start Custom 3 WooCommerce Color Scheme Rules ******************/
+
+	/* Start Main Content Font Color */
+	html .cmsms_color_scheme_third .cmsms_products .product .product_outer .product_inner .cmsms_product_cat, 
+	html .cmsms_color_scheme_third .cmsms_products .product .product_outer .product_inner .cmsms_product_cat a, 
+	html .cmsms_color_scheme_third .cmsms_products .product .product_outer .product_inner .cmsms_product_info .price del, 
+	html .cmsms_color_scheme_third .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a, 
+	html .cmsms_color_scheme_third .cmsms_single_product .cmsms_product_right_column .price del, 
+	html .cmsms_color_scheme_third #order_review .shop_table td.product-name, 
+	html .cmsms_color_scheme_third #order_review .shop_table td.product-name *, 
+	html .cmsms_color_scheme_third .shop_table.order_details td.product-name, 
+	html .cmsms_color_scheme_third .shop_table.order_details td.product-name *, 
+	html .cmsms_color_scheme_third .cmsms_dynamic_cart .cmsms_dynamic_cart_button, 
+	html .cmsms_color_scheme_third .widget_shopping_cart_content .cart_list li .quantity, 
+	html .cmsms_color_scheme_third .product_list_widget li del .amount, 
+	html .cmsms_color_scheme_third .quantity .text {
+		color:#ffffff; color:rgba(255, 255, 255, 1);
+	}
+	/* Finish Main Content Font Color */
+	
+	
+	/* Start Primary Color */
+	html .cmsms_color_scheme_third .cmsms_products .product .product_outer .product_inner .cmsms_product_cat a:hover, 
+	html .cmsms_color_scheme_third .cmsms_products .product .product_outer .product_inner .cmsms_product_info .price, 
+	html .cmsms_color_scheme_third .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a:hover, 
+	html .cmsms_color_scheme_third .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a:hover:before, 
+	html .cmsms_color_scheme_third .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a.cmsms_add_to_cart_button.loading, 
+	html .cmsms_color_scheme_third .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a.cmsms_add_to_cart_button.loading:before, 
+	html .cmsms_color_scheme_third .cmsms_single_product .cmsms_product_right_column .price, 
+	html .cmsms_color_scheme_third .required, 
+	html .cmsms_color_scheme_third .shop_table .product-name a:hover, 
+	html .cmsms_color_scheme_third .shop_table td.product-subtotal, 
+	html .cmsms_color_scheme_third .cart_totals table tr.cart-subtotal td, 
+	html .cmsms_color_scheme_third .cart_totals table tr.order-total td, 
+	html .cmsms_color_scheme_third #order_review .shop_table tr.order-total th, 
+	html .cmsms_color_scheme_third #order_review .shop_table tr.order-total td, 
+	html .cmsms_color_scheme_third .shop_table.order_details td.product-name a:hover, 
+	html .cmsms_color_scheme_third .shop_table.order_details tfoot tr:last-child th, 
+	html .cmsms_color_scheme_third .shop_table.order_details tfoot tr:last-child td, 
+	html .cmsms_color_scheme_third .cmsms_dynamic_cart .cmsms_dynamic_cart_button:hover, 
+	html .cmsms_color_scheme_third .cmsms_dynamic_cart:hover .cmsms_dynamic_cart_button, 
+	html .cmsms_color_scheme_third .widget_shopping_cart_content .cart_list li a:hover, 
+	html .cmsms_color_scheme_third .widget_shopping_cart_content .cart_list li .quantity .amount, 
+	html .cmsms_color_scheme_third .widget_shopping_cart_content .total .amount, 
+	html .cmsms_color_scheme_third .product_list_widget li > a:hover, 
+	html .cmsms_color_scheme_third .product_list_widget li .amount {
+		color:#423932; color:rgba(66, 57, 50, 0);
+	}
+	
+	html .cmsms_color_scheme_third .onsale {
+		background-color:#423932; background-color:rgba(66, 57, 50, 0);
+	}
+	/* Finish Primary Color */
+	
+	
+	/* Start Highlight Color */
+	html .cmsms_color_scheme_third .input-checkbox + label:after, 
+	html .cmsms_color_scheme_third .input-radio + label:after, 
+	html .cmsms_color_scheme_third .shipping_method + label:after {
+		background-color:#423932; background-color:rgba(66, 57, 50, 0);
+	}
+	/* Finish Highlight Color */
+	
+	
+	/* Start Headings Color */
+	html .cmsms_color_scheme_third .cmsms_single_product .cmsms_product_right_column .product_meta strong, 
+	html .cmsms_color_scheme_third .cmsms_single_product .cmsms_woo_tabs .shop_attributes th, 
+	html .cmsms_color_scheme_third .shop_table thead th, 
+	html .cmsms_color_scheme_third .shop_table td.product-remove .remove, 
+	html .cmsms_color_scheme_third .shop_table td.product-name, 
+	html .cmsms_color_scheme_third .shop_table td.product-name a, 
+	html .cmsms_color_scheme_third .cart_totals table tr.cart-subtotal th, 
+	html .cmsms_color_scheme_third .cart_totals table tr.order-total th, 
+	html .cmsms_color_scheme_third #order_review .shop_table tr.cart-subtotal th, 
+	html .cmsms_color_scheme_third #order_review .shop_table tr.cart-subtotal td, 
+	html .cmsms_color_scheme_third ul.order_details li > span, 
+	html .cmsms_color_scheme_third .shop_table.order_details tfoot tr:first-child th, 
+	html .cmsms_color_scheme_third .shop_table.order_details tfoot tr:first-child td, 
+	html .cmsms_color_scheme_third .widget_shopping_cart_content .cart_list li a, 
+	html .cmsms_color_scheme_third .widget_shopping_cart_content .total strong, 
+	html .cmsms_color_scheme_third .cmsms_added_product_info .cmsms_added_product_info_text, 
+	html .cmsms_color_scheme_third .product_list_widget li > a {
+		color:#423932; color:rgba(66, 57, 50, 0);
+	}
+	
+	html .cmsms_color_scheme_third .out-of-stock {
+		background-color:#423932; background-color:rgba(66, 57, 50, 0);
+	}
+	
+	html .cmsms_color_scheme_third .cmsms_single_product .cmsms_product_images .cmsms_product_thumbs .cmsms_product_thumb:hover {
+		border-color:#423932; border-color:rgba(66, 57, 50, 0);
+	}
+	/* Finish Headings Color */
+	
+	
+	/* Start Main Background Color */
+	html .cmsms_color_scheme_third .onsale, 
+	html .cmsms_color_scheme_third .out-of-stock {
+		color:#ffffff; color:rgba(255, 255, 255, 1);
+	}
+	
+	html .cmsms_color_scheme_third .quantity .text, 
+	html .cmsms_color_scheme_third .woocommerce-message, 
+	html .cmsms_color_scheme_third .woocommerce-info, 
+	html .cmsms_color_scheme_third #order_review #payment, 
+	html .cmsms_color_scheme_third .cmsms_dynamic_cart .widget_shopping_cart_content, 
+	html .cmsms_color_scheme_third .cmsms_added_product_info, 
+	html .cmsms_color_scheme_third .widget_price_filter .price_slider_wrapper .price_slider {
+		background-color:#ffffff; background-color:rgba(255, 255, 255, 1);
+	}
+	
+	html .cmsms_color_scheme_third .cmsms_dynamic_cart .widget_shopping_cart_content:after, 
+	html .cmsms_color_scheme_third .cmsms_added_product_info:after {
+		border-left-color:#ffffff; border-left-color:rgba(255, 255, 255, 1);
+	}
+	/* Finish Main Background Color */
+	
+	
+	/* Start Alternate Background Color */
+	html .cmsms_color_scheme_third .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a:hover, 
+	html .cmsms_color_scheme_third .shop_table thead th, 
+	html .cmsms_color_scheme_third .shop_table td.product-remove .remove, 
+	html .cmsms_color_scheme_third .shop_table td.actions, 
+	html .cmsms_color_scheme_third .cart_totals table tr.cart-subtotal th, 
+	html .cmsms_color_scheme_third .cart_totals table tr.cart-subtotal td, 
+	html .cmsms_color_scheme_third .cart_totals table tr.order-total th, 
+	html .cmsms_color_scheme_third .cart_totals table tr.order-total td, 
+	html .cmsms_color_scheme_third .input-checkbox + label:before,
+	html .cmsms_color_scheme_third .input-radio + label:before, 
+	html .cmsms_color_scheme_third .shipping_method + label:before, 
+	html .cmsms_color_scheme_third #order_review .shop_table tr.cart-subtotal th, 
+	html .cmsms_color_scheme_third #order_review .shop_table tr.cart-subtotal td, 
+	html .cmsms_color_scheme_third #order_review .shop_table tr.order-total th, 
+	html .cmsms_color_scheme_third #order_review .shop_table tr.order-total td, 
+	html .cmsms_color_scheme_third #order_review #payment .payment_methods .payment_box, 
+	html .cmsms_color_scheme_third ul.order_details li > span, 
+	html .cmsms_color_scheme_third .shop_table.order_details tfoot tr:first-child th, 
+	html .cmsms_color_scheme_third .shop_table.order_details tfoot tr:last-child th, 
+	html .cmsms_color_scheme_third .shop_table.order_details tfoot tr:first-child td, 
+	html .cmsms_color_scheme_third .shop_table.order_details tfoot tr:last-child td, 
+	html .cmsms_color_scheme_third .cmsms_dynamic_cart .cmsms_dynamic_cart_button, 
+	html .cmsms_color_scheme_third .widget_price_filter .price_slider_wrapper .price_slider .ui-slider-range {
+		background-color:#423932; background-color:rgba(66, 57, 50, 0);
+	}
+	
+	html .cmsms_color_scheme_third #order_review #payment .payment_methods .payment_box:after {
+		border-bottom-color:#423932; border-bottom-color:rgba(66, 57, 50, 0);
+	}
+	/* Finish Alternate Background Color */
+	
+	
+	/* Start Borders Color */
+	html .cmsms_color_scheme_third .cmsms_star_rating .cmsms_star, 
+	html .cmsms_color_scheme_third .comment-form-rating .stars > span, 
+	html .cmsms_color_scheme_third .comment-form-rating .stars > span a:hover, 
+	html .cmsms_color_scheme_third .comment-form-rating .stars > span a.active, 
+	html .cmsms_color_scheme_third .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a:before {
+		color:#333333; color:rgba(51, 51, 51, 0);
+	}
+	
+	html .cmsms_color_scheme_third .widget_price_filter .price_slider_wrapper .price_slider .ui-slider-handle {
+		background-color:#333333; background-color:rgba(51, 51, 51, 0);
+	}
+	
+	html .cmsms_color_scheme_third .cmsms_products .product .product_outer .product_inner, 
+	html .cmsms_color_scheme_third .cmsms_products .product .product_outer .product_inner .cmsms_product_footer, 
+	html .cmsms_color_scheme_third .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a.cmsms_add_to_cart_button + .cmsms_details_button, 	
+	html .cmsms_color_scheme_third .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a.added_to_cart + .cmsms_details_button, 
+	html .cmsms_color_scheme_third .cmsms_single_product .cmsms_product_images .cmsms_product_image, 
+	html .cmsms_color_scheme_third .cmsms_single_product .cmsms_product_images .cmsms_product_thumbs .cmsms_product_thumb, 
+	html .cmsms_color_scheme_third .cmsms_single_product .cmsms_woo_tabs .shop_attributes th, 
+	html .cmsms_color_scheme_third .cmsms_single_product .cmsms_woo_tabs .shop_attributes td, 
+	html .cmsms_color_scheme_third .cmsms_single_product .cmsms_woo_tabs #reviews #comments .commentlist, 
+	html .cmsms_color_scheme_third .cmsms_single_product .cmsms_woo_tabs #reviews #comments .commentlist .comment .comment_container .comment-text, 
+	html .cmsms_color_scheme_third .woocommerce-message, 
+	html .cmsms_color_scheme_third .woocommerce-info, 
+	html .cmsms_color_scheme_third .shop_table, 
+	html .cmsms_color_scheme_third .shop_table th, 
+	html .cmsms_color_scheme_third .shop_table td, 
+	html .cmsms_color_scheme_third .shop_table td.product-remove .remove, 
+	html .cmsms_color_scheme_third .shop_table td.product-thumbnail img, 
+	html .cmsms_color_scheme_third .cart_totals table, 
+	html .cmsms_color_scheme_third .cart_totals table tr th, 
+	html .cmsms_color_scheme_third .cart_totals table tr td, 
+	html .cmsms_color_scheme_third .input-checkbox + label:before,
+	html .cmsms_color_scheme_third .input-radio + label:before, 
+	html .cmsms_color_scheme_third .shipping_method + label:before, 
+	html .cmsms_color_scheme_third #order_review #payment, 
+	html .cmsms_color_scheme_third #order_review #payment .payment_methods .payment_box, 
+	html .cmsms_color_scheme_third ul.order_details, 
+	html .cmsms_color_scheme_third ul.order_details li, 
+	html .cmsms_color_scheme_third ul.order_details li > span, 
+	html .cmsms_color_scheme_third .cmsms_dynamic_cart .cmsms_dynamic_cart_button, 
+	html .cmsms_color_scheme_third .cmsms_dynamic_cart .widget_shopping_cart_content, 
+	html .cmsms_color_scheme_third .cmsms_added_product_info, 
+	html .cmsms_color_scheme_third .widget_shopping_cart_content .cart_list li, 
+	html .cmsms_color_scheme_third .cmsms_added_product_info .cmsms_added_product_info_img, 
+	html .cmsms_color_scheme_third .widget_price_filter .price_slider_wrapper .price_slider, 
+	html .cmsms_color_scheme_third .product_list_widget li, 
+	html .cmsms_color_scheme_third .product_list_widget li img, 
+	html .cmsms_color_scheme_third .quantity .text {
+		border-color:#333333; border-color:rgba(51, 51, 51, 0);
+	}
+	
+	html .cmsms_color_scheme_third #order_review #payment .payment_methods .payment_box:before {
+		border-bottom-color:#333333; border-bottom-color:rgba(51, 51, 51, 0);
+	}
+	
+	html .cmsms_color_scheme_third .cmsms_dynamic_cart .widget_shopping_cart_content:before, 
+	html .cmsms_color_scheme_third .cmsms_added_product_info:before {
+		border-left-color:#333333; border-left-color:rgba(51, 51, 51, 0);
+	}
+	/* Finish Borders Color */
+
+/***************** Finish Custom 3 WooCommerce Color Scheme Rules ******************/
+
+
+
+/***************** Start Custom 4 WooCommerce Color Scheme Rules ******************/
+
+	/* Start Main Content Font Color */
+	html .cmsms_color_scheme_fourth .cmsms_products .product .product_outer .product_inner .cmsms_product_cat, 
+	html .cmsms_color_scheme_fourth .cmsms_products .product .product_outer .product_inner .cmsms_product_cat a, 
+	html .cmsms_color_scheme_fourth .cmsms_products .product .product_outer .product_inner .cmsms_product_info .price del, 
+	html .cmsms_color_scheme_fourth .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a, 
+	html .cmsms_color_scheme_fourth .cmsms_single_product .cmsms_product_right_column .price del, 
+	html .cmsms_color_scheme_fourth #order_review .shop_table td.product-name, 
+	html .cmsms_color_scheme_fourth #order_review .shop_table td.product-name *, 
+	html .cmsms_color_scheme_fourth .shop_table.order_details td.product-name, 
+	html .cmsms_color_scheme_fourth .shop_table.order_details td.product-name *, 
+	html .cmsms_color_scheme_fourth .cmsms_dynamic_cart .cmsms_dynamic_cart_button, 
+	html .cmsms_color_scheme_fourth .widget_shopping_cart_content .cart_list li .quantity, 
+	html .cmsms_color_scheme_fourth .product_list_widget li del .amount, 
+	html .cmsms_color_scheme_fourth .quantity .text {
+		color:#707070; color:rgba(112, 112, 112, 1);
+	}
+	/* Finish Main Content Font Color */
+	
+	
+	/* Start Primary Color */
+	html .cmsms_color_scheme_fourth .cmsms_products .product .product_outer .product_inner .cmsms_product_cat a:hover, 
+	html .cmsms_color_scheme_fourth .cmsms_products .product .product_outer .product_inner .cmsms_product_info .price, 
+	html .cmsms_color_scheme_fourth .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a:hover, 
+	html .cmsms_color_scheme_fourth .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a:hover:before, 
+	html .cmsms_color_scheme_fourth .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a.cmsms_add_to_cart_button.loading, 
+	html .cmsms_color_scheme_fourth .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a.cmsms_add_to_cart_button.loading:before, 
+	html .cmsms_color_scheme_fourth .cmsms_single_product .cmsms_product_right_column .price, 
+	html .cmsms_color_scheme_fourth .required, 
+	html .cmsms_color_scheme_fourth .shop_table .product-name a:hover, 
+	html .cmsms_color_scheme_fourth .shop_table td.product-subtotal, 
+	html .cmsms_color_scheme_fourth .cart_totals table tr.cart-subtotal td, 
+	html .cmsms_color_scheme_fourth .cart_totals table tr.order-total td, 
+	html .cmsms_color_scheme_fourth #order_review .shop_table tr.order-total th, 
+	html .cmsms_color_scheme_fourth #order_review .shop_table tr.order-total td, 
+	html .cmsms_color_scheme_fourth .shop_table.order_details td.product-name a:hover, 
+	html .cmsms_color_scheme_fourth .shop_table.order_details tfoot tr:last-child th, 
+	html .cmsms_color_scheme_fourth .shop_table.order_details tfoot tr:last-child td, 
+	html .cmsms_color_scheme_fourth .cmsms_dynamic_cart .cmsms_dynamic_cart_button:hover, 
+	html .cmsms_color_scheme_fourth .cmsms_dynamic_cart:hover .cmsms_dynamic_cart_button, 
+	html .cmsms_color_scheme_fourth .widget_shopping_cart_content .cart_list li a:hover, 
+	html .cmsms_color_scheme_fourth .widget_shopping_cart_content .cart_list li .quantity .amount, 
+	html .cmsms_color_scheme_fourth .widget_shopping_cart_content .total .amount, 
+	html .cmsms_color_scheme_fourth .product_list_widget li > a:hover, 
+	html .cmsms_color_scheme_fourth .product_list_widget li .amount {
+		color:#61a93e; color:rgba(97, 169, 62, 1);
+	}
+	
+	html .cmsms_color_scheme_fourth .onsale {
+		background-color:#61a93e; background-color:rgba(97, 169, 62, 1);
+	}
+	/* Finish Primary Color */
+	
+	
+	/* Start Highlight Color */
+	html .cmsms_color_scheme_fourth .input-checkbox + label:after, 
+	html .cmsms_color_scheme_fourth .input-radio + label:after, 
+	html .cmsms_color_scheme_fourth .shipping_method + label:after {
+		background-color:#3d3d3d; background-color:rgba(61, 61, 61, 0);
+	}
+	/* Finish Highlight Color */
+	
+	
+	/* Start Headings Color */
+	html .cmsms_color_scheme_fourth .cmsms_single_product .cmsms_product_right_column .product_meta strong, 
+	html .cmsms_color_scheme_fourth .cmsms_single_product .cmsms_woo_tabs .shop_attributes th, 
+	html .cmsms_color_scheme_fourth .shop_table thead th, 
+	html .cmsms_color_scheme_fourth .shop_table td.product-remove .remove, 
+	html .cmsms_color_scheme_fourth .shop_table td.product-name, 
+	html .cmsms_color_scheme_fourth .shop_table td.product-name a, 
+	html .cmsms_color_scheme_fourth .cart_totals table tr.cart-subtotal th, 
+	html .cmsms_color_scheme_fourth .cart_totals table tr.order-total th, 
+	html .cmsms_color_scheme_fourth #order_review .shop_table tr.cart-subtotal th, 
+	html .cmsms_color_scheme_fourth #order_review .shop_table tr.cart-subtotal td, 
+	html .cmsms_color_scheme_fourth ul.order_details li > span, 
+	html .cmsms_color_scheme_fourth .shop_table.order_details tfoot tr:first-child th, 
+	html .cmsms_color_scheme_fourth .shop_table.order_details tfoot tr:first-child td, 
+	html .cmsms_color_scheme_fourth .widget_shopping_cart_content .cart_list li a, 
+	html .cmsms_color_scheme_fourth .widget_shopping_cart_content .total strong, 
+	html .cmsms_color_scheme_fourth .cmsms_added_product_info .cmsms_added_product_info_text, 
+	html .cmsms_color_scheme_fourth .product_list_widget li > a {
+		color:#3d3d3d; color:rgba(61, 61, 61, 1);
+	}
+	
+	html .cmsms_color_scheme_fourth .out-of-stock {
+		background-color:#3d3d3d; background-color:rgba(61, 61, 61, 1);
+	}
+	
+	html .cmsms_color_scheme_fourth .cmsms_single_product .cmsms_product_images .cmsms_product_thumbs .cmsms_product_thumb:hover {
+		border-color:#3d3d3d; border-color:rgba(61, 61, 61, 1);
+	}
+	/* Finish Headings Color */
+	
+	
+	/* Start Main Background Color */
+	html .cmsms_color_scheme_fourth .onsale, 
+	html .cmsms_color_scheme_fourth .out-of-stock {
+		color:#fcfaf6; color:rgba(252, 250, 246, 1);
+	}
+	
+	html .cmsms_color_scheme_fourth .quantity .text, 
+	html .cmsms_color_scheme_fourth .woocommerce-message, 
+	html .cmsms_color_scheme_fourth .woocommerce-info, 
+	html .cmsms_color_scheme_fourth #order_review #payment, 
+	html .cmsms_color_scheme_fourth .cmsms_dynamic_cart .widget_shopping_cart_content, 
+	html .cmsms_color_scheme_fourth .cmsms_added_product_info, 
+	html .cmsms_color_scheme_fourth .widget_price_filter .price_slider_wrapper .price_slider {
+		background-color:#fcfaf6; background-color:rgba(252, 250, 246, 1);
+	}
+	
+	html .cmsms_color_scheme_fourth .cmsms_dynamic_cart .widget_shopping_cart_content:after, 
+	html .cmsms_color_scheme_fourth .cmsms_added_product_info:after {
+		border-left-color:#fcfaf6; border-left-color:rgba(252, 250, 246, 1);
+	}
+	/* Finish Main Background Color */
+	
+	
+	/* Start Alternate Background Color */
+	html .cmsms_color_scheme_fourth .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a:hover, 
+	html .cmsms_color_scheme_fourth .shop_table thead th, 
+	html .cmsms_color_scheme_fourth .shop_table td.product-remove .remove, 
+	html .cmsms_color_scheme_fourth .shop_table td.actions, 
+	html .cmsms_color_scheme_fourth .cart_totals table tr.cart-subtotal th, 
+	html .cmsms_color_scheme_fourth .cart_totals table tr.cart-subtotal td, 
+	html .cmsms_color_scheme_fourth .cart_totals table tr.order-total th, 
+	html .cmsms_color_scheme_fourth .cart_totals table tr.order-total td, 
+	html .cmsms_color_scheme_fourth .input-checkbox + label:before,
+	html .cmsms_color_scheme_fourth .input-radio + label:before, 
+	html .cmsms_color_scheme_fourth .shipping_method + label:before, 
+	html .cmsms_color_scheme_fourth #order_review .shop_table tr.cart-subtotal th, 
+	html .cmsms_color_scheme_fourth #order_review .shop_table tr.cart-subtotal td, 
+	html .cmsms_color_scheme_fourth #order_review .shop_table tr.order-total th, 
+	html .cmsms_color_scheme_fourth #order_review .shop_table tr.order-total td, 
+	html .cmsms_color_scheme_fourth #order_review #payment .payment_methods .payment_box, 
+	html .cmsms_color_scheme_fourth ul.order_details li > span, 
+	html .cmsms_color_scheme_fourth .shop_table.order_details tfoot tr:first-child th, 
+	html .cmsms_color_scheme_fourth .shop_table.order_details tfoot tr:last-child th, 
+	html .cmsms_color_scheme_fourth .shop_table.order_details tfoot tr:first-child td, 
+	html .cmsms_color_scheme_fourth .shop_table.order_details tfoot tr:last-child td, 
+	html .cmsms_color_scheme_fourth .cmsms_dynamic_cart .cmsms_dynamic_cart_button, 
+	html .cmsms_color_scheme_fourth .widget_price_filter .price_slider_wrapper .price_slider .ui-slider-range {
+		background-color:#fcfaf6; background-color:rgba(252, 250, 246, 1);
+	}
+	
+	html .cmsms_color_scheme_fourth #order_review #payment .payment_methods .payment_box:after {
+		border-bottom-color:#fcfaf6; border-bottom-color:rgba(252, 250, 246, 1);
+	}
+	/* Finish Alternate Background Color */
+	
+	
+	/* Start Borders Color */
+	html .cmsms_color_scheme_fourth .cmsms_star_rating .cmsms_star, 
+	html .cmsms_color_scheme_fourth .comment-form-rating .stars > span, 
+	html .cmsms_color_scheme_fourth .comment-form-rating .stars > span a:hover, 
+	html .cmsms_color_scheme_fourth .comment-form-rating .stars > span a.active, 
+	html .cmsms_color_scheme_fourth .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a:before {
+		color:#dadada; color:rgba(218, 218, 218, 1);
+	}
+	
+	html .cmsms_color_scheme_fourth .widget_price_filter .price_slider_wrapper .price_slider .ui-slider-handle {
+		background-color:#dadada; background-color:rgba(218, 218, 218, 1);
+	}
+	
+	html .cmsms_color_scheme_fourth .cmsms_products .product .product_outer .product_inner, 
+	html .cmsms_color_scheme_fourth .cmsms_products .product .product_outer .product_inner .cmsms_product_footer, 
+	html .cmsms_color_scheme_fourth .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a.cmsms_add_to_cart_button + .cmsms_details_button, 	
+	html .cmsms_color_scheme_fourth .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a.added_to_cart + .cmsms_details_button, 
+	html .cmsms_color_scheme_fourth .cmsms_single_product .cmsms_product_images .cmsms_product_image, 
+	html .cmsms_color_scheme_fourth .cmsms_single_product .cmsms_product_images .cmsms_product_thumbs .cmsms_product_thumb, 
+	html .cmsms_color_scheme_fourth .cmsms_single_product .cmsms_woo_tabs .shop_attributes th, 
+	html .cmsms_color_scheme_fourth .cmsms_single_product .cmsms_woo_tabs .shop_attributes td, 
+	html .cmsms_color_scheme_fourth .cmsms_single_product .cmsms_woo_tabs #reviews #comments .commentlist, 
+	html .cmsms_color_scheme_fourth .cmsms_single_product .cmsms_woo_tabs #reviews #comments .commentlist .comment .comment_container .comment-text, 
+	html .cmsms_color_scheme_fourth .woocommerce-message, 
+	html .cmsms_color_scheme_fourth .woocommerce-info, 
+	html .cmsms_color_scheme_fourth .shop_table, 
+	html .cmsms_color_scheme_fourth .shop_table th, 
+	html .cmsms_color_scheme_fourth .shop_table td, 
+	html .cmsms_color_scheme_fourth .shop_table td.product-remove .remove, 
+	html .cmsms_color_scheme_fourth .shop_table td.product-thumbnail img, 
+	html .cmsms_color_scheme_fourth .cart_totals table, 
+	html .cmsms_color_scheme_fourth .cart_totals table tr th, 
+	html .cmsms_color_scheme_fourth .cart_totals table tr td, 
+	html .cmsms_color_scheme_fourth .input-checkbox + label:before,
+	html .cmsms_color_scheme_fourth .input-radio + label:before, 
+	html .cmsms_color_scheme_fourth .shipping_method + label:before, 
+	html .cmsms_color_scheme_fourth #order_review #payment, 
+	html .cmsms_color_scheme_fourth #order_review #payment .payment_methods .payment_box, 
+	html .cmsms_color_scheme_fourth ul.order_details, 
+	html .cmsms_color_scheme_fourth ul.order_details li, 
+	html .cmsms_color_scheme_fourth ul.order_details li > span, 
+	html .cmsms_color_scheme_fourth .cmsms_dynamic_cart .cmsms_dynamic_cart_button, 
+	html .cmsms_color_scheme_fourth .cmsms_dynamic_cart .widget_shopping_cart_content, 
+	html .cmsms_color_scheme_fourth .cmsms_added_product_info, 
+	html .cmsms_color_scheme_fourth .widget_shopping_cart_content .cart_list li, 
+	html .cmsms_color_scheme_fourth .cmsms_added_product_info .cmsms_added_product_info_img, 
+	html .cmsms_color_scheme_fourth .widget_price_filter .price_slider_wrapper .price_slider, 
+	html .cmsms_color_scheme_fourth .product_list_widget li, 
+	html .cmsms_color_scheme_fourth .product_list_widget li img, 
+	html .cmsms_color_scheme_fourth .quantity .text {
+		border-color:#dadada; border-color:rgba(218, 218, 218, 1);
+	}
+	
+	html .cmsms_color_scheme_fourth #order_review #payment .payment_methods .payment_box:before {
+		border-bottom-color:#dadada; border-bottom-color:rgba(218, 218, 218, 1);
+	}
+	
+	html .cmsms_color_scheme_fourth .cmsms_dynamic_cart .widget_shopping_cart_content:before, 
+	html .cmsms_color_scheme_fourth .cmsms_added_product_info:before {
+		border-left-color:#dadada; border-left-color:rgba(218, 218, 218, 1);
+	}
+	/* Finish Borders Color */
+
+/***************** Finish Custom 4 WooCommerce Color Scheme Rules ******************/
+
+
+
+/***************** Start Custom 5 WooCommerce Color Scheme Rules ******************/
+
+	/* Start Main Content Font Color */
+	html .cmsms_color_scheme_fifth .cmsms_products .product .product_outer .product_inner .cmsms_product_cat, 
+	html .cmsms_color_scheme_fifth .cmsms_products .product .product_outer .product_inner .cmsms_product_cat a, 
+	html .cmsms_color_scheme_fifth .cmsms_products .product .product_outer .product_inner .cmsms_product_info .price del, 
+	html .cmsms_color_scheme_fifth .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a, 
+	html .cmsms_color_scheme_fifth .cmsms_single_product .cmsms_product_right_column .price del, 
+	html .cmsms_color_scheme_fifth #order_review .shop_table td.product-name, 
+	html .cmsms_color_scheme_fifth #order_review .shop_table td.product-name *, 
+	html .cmsms_color_scheme_fifth .shop_table.order_details td.product-name, 
+	html .cmsms_color_scheme_fifth .shop_table.order_details td.product-name *, 
+	html .cmsms_color_scheme_fifth .cmsms_dynamic_cart .cmsms_dynamic_cart_button, 
+	html .cmsms_color_scheme_fifth .widget_shopping_cart_content .cart_list li .quantity, 
+	html .cmsms_color_scheme_fifth .product_list_widget li del .amount, 
+	html .cmsms_color_scheme_fifth .quantity .text {
+		color:#707070; color:rgba(112, 112, 112, 1);
+	}
+	/* Finish Main Content Font Color */
+	
+	
+	/* Start Primary Color */
+	html .cmsms_color_scheme_fifth .cmsms_products .product .product_outer .product_inner .cmsms_product_cat a:hover, 
+	html .cmsms_color_scheme_fifth .cmsms_products .product .product_outer .product_inner .cmsms_product_info .price, 
+	html .cmsms_color_scheme_fifth .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a:hover, 
+	html .cmsms_color_scheme_fifth .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a:hover:before, 
+	html .cmsms_color_scheme_fifth .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a.cmsms_add_to_cart_button.loading, 
+	html .cmsms_color_scheme_fifth .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a.cmsms_add_to_cart_button.loading:before, 
+	html .cmsms_color_scheme_fifth .cmsms_single_product .cmsms_product_right_column .price, 
+	html .cmsms_color_scheme_fifth .required, 
+	html .cmsms_color_scheme_fifth .shop_table .product-name a:hover, 
+	html .cmsms_color_scheme_fifth .shop_table td.product-subtotal, 
+	html .cmsms_color_scheme_fifth .cart_totals table tr.cart-subtotal td, 
+	html .cmsms_color_scheme_fifth .cart_totals table tr.order-total td, 
+	html .cmsms_color_scheme_fifth #order_review .shop_table tr.order-total th, 
+	html .cmsms_color_scheme_fifth #order_review .shop_table tr.order-total td, 
+	html .cmsms_color_scheme_fifth .shop_table.order_details td.product-name a:hover, 
+	html .cmsms_color_scheme_fifth .shop_table.order_details tfoot tr:last-child th, 
+	html .cmsms_color_scheme_fifth .shop_table.order_details tfoot tr:last-child td, 
+	html .cmsms_color_scheme_fifth .cmsms_dynamic_cart .cmsms_dynamic_cart_button:hover, 
+	html .cmsms_color_scheme_fifth .cmsms_dynamic_cart:hover .cmsms_dynamic_cart_button, 
+	html .cmsms_color_scheme_fifth .widget_shopping_cart_content .cart_list li a:hover, 
+	html .cmsms_color_scheme_fifth .widget_shopping_cart_content .cart_list li .quantity .amount, 
+	html .cmsms_color_scheme_fifth .widget_shopping_cart_content .total .amount, 
+	html .cmsms_color_scheme_fifth .product_list_widget li > a:hover, 
+	html .cmsms_color_scheme_fifth .product_list_widget li .amount {
+		color:#ff6b6b; color:rgba(255, 107, 107, 1);
+	}
+	
+	html .cmsms_color_scheme_fifth .onsale {
+		background-color:#ff6b6b; background-color:rgba(255, 107, 107, 1);
+	}
+	/* Finish Primary Color */
+	
+	
+	/* Start Highlight Color */
+	html .cmsms_color_scheme_fifth .input-checkbox + label:after, 
+	html .cmsms_color_scheme_fifth .input-radio + label:after, 
+	html .cmsms_color_scheme_fifth .shipping_method + label:after {
+		background-color:#3d3d3d; background-color:rgba(61, 61, 61, 1);
+	}
+	/* Finish Highlight Color */
+	
+	
+	/* Start Headings Color */
+	html .cmsms_color_scheme_fifth .cmsms_single_product .cmsms_product_right_column .product_meta strong, 
+	html .cmsms_color_scheme_fifth .cmsms_single_product .cmsms_woo_tabs .shop_attributes th, 
+	html .cmsms_color_scheme_fifth .shop_table thead th, 
+	html .cmsms_color_scheme_fifth .shop_table td.product-remove .remove, 
+	html .cmsms_color_scheme_fifth .shop_table td.product-name, 
+	html .cmsms_color_scheme_fifth .shop_table td.product-name a, 
+	html .cmsms_color_scheme_fifth .cart_totals table tr.cart-subtotal th, 
+	html .cmsms_color_scheme_fifth .cart_totals table tr.order-total th, 
+	html .cmsms_color_scheme_fifth #order_review .shop_table tr.cart-subtotal th, 
+	html .cmsms_color_scheme_fifth #order_review .shop_table tr.cart-subtotal td, 
+	html .cmsms_color_scheme_fifth ul.order_details li > span, 
+	html .cmsms_color_scheme_fifth .shop_table.order_details tfoot tr:first-child th, 
+	html .cmsms_color_scheme_fifth .shop_table.order_details tfoot tr:first-child td, 
+	html .cmsms_color_scheme_fifth .widget_shopping_cart_content .cart_list li a, 
+	html .cmsms_color_scheme_fifth .widget_shopping_cart_content .total strong, 
+	html .cmsms_color_scheme_fifth .cmsms_added_product_info .cmsms_added_product_info_text, 
+	html .cmsms_color_scheme_fifth .product_list_widget li > a {
+		color:#3d3d3d; color:rgba(61, 61, 61, 1);
+	}
+	
+	html .cmsms_color_scheme_fifth .out-of-stock {
+		background-color:#3d3d3d; background-color:rgba(61, 61, 61, 1);
+	}
+	
+	html .cmsms_color_scheme_fifth .cmsms_single_product .cmsms_product_images .cmsms_product_thumbs .cmsms_product_thumb:hover {
+		border-color:#3d3d3d; border-color:rgba(61, 61, 61, 1);
+	}
+	/* Finish Headings Color */
+	
+	
+	/* Start Main Background Color */
+	html .cmsms_color_scheme_fifth .onsale, 
+	html .cmsms_color_scheme_fifth .out-of-stock {
+		color:#ffffff; color:rgba(255, 255, 255, 1);
+	}
+	
+	html .cmsms_color_scheme_fifth .quantity .text, 
+	html .cmsms_color_scheme_fifth .woocommerce-message, 
+	html .cmsms_color_scheme_fifth .woocommerce-info, 
+	html .cmsms_color_scheme_fifth #order_review #payment, 
+	html .cmsms_color_scheme_fifth .cmsms_dynamic_cart .widget_shopping_cart_content, 
+	html .cmsms_color_scheme_fifth .cmsms_added_product_info, 
+	html .cmsms_color_scheme_fifth .widget_price_filter .price_slider_wrapper .price_slider {
+		background-color:#ffffff; background-color:rgba(255, 255, 255, 1);
+	}
+	
+	html .cmsms_color_scheme_fifth .cmsms_dynamic_cart .widget_shopping_cart_content:after, 
+	html .cmsms_color_scheme_fifth .cmsms_added_product_info:after {
+		border-left-color:#ffffff; border-left-color:rgba(255, 255, 255, 1);
+	}
+	/* Finish Main Background Color */
+	
+	
+	/* Start Alternate Background Color */
+	html .cmsms_color_scheme_fifth .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a:hover, 
+	html .cmsms_color_scheme_fifth .shop_table thead th, 
+	html .cmsms_color_scheme_fifth .shop_table td.product-remove .remove, 
+	html .cmsms_color_scheme_fifth .shop_table td.actions, 
+	html .cmsms_color_scheme_fifth .cart_totals table tr.cart-subtotal th, 
+	html .cmsms_color_scheme_fifth .cart_totals table tr.cart-subtotal td, 
+	html .cmsms_color_scheme_fifth .cart_totals table tr.order-total th, 
+	html .cmsms_color_scheme_fifth .cart_totals table tr.order-total td, 
+	html .cmsms_color_scheme_fifth .input-checkbox + label:before,
+	html .cmsms_color_scheme_fifth .input-radio + label:before, 
+	html .cmsms_color_scheme_fifth .shipping_method + label:before, 
+	html .cmsms_color_scheme_fifth #order_review .shop_table tr.cart-subtotal th, 
+	html .cmsms_color_scheme_fifth #order_review .shop_table tr.cart-subtotal td, 
+	html .cmsms_color_scheme_fifth #order_review .shop_table tr.order-total th, 
+	html .cmsms_color_scheme_fifth #order_review .shop_table tr.order-total td, 
+	html .cmsms_color_scheme_fifth #order_review #payment .payment_methods .payment_box, 
+	html .cmsms_color_scheme_fifth ul.order_details li > span, 
+	html .cmsms_color_scheme_fifth .shop_table.order_details tfoot tr:first-child th, 
+	html .cmsms_color_scheme_fifth .shop_table.order_details tfoot tr:last-child th, 
+	html .cmsms_color_scheme_fifth .shop_table.order_details tfoot tr:first-child td, 
+	html .cmsms_color_scheme_fifth .shop_table.order_details tfoot tr:last-child td, 
+	html .cmsms_color_scheme_fifth .cmsms_dynamic_cart .cmsms_dynamic_cart_button, 
+	html .cmsms_color_scheme_fifth .widget_price_filter .price_slider_wrapper .price_slider .ui-slider-range {
+		background-color:#fdfdfd; background-color:rgba(253, 253, 253, 1);
+	}
+	
+	html .cmsms_color_scheme_fifth #order_review #payment .payment_methods .payment_box:after {
+		border-bottom-color:#fdfdfd; border-bottom-color:rgba(253, 253, 253, 1);
+	}
+	/* Finish Alternate Background Color */
+	
+	
+	/* Start Borders Color */
+	html .cmsms_color_scheme_fifth .cmsms_star_rating .cmsms_star, 
+	html .cmsms_color_scheme_fifth .comment-form-rating .stars > span, 
+	html .cmsms_color_scheme_fifth .comment-form-rating .stars > span a:hover, 
+	html .cmsms_color_scheme_fifth .comment-form-rating .stars > span a.active, 
+	html .cmsms_color_scheme_fifth .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a:before {
+		color:#dadada; color:rgba(218, 218, 218, 1);
+	}
+	
+	html .cmsms_color_scheme_fifth .widget_price_filter .price_slider_wrapper .price_slider .ui-slider-handle {
+		background-color:#dadada; background-color:rgba(218, 218, 218, 1);
+	}
+	
+	html .cmsms_color_scheme_fifth .cmsms_products .product .product_outer .product_inner, 
+	html .cmsms_color_scheme_fifth .cmsms_products .product .product_outer .product_inner .cmsms_product_footer, 
+	html .cmsms_color_scheme_fifth .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a.cmsms_add_to_cart_button + .cmsms_details_button, 	
+	html .cmsms_color_scheme_fifth .cmsms_products .product .product_outer .product_inner .cmsms_product_footer > a.added_to_cart + .cmsms_details_button, 
+	html .cmsms_color_scheme_fifth .cmsms_single_product .cmsms_product_images .cmsms_product_image, 
+	html .cmsms_color_scheme_fifth .cmsms_single_product .cmsms_product_images .cmsms_product_thumbs .cmsms_product_thumb, 
+	html .cmsms_color_scheme_fifth .cmsms_single_product .cmsms_woo_tabs .shop_attributes th, 
+	html .cmsms_color_scheme_fifth .cmsms_single_product .cmsms_woo_tabs .shop_attributes td, 
+	html .cmsms_color_scheme_fifth .cmsms_single_product .cmsms_woo_tabs #reviews #comments .commentlist, 
+	html .cmsms_color_scheme_fifth .cmsms_single_product .cmsms_woo_tabs #reviews #comments .commentlist .comment .comment_container .comment-text, 
+	html .cmsms_color_scheme_fifth .woocommerce-message, 
+	html .cmsms_color_scheme_fifth .woocommerce-info, 
+	html .cmsms_color_scheme_fifth .shop_table, 
+	html .cmsms_color_scheme_fifth .shop_table th, 
+	html .cmsms_color_scheme_fifth .shop_table td, 
+	html .cmsms_color_scheme_fifth .shop_table td.product-remove .remove, 
+	html .cmsms_color_scheme_fifth .shop_table td.product-thumbnail img, 
+	html .cmsms_color_scheme_fifth .cart_totals table, 
+	html .cmsms_color_scheme_fifth .cart_totals table tr th, 
+	html .cmsms_color_scheme_fifth .cart_totals table tr td, 
+	html .cmsms_color_scheme_fifth .input-checkbox + label:before,
+	html .cmsms_color_scheme_fifth .input-radio + label:before, 
+	html .cmsms_color_scheme_fifth .shipping_method + label:before, 
+	html .cmsms_color_scheme_fifth #order_review #payment, 
+	html .cmsms_color_scheme_fifth #order_review #payment .payment_methods .payment_box, 
+	html .cmsms_color_scheme_fifth ul.order_details, 
+	html .cmsms_color_scheme_fifth ul.order_details li, 
+	html .cmsms_color_scheme_fifth ul.order_details li > span, 
+	html .cmsms_color_scheme_fifth .cmsms_dynamic_cart .cmsms_dynamic_cart_button, 
+	html .cmsms_color_scheme_fifth .cmsms_dynamic_cart .widget_shopping_cart_content, 
+	html .cmsms_color_scheme_fifth .cmsms_added_product_info, 
+	html .cmsms_color_scheme_fifth .widget_shopping_cart_content .cart_list li, 
+	html .cmsms_color_scheme_fifth .cmsms_added_product_info .cmsms_added_product_info_img, 
+	html .cmsms_color_scheme_fifth .widget_price_filter .price_slider_wrapper .price_slider, 
+	html .cmsms_color_scheme_fifth .product_list_widget li, 
+	html .cmsms_color_scheme_fifth .product_list_widget li img, 
+	html .cmsms_color_scheme_fifth .quantity .text {
+		border-color:#dadada; border-color:rgba(218, 218, 218, 1);
+	}
+	
+	html .cmsms_color_scheme_fifth #order_review #payment .payment_methods .payment_box:before {
+		border-bottom-color:#dadada; border-bottom-color:rgba(218, 218, 218, 1);
+	}
+	
+	html .cmsms_color_scheme_fifth .cmsms_dynamic_cart .widget_shopping_cart_content:before, 
+	html .cmsms_color_scheme_fifth .cmsms_added_product_info:before {
+		border-left-color:#dadada; border-left-color:rgba(218, 218, 218, 1);
+	}
+	/* Finish Borders Color */
+
+/***************** Finish Custom 5 WooCommerce Color Scheme Rules ******************/
+
+
+
+/***************** Start Header Color Scheme Rules ******************/
+
+	/* Start Header Content Color */
+	.header_mid,
+	.header_bot, 
+	.header_mid_inner .social_wrap a {
+		color:#ffffff; color:rgba(255, 255, 255, 1);
+	}
+	/* Finish Header Content Color */
+	
+	
+	/* Start Header Primary Color */
+	.header_mid a,
+	.header_mid h1 a:hover,
+	.header_mid h2 a:hover,
+	.header_mid h3 a:hover,
+	.header_mid h4 a:hover,
+	.header_mid h5 a:hover,
+	.header_mid h6 a:hover,
+	.header_mid .color_2,
+	.header_bot a,
+	.header_bot h1 a:hover,
+	.header_bot h2 a:hover,
+	.header_bot h3 a:hover,
+	.header_bot h4 a:hover,
+	.header_bot h5 a:hover,
+	.header_bot h6 a:hover,
+	.header_bot .color_2,
+	.header_mid h1,
+	.header_mid h2,
+	.header_mid h3,
+	.header_mid h4,
+	.header_mid h5,
+	.header_mid h6,
+	.header_mid h1 a,
+	.header_mid h2 a,
+	.header_mid h3 a,
+	.header_mid h4 a,
+	.header_mid h5 a,
+	.header_mid h6 a,
+	.header_bot h1,
+	.header_bot h2,
+	.header_bot h3,
+	.header_bot h4,
+	.header_bot h5,
+	.header_bot h6,
+	.header_bot h1 a,
+	.header_bot h2 a,
+	.header_bot h3 a,
+	.header_bot h4 a,
+	.header_bot h5 a,
+	.header_bot h6 a,
+	#navigation > li > a,
+	.header_mid_outer .header_mid_inner .search_wrap .search_bar_wrap button[type=submit][class^="cmsms-icon-"],
+	.header_mid_outer .header_mid_inner .search_wrap .search_bar_wrap button[type=submit][class*=" cmsms-icon-"],
+	.header_mid_outer .header_mid_inner .search_wrap .search_but,
+	.header_mid .search_bar_wrap button[type=submit][class^="cmsms-icon-"],
+	.header_mid .search_bar_wrap button[type=submit][class*=" cmsms-icon-"],
+	.header_bot .search_bar_wrap button[type=submit][class^="cmsms-icon-"],
+	.header_bot .search_bar_wrap button[type=submit][class*=" cmsms-icon-"], 
+	.header_mid_inner .social_wrap a:hover {
+		color:#423932; color:rgba(66, 57, 50, 1);
+	}
+	
+	.header_mid .cmsms_button,
+	.header_mid .button:hover,
+	.header_bot .cmsms_button,
+	.header_bot .button:hover,
+	.header_mid .button,
+	.header_bot .button {
+		background-color:#423932; background-color:rgba(66, 57, 50, 1);
+	}
+	
+	.header_mid input[type=text]:focus,
+	.header_mid input[type=email]:focus,
+	.header_mid input[type=password]:focus,
+	.header_mid textarea:focus,
+	.header_top input[type=text]:focus,
+	.header_top input[type=email]:focus,
+	.header_top input[type=password]:focus,
+	.header_top textarea:focus {
+		border-color:#423932; border-color:rgba(66, 57, 50, 1);
+	}
+	/* Finish Header Primary Color */
+	
+	
+	/* Start Header Rollover Color */
+	.header_mid a:hover,
+	.header_bot a:hover,
+	#navigation > li > a:hover,
+	#navigation > li.current-menu-item > a,
+	#navigation > li.current_page_item > a,
+	#navigation > li.current-menu-ancestor > a,
+	#navigation > li.menu-item-highlight > a {
+		color:#ffffff; color:rgba(255, 255, 255, 1);
+	}
+	
+	@media only screen and (min-width: 1024px) {
+		#navigation > li:hover > a {
+			color:#ffffff; color:rgba(255, 255, 255, 1);
+		}
+	}
+	/* Finish Header Rollover Color */
+	
+	
+	/* Start Header Background Color */
+	.header_mid .cmsms_button,
+	.header_mid .cmsms_button:hover, 
+	.header_bot .cmsms_button,
+	.header_bot .cmsms_button:hover {
+		color:#fcfaf6; color:rgba(252, 250, 246, 1);
+	}
+	
+	.header_mid input[type=text]:focus,
+	.header_mid input[type=number]:focus,
+	.header_mid input[type=email]:focus,
+	.header_mid input[type=password]:focus,
+	.header_mid textarea:focus,
+	.header_bot input[type=text]:focus,
+	.header_bot input[type=number]:focus,
+	.header_bot input[type=email]:focus,
+	.header_bot input[type=password]:focus,
+	.header_bot textarea:focus,
+	.header_mid_outer,
+	.header_bot_outer,
+	.header_mid_outer .header_mid_inner .search_wrap.search_opened .search_but {
+		background-color:#fcfaf6; background-color:rgba(252, 250, 246, 1);
+	}
+	/* Finish Header Background Color */
+	
+	
+	/* Start Header Rollover Background Color */
+	#navigation > li > a:hover,
+	#navigation > li.current-menu-item > a,
+	#navigation > li.current_page_item > a,
+	#navigation > li.current-menu-ancestor > a,
+	#navigation > li > a > span.nav_bg_clr,
+	#navigation > li.menu-item-highlight > a > span.nav_bg_clr {
+		background-color:#61a93e; background-color:rgba(97, 169, 62, 1);
+	}
+	
+	@media only screen and (min-width: 1024px) {
+		#navigation > li:hover > a {
+			background-color:#61a93e; background-color:rgba(97, 169, 62, 1);
+		}
+	}
+	/* Finish Header Rollover Background Color */
+	
+	
+	/* Start Header Borders Color */
+	.header_mid input[type=text],
+	.header_mid input[type=number],
+	.header_mid input[type=email],
+	.header_mid input[type=password],
+	.header_mid input[type=submit],
+	.header_mid button,
+	.header_mid textarea,
+	.header_mid select,
+	.header_mid option,
+	.header_bot input[type=text],
+	.header_bot input[type=number],
+	.header_bot input[type=email],
+	.header_bot input[type=password],
+	.header_bot input[type=submit],
+	.header_bot button,
+	.header_bot textarea,
+	.header_bot select,
+	.header_bot option,
+	.header_mid_outer .header_mid_inner .search_wrap.search_opened .search_but,
+	.header_mid .search_bar_wrap,
+	.header_bot .search_bar_wrap, 
+	#navigation li a {
+		border-color:#ebebeb; border-color:rgba(235, 235, 235, 1);
+	}
+	
+	.header_mid_outer,
+	.header_bot_outer,
+	.header_mid hr,
+	.header_mid .cmsms_divider,
+	.header_bot hr,
+	.header_bot .cmsms_divider {
+		border-bottom-color:#ebebeb; border-bottom-color:rgba(235, 235, 235, 1);
+	}
+	/* Finish Header Borders Color */
+	
+	
+	/* Start Header Dropdown Link Color */
+	.header_mid .button,
+	.header_mid .button:hover, 
+	.header_bot .button,
+	.header_bot .button:hover, 
+	#navigation ul li a {
+		color:#9e9e9e; color:rgba(158, 158, 158, 1);
+	}
+	
+	@media only screen and (max-width: 1024px) {
+		#navigation > li > a {
+			color:#9e9e9e; color:rgba(158, 158, 158, 1);
+		}
+	}
+	/* Finish Header Dropdown Link Color */
+	
+	
+	/* Start Header Dropdown Rollover Color */
+	#navigation ul li > a:hover,
+	#navigation ul li.current-menu-item > a,
+	#navigation ul li.current_page_item > a,
+	#navigation ul li.current-menu-ancestor > a,
+	#navigation > li li.menu-item-highlight > a,
+	#navigation > li li.menu-item-highlight > a:hover,
+	#navigation > li.menu-item-mega li > a:hover,
+	#navigation > li.menu-item-mega li.current-menu-ancestor > a,
+	#navigation > li.menu-item-mega li li > a:hover,
+	#navigation > li.menu-item-mega > ul > li > a,
+	#navigation > li.menu-item-mega > ul > li > a:hover,
+	#navigation > li.menu-item-mega > div.menu-item-mega-container li > a:hover,
+	#navigation > li.menu-item-mega > div.menu-item-mega-container li.current-menu-item > a,
+	#navigation > li.menu-item-mega > div.menu-item-mega-container li.current_page_item > a,
+	#navigation > li.menu-item-mega > div.menu-item-mega-container li.menu-item-highlight > a,
+	#navigation > li.menu-item-mega > div.menu-item-mega-container li.menu-item-highlight > a:hover,
+	#navigation > li.menu-item-mega > div.menu-item-mega-container li.menu-item-highlight:hover > a:hover,
+	#navigation > li.menu-item-mega > div.menu-item-mega-container > ul > li > a,
+	#navigation > li.menu-item-mega > div.menu-item-mega-container > ul > li > a:hover,
+	#navigation > li.menu-item-mega > div.menu-item-mega-container > ul > li > a[href]:hover,
+	#navigation > li.menu-item-mega > div.menu-item-mega-container > ul li li > a:hover,
+	#navigation > li.menu-item-mega > div.menu-item-mega-container > ul li li:hover > a:hover {
+		color:#3d3d3d; color:rgba(61, 61, 61, 1);
+	}
+	
+	@media only screen and (max-width: 1024px) {
+		#navigation > li > a:hover,
+		#navigation > li.current-menu-item > a,
+		#navigation > li.current_page_item > a,
+		#navigation > li.current-menu-ancestor > a,
+		#navigation > li.menu-item-highlight > a {
+			color:#3d3d3d; color:rgba(61, 61, 61, 1);
+		}
+	}
+	
+	@media only screen and (min-width: 1024px) {
+		#navigation ul li:hover > a,
+		#navigation > li li.menu-item-highlight:hover > a,
+		#navigation > li.menu-item-mega li:hover > a,
+		#navigation > li.menu-item-mega > ul > li:hover > a,
+		#navigation > li.menu-item-mega > div.menu-item-mega-container li:hover > a,
+		#navigation > li.menu-item-mega > div.menu-item-mega-container > ul li li:hover > a,
+		#navigation > li.menu-item-mega > div.menu-item-mega-container li.menu-item-highlight:hover > a {
+			color:#3d3d3d; color:rgba(61, 61, 61, 1);
+		}
+	}
+	/* Finish Header Dropdown Rollover Color */
+	
+	
+	/* Start Header Dropdown Background Color */
+	.header_mid input[type=text],
+	.header_mid input[type=number],
+	.header_mid input[type=email],
+	.header_mid input[type=password],
+	.header_mid input[type=submit],
+	.header_mid button,
+	.header_mid textarea,
+	.header_mid select,
+	.header_mid option,
+	.header_bot input[type=text],
+	.header_bot input[type=number],
+	.header_bot input[type=email],
+	.header_bot input[type=password],
+	.header_bot input[type=submit],
+	.header_bot button,
+	.header_bot textarea,
+	.header_bot select,
+	.header_bot option,
+	#navigation ul,
+	#navigation > li.menu-item-mega li > a:hover,
+	#navigation > li.menu-item-mega > div.menu-item-mega-container {
+		background-color:#fcfaf6; background-color:rgba(252, 250, 246, 1);
+	}
+	
+	@media only screen and (max-width: 1024px) {
+		#navigation {
+			background-color:#fcfaf6; background-color:rgba(252, 250, 246, 1);
+		}
+	}
+	
+	@media only screen and (min-width: 1024px) {
+		#navigation > li.menu-item-mega li:hover > a {
+			background-color:#fcfaf6; background-color:rgba(252, 250, 246, 1);
+		}
+	}
+	
+	#navigation > li.menu-item-has-children > a:before,
+	#navigation > li.menu-item-has-children > a > span.nav_bg_clr:before {
+		border-bottom-color:#fcfaf6; border-bottom-color:rgba(252, 250, 246, 1);
+	}
+	/* Finish Header Dropdown Background Color */
+	
+	
+	/* Start Header Dropdown Rollover Background Color */
+	#navigation ul li > a:hover,
+	#navigation ul li.current-menu-item > a,
+	#navigation ul li.current_page_item > a,
+	#navigation ul li.current-menu-ancestor > a,
+	#navigation > li.menu-item-mega li li:hover > a:hover,
+	#navigation > li.menu-item-mega li li.current-menu-item > a,
+	#navigation > li.menu-item-mega li li.current_page_item > a,
+	.header_mid .search_bar_wrap,
+	.header_mid .search_bar_wrap input[type=text],
+	.header_mid .search_bar_wrap input[type=text]:focus,
+	.header_bot .search_bar_wrap,
+	.header_bot .search_bar_wrap input[type=text],
+	.header_bot .search_bar_wrap input[type=text]:focus {
+		background-color:#fbfbfb; background-color:rgba(251, 251, 251, 1);
+	}
+	
+	@media only screen and (max-width: 1024px) {
+		#navigation > li > a:hover,
+		#navigation > li.current-menu-item > a,
+		#navigation > li.current_page_item > a,
+		#navigation > li.current-menu-ancestor > a,
+		#navigation > li > a > span.nav_bg_clr,
+		#navigation > li.menu-item-highlight > a > span.nav_bg_clr {
+			background-color:#fbfbfb; background-color:rgba(251, 251, 251, 1);
+		}
+	}
+	
+	@media only screen and (min-width: 1024px) {
+		#navigation ul li:hover > a {
+			background-color:#fbfbfb; background-color:rgba(251, 251, 251, 1);
+		}
+	}
+	/* Finish Header Dropdown Rollover Background Color */
+	
+	
+	/* Start Header Dropdown Borders Color */
+	#navigation > li.menu-item-mega > div.menu-item-mega-container > ul:after {
+		background-color:#ebebeb; background-color:rgba(235, 235, 235, 1);
+	}
+	
+	#navigation ul,
+	#navigation > li.menu-item-mega > div.menu-item-mega-container {
+		border-color:#ebebeb; border-color:rgba(235, 235, 235, 1);
+	}
+	
+	@media only screen and (max-width: 1024px) {
+		#navigation li a {
+			border-color:#ebebeb; border-color:rgba(235, 235, 235, 1);
+		}
+		
+		.header_mid_outer,
+		.header_bot_outer {
+			border-bottom-color:#ebebeb; border-bottom-color:rgba(235, 235, 235, 1);
+		}
+	}
+	
+	#navigation ul li,
+	#navigation > li.menu-item-mega > div.menu-item-mega-container li li li:first-child {
+		border-top-color:#ebebeb; border-top-color:rgba(235, 235, 235, 1);
+	}
+	/* Finish Header Dropdown Borders Color */
+	
+	
+	/* Start Header Custom Rules */
+	.header_mid ::selection,
+	.header_bot ::selection {
+		background:#423932; background:rgba(66, 57, 50, 1);
+		color:#fcfaf6; color:rgba(252, 250, 246, 1);
+	}
+	
+	.header_mid ::-moz-selection,
+	.header_bot ::-moz-selection {
+		background:#423932; background:rgba(66, 57, 50, 1);
+		color:#fcfaf6; color:rgba(252, 250, 246, 1);
+	}
+	
+	#page.fixed_header .header_mid_outer,
+	#page.fixed_header .header_bot_outer {
+		background-color:rgba(252, 250, 246, 1);
+	}
+	
+	#navigation ul,
+	#navigation > li.menu-item-mega > div.menu-item-mega-container {
+		-webkit-box-shadow:0 5px 15px 0 rgba(252, 250, 246, 0.02);
+		-moz-box-shadow:0 5px 15px 0 rgba(252, 250, 246, 0.02);
+		box-shadow:0 5px 15px 0 rgba(252, 250, 246, 0.02);
+	}
+	
+	/* Finish Header Custom Rules */
+
+/***************** Finish Header Color Scheme Rules ******************/
+
+
+
+/***************** Start Header Top Color Scheme Rules ******************/
+
+	/* Start Header Top Content Color */
+	.header_top,
+	.header_top_outer .meta_wrap, 
+	.header_top_inner .social_wrap a {
+		color:#bfbbbb; color:rgba(191, 187, 187, 1);
+	}
+	/* Finish Header Top Content Color */
+	
+	
+	/* Start Header Top Primary Color */
+	.header_top a,
+	.header_top .color_2,
+	.header_top_outer nav > div > ul > li a,
+	.header_top_outer .meta_wrap a,
+	.header_top h1,
+	.header_top h2,
+	.header_top h3,
+	.header_top h4,
+	.header_top h5,
+	.header_top h6,
+	.header_top h1 a,
+	.header_top h2 a,
+	.header_top h3 a,
+	.header_top h4 a,
+	.header_top h5 a,
+	.header_top h6 a,
+	.header_top h1 a:hover,
+	.header_top h2 a:hover,
+	.header_top h3 a:hover,
+	.header_top h4 a:hover,
+	.header_top h5 a:hover,
+	.header_top h6 a:hover,
+	.header_top .search_bar_wrap button[type=submit][class^="cmsms-icon-"],
+	.header_top .search_bar_wrap button[type=submit][class*=" cmsms-icon-"] {
+		color:#afaba7; color:rgba(175, 171, 167, 1);
+	}
+	
+	@media only screen and (max-width: 1024px) {
+		html #page #header .header_top .header_top_outer .header_top_inner .header_top_right .nav_wrap nav #top_line_nav li > a {
+			color:#afaba7; color:rgba(175, 171, 167, 1);
+		}
+	}
+	
+	.header_top .cmsms_button,
+	.header_top .button:hover,
+	.header_top_outer nav > div > ul > li > a > span.cmsms_count,
+	.header_top .button {
+		background-color:#afaba7; background-color:rgba(175, 171, 167, 1);
+	}
+	
+	.header_top input[type=text]:focus,
+	.header_top input[type=number]:focus,
+	.header_top input[type=email]:focus,
+	.header_top input[type=password]:focus,
+	.header_top textarea:focus {
+		border-color:#afaba7; border-color:rgba(175, 171, 167, 1);
+	}
+	/* Finish Header Top Primary Color */
+	
+	
+	/* Start Header Top Rollover Color */
+	.header_top a:hover,
+	.header_top_outer nav > div > ul > li:hover > a,
+	.header_top_outer nav > div > ul > li.current-menu-item > a,
+	.header_top_outer nav > div > ul > li.current-menu-ancestor > a,
+	.header_top_outer .meta_wrap a:hover, 
+	.header_top_inner .social_wrap a:hover {
+		color:#61a93e; color:rgba(97, 169, 62, 1);
+	}
+	
+	@media only screen and (max-width: 1024px) {
+		html #page #header .header_top .header_top_outer .header_top_inner .header_top_right .nav_wrap nav #top_line_nav li > a:hover, 
+		html #page #header .header_top .header_top_outer .header_top_inner .header_top_right .nav_wrap nav #top_line_nav li.current-menu-item > a {
+			color:#61a93e; color:rgba(97, 169, 62, 1);
+		}
+	}
+	
+	.header_top_but .cmsms_top_arrow, 
+	.header_top_but .cmsms_bot_arrow {
+		background-color:#61a93e; background-color:rgba(97, 169, 62, 1);
+	}
+	
+	.header_top_but .cmsms_top_arrow:before, 
+	.header_top_but .cmsms_top_arrow:after, 
+	.header_top_but .cmsms_top_arrow span:before, 
+	.header_top_but .cmsms_top_arrow span:after, 
+	.header_top_but .cmsms_bot_arrow:before, 
+	.header_top_but .cmsms_bot_arrow:after, 
+	.header_top_but .cmsms_bot_arrow span:before, 
+	.header_top_but .cmsms_bot_arrow span:after {
+		border-color:#61a93e; border-color:rgba(97, 169, 62, 1);
+	}
+	/* Finish Header Top Rollover Color */
+	
+	
+	/* Start Header Top Background Color */
+	.header_top_outer nav > div > ul > li > a > span.cmsms_count,
+	.header_top .cmsms_button,
+	.header_top .cmsms_button:hover {
+		color:#fcfaf6; color:rgba(252, 250, 246, 1);
+	}
+	
+	.header_top,
+	.header_top input[type=text]:focus,
+	.header_top input[type=number]:focus,
+	.header_top input[type=email]:focus,
+	.header_top input[type=password]:focus,
+	.header_top textarea:focus,
+	.header_top_outer {
+		background-color:#fcfaf6; background-color:rgba(252, 250, 246, 1);
+	}
+	/* Finish Header Top Background Color */
+	
+	
+	/* Start Header Top Borders Color */
+	.header_top input[type=text],
+	.header_top input[type=number],
+	.header_top input[type=email],
+	.header_top input[type=password],
+	.header_top input[type=submit],
+	.header_top button,
+	.header_top textarea,
+	.header_top select,
+	.header_top option,
+	.header_top .search_bar_wrap {
+		border-color:#e2e1dd; border-color:rgba(226, 225, 221, 1);
+	}
+	
+	.header_top hr,
+	.header_top .cmsms_divider {
+		border-bottom-color:#e2e1dd; border-bottom-color:rgba(226, 225, 221, 1);
+	}
+	
+	@media only screen and (max-width: 1024px) {
+		html #page #header .header_top .header_top_outer .header_top_inner .header_top_left, 
+		html #page #header .header_top .header_top_outer .header_top_inner .header_top_right {
+			border-bottom-color:#e2e1dd; border-bottom-color:rgba(226, 225, 221, 1);
+		}
+		
+		html #page #header .header_top .header_top_outer .header_top_inner .header_top_right .nav_wrap nav #top_line_nav li > a {
+			border-top-color:#e2e1dd; border-top-color:rgba(226, 225, 221, 1);
+		}
+	}
+	/* Finish Header Top Borders Color */
+	
+	
+	/* Start Header Top Dropdown Link Color */
+	.header_top_outer nav > div > ul > li a,
+	.header_top_outer nav > div > ul > li ul li > a,
+	.header_top .button,
+	.header_top .button:hover, 
+	html #page #header .header_top .header_top_outer .header_top_inner .header_top_right .nav_wrap .responsive_top_nav:hover, 
+	html #page #header .header_top .header_top_outer .header_top_inner .header_top_right .nav_wrap .responsive_top_nav.active {
+		color:#61a93e; color:rgba(97, 169, 62, 1);
+	}
+	
+	html #page #header .header_top .header_top_outer .header_top_inner .header_top_right .nav_wrap .responsive_top_nav {
+		background-color:#61a93e; background-color:rgba(97, 169, 62, 1);
+	}
+	/* Finish Header Top Dropdown Link Color */
+	
+	
+	/* Start Header Top Dropdown Rollover Color */
+	.header_top_outer nav > div > ul > li ul li:hover > a,
+	.header_top_outer nav > div > ul > li ul li.current-menu-item > a,
+	.header_top_outer nav > div > ul > li ul li.current-menu-ancestor > a, 
+	html #page #header .header_top .header_top_outer .header_top_inner .header_top_right .nav_wrap .responsive_top_nav {
+		color:#61a93e; color:rgba(97, 169, 62, 1);
+	}
+	/* Finish Header Top Dropdown Rollover Color */
+	
+	
+	/* Start Header Top Dropdown Background Color */
+	.header_top input[type=text],
+	.header_top input[type=number],
+	.header_top input[type=email],
+	.header_top input[type=password],
+	.header_top input[type=submit],
+	.header_top button,
+	.header_top textarea,
+	.header_top select,
+	.header_top option,
+	.header_top_outer nav > div > ul > li ul,
+	.header_top .search_bar_wrap,
+	.header_top .search_bar_wrap input[type=text],
+	.header_top .search_bar_wrap input[type=text]:focus {
+		background-color:#3d3d3d; background-color:rgba(61, 61, 61, 1);
+	}
+	/* Finish Header Top Dropdown Background Color */
+	
+	
+	/* Start Header Top Dropdown Border Color */
+	
+	.header_top_outer nav > div > ul > li.menu-item-has-children > a:before {
+		border-bottom-color:#333333; border-bottom-color:rgba(51, 51, 51, 1);
+	}
+	
+	html #page #header .header_top .header_top_outer .header_top_inner .header_top_right .nav_wrap .responsive_top_nav:hover, 
+	html #page #header .header_top .header_top_outer .header_top_inner .header_top_right .nav_wrap .responsive_top_nav.active {
+		background-color:#333333; background-color:rgba(51, 51, 51, 1);
+	}
+	/* Finish Header Top Dropdown Border Color */
+	
+	
+	/* Start Header Top Custom Rules */
+	.header_top ::selection {
+		background:#afaba7; background:rgba(175, 171, 167, 1);
+		color:#fcfaf6; color:rgba(252, 250, 246, 1);
+	}
+	
+	.header_top ::-moz-selection {
+		background:#afaba7; background:rgba(175, 171, 167, 1);
+		color:#fcfaf6; color:rgba(252, 250, 246, 1);
+	}
+	
+	.header_top_outer {
+		-webkit-box-shadow:inset 0 -1px 0 0 rgba(226, 225, 221, 1);
+		-moz-box-shadow:inset 0 -1px 0 0 rgba(226, 225, 221, 1);
+		box-shadow:inset 0 -1px 0 0 rgba(226, 225, 221, 1);
+	}
+	
+	.header_top_outer nav > div > ul > li ul {
+		-webkit-box-shadow:0 0 2px 0 rgba(226, 225, 221, 0.8);
+		-moz-box-shadow:0 0 2px 0 rgba(226, 225, 221, 0.8);
+		box-shadow:0 0 2px 0 rgba(226, 225, 221, 0.8);
+	}
+	
+	/* Finish Header Top Custom Rules */
+
+/***************** Finish Header Top Color Scheme Rules ******************/
+

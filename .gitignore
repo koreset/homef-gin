@@ -1,6 +1,6 @@
 .idea/
 
-public/
+public/content/*
 tmp/
 public_backup/
 views_backup/
