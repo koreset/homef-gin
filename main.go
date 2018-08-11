@@ -53,9 +53,13 @@ func SetupRouter() *gin.Engine {
 	router.GET("/", controllers.Home)
 	router.GET("/aboutus", controllers.AboutUs)
 	router.GET("posts/:id", controllers.GetPost)
+
 	router.Static("/public", "./public")
 	router.Any("/admin/*resources", gin.WrapH(mux))
-
+	router.NoRoute(func(context *gin.Context) {
+		fmt.Println(">>>>>>>>>>>>>>>>>> 404 <<<<<<<<<<<<<<<<<<<")
+		context.HTML(http.StatusNotFound, "content_not_found",nil)
+	})
 	return router
 }
 
