@@ -19,3 +19,7 @@ func GetPost(c *gin.Context) {
 	post := services.GetPost(postID)
 	c.HTML(http.StatusOK, "single_post", post)
 }
+
+func GetPublications(c *gin.Context){
+	c.HTML(http.StatusOK, "publications_home", nil)
+}
