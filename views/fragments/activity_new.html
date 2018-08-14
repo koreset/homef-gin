@@ -1,0 +1,12 @@
+{{define "activity_new_item"}}
+<article class="card">
+    <img src="/public{{(index .Images 0).File.URL "article_preview"}}" alt="" class="card-image-top img-fluid">
+    <div class="card-body">
+        <a href="/posts/{{ .ID}}"><h5 class="card-title">{{ .Title}}</h5></a>
+        {{/*<p class="card-text">{{ .Summary}}</p>*/}}
+    </div>
+    <div class="card-footer">
+        <span class="cmsms-icon-calendar-8">{{ .Created | displayDate }}</span><span class="cmsms-icon-comment-6 float-right">0</span>
+    </div>
+</article>
+{{end}}

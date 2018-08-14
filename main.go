@@ -1,22 +1,23 @@
 package main
 
 import (
-	"github.com/gin-gonic/gin"
-	_ "github.com/jinzhu/gorm/dialects/postgres"
-	"github.com/koreset/homef-gin/services"
-	"github.com/jinzhu/gorm"
-	"github.com/koreset/homef-gin/models"
-	"github.com/koreset/homef-gin/utils"
-	"html/template"
-	"github.com/koreset/gtf"
-	"github.com/koreset/homef-gin/controllers"
 	"flag"
 	"fmt"
-	"github.com/qor/admin"
+	"html/template"
 	"net/http"
+
+	"github.com/gin-gonic/gin"
+	"github.com/jinzhu/gorm"
+	_ "github.com/jinzhu/gorm/dialects/postgres"
+	"github.com/koreset/gtf"
+	"github.com/koreset/homef-gin/controllers"
+	"github.com/koreset/homef-gin/models"
+	"github.com/koreset/homef-gin/services"
+	"github.com/koreset/homef-gin/utils"
+	"github.com/qor/admin"
+	"github.com/qor/media"
 	"github.com/qor/media/asset_manager"
 	"github.com/qor/media/media_library"
-	"github.com/qor/media"
 )
 
 var db *gorm.DB
@@ -40,32 +41,31 @@ func SetupRouter() *gin.Engine {
 	// Add Media Library
 	Admin.AddResource(&media_library.MediaLibrary{}, &admin.Config{Menu: []string{"Site Management"}})
 
-	post := Admin.AddResource(&models.Post{}, &admin.Config{Name:"Posts", Menu:[]string{"Content Management"}})
+	post := Admin.AddResource(&models.Post{}, &admin.Config{Name: "Posts", Menu: []string{"Content Management"}})
 	post.IndexAttrs("ID", "Title", "Body", "Summary", "Images", "Videos", "Links", "Type")
 	post.NewAttrs("Title", "Body", "Summary", "Images", "Videos", "Links", "Type")
-	post.Meta(&admin.Meta{Name: "Body", Config:&admin.RichEditorConfig{AssetManager:assetManager}})
+	post.Meta(&admin.Meta{Name: "Body", Config: &admin.RichEditorConfig{AssetManager: assetManager}})
 
 	router := gin.Default()
 	router.SetFuncMap(setupTemplatFuncs())
 	router.LoadHTMLGlob("views/**/*")
 
-
 	router.GET("/", controllers.Home)
 	router.GET("/aboutus", controllers.AboutUs)
+	router.GET("/contacts", controllers.Contacts)
 	router.GET("posts/:id", controllers.GetPost)
 	router.GET("publications", controllers.GetPublications)
-
 
 	router.Static("/public", "./public")
 	router.Any("/admin/*resources", gin.WrapH(mux))
 	router.NoRoute(func(context *gin.Context) {
 		fmt.Println(">>>>>>>>>>>>>>>>>> 404 <<<<<<<<<<<<<<<<<<<")
-		context.HTML(http.StatusNotFound, "content_not_found",nil)
+		context.HTML(http.StatusNotFound, "content_not_found", nil)
 	})
 	return router
 }
 
-func setupTemplatFuncs() template.FuncMap{
+func setupTemplatFuncs() template.FuncMap {
 	funcMaps = make(template.FuncMap)
 	funcMaps["unsafeHtml"] = utils.UnsafeHtml
 	funcMaps["stripSummaryTags"] = utils.StripSummaryTags

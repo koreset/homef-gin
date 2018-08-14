@@ -9,6 +9,7 @@ import (
 )
 
 func GetPost(c *gin.Context) {
+	payload := make(map[string] interface{} )
 	id := c.Param("id")
 	fmt.Println("The ID: ", id)
 	postID, err := strconv.Atoi(id)
@@ -17,7 +18,9 @@ func GetPost(c *gin.Context) {
 		return
 	}
 	post := services.GetPost(postID)
-	c.HTML(http.StatusOK, "single_post", post)
+	payload["post"] = post
+	payload["active"] = "none"
+	c.HTML(http.StatusOK, "single_post_new", payload)
 }
 
 func GetPublications(c *gin.Context){

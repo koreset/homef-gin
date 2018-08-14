@@ -6,5 +6,7 @@ import (
 )
 
 func AboutUs(c *gin.Context){
-	c.HTML(http.StatusOK, "about_us", nil)
+	payload := make(map[string] interface{})
+	payload["active"] = "aboutus"
+	c.HTML(http.StatusOK, "about_us", payload)
 }
