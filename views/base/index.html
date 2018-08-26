@@ -1,7 +1,19 @@
 {{define "home_page"}}
 {{ template "base_head"}}
 {{ template "header_new" .active}}
-
+<section class="jumbotron jumbotron-fluid home-banner">
+    <div class="container front-item">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center front-text">
+                    Examining the roots of exploitation of resources, peoples and nations
+                </h1>
+                <p class="col-md-6 offset-md-3  text-center banner-text">Nurturing movements for the recovery of memory,
+                    dignity, and harmonious living with Mother Earth.</p>
+            </div>
+        </div>
+    </div>
+</section>
 {{ template "latest_news" .posts}}
 {{template "bottom_footer_content"}}
 {{template "base_footer_new"}}

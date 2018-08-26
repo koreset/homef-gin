@@ -1,0 +1,20 @@
+{{define "more_news"}}
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h4 class="text-center">Latest News</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="owl-carousel2 owl-theme card-deck">
+                {{range  .}}
+                    {{template "activity_new_item" .}}
+                {{end}}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{end }}

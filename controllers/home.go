@@ -9,7 +9,7 @@ import (
 
 func Home(c *gin.Context) {
 	payload := make(map[string]interface{})
-	posts := services.GetPosts(0, 10)
+	posts := services.GetPosts(0, 6)
 	newsfeed := services.GetNewsFeed()
 	videos := services.GetVideos()
 	publications := services.GetPublications()
@@ -19,7 +19,7 @@ func Home(c *gin.Context) {
 	payload["publications"] = publications
 	payload["active"] = "home_page"
 
-	c.HTML(http.StatusOK, "home_page", payload)
+	c.HTML(http.StatusOK, "home_page2", payload)
 
 }
 

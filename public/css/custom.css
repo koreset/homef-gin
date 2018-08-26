@@ -44,7 +44,6 @@ body {
     padding-bottom: 0;
     padding-top: 0;
     margin-bottom: 0;
-    height: 32rem;
 }
 
 span.cmsms-icon-calendar-8, span.cmsms-icon-comment-6 {
@@ -66,6 +65,14 @@ span.cmsms-icon-calendar-8, span.cmsms-icon-comment-6 {
 .bottom-footer p {
     color: #ffffff;
     font-size: 0.8rem;
+}
+
+.home-banner {
+    background-image: url("/public/img/women-2-pots.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 32rem;
+
 }
 
 .aboutus-header .jumbtron-fluid {
@@ -109,4 +116,15 @@ span.cmsms-icon-calendar-8, span.cmsms-icon-comment-6 {
     margin: 0 15px;
 }
 
+.front-text {
+    padding-top: 3rem;
+    color: #ffbd20;
+}
 
+.banner-text {
+    font-size: 1.5rem;
+    color: #ffffff;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-bottom: 1rem;
+}
