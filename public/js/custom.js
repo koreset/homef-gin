@@ -20,6 +20,19 @@ $(document).ready(function(){
         }
     });
 
+    $(window).scroll(function () {
+        if($(window).scrollTop() >= 120){
+            $('img.homef-logo').addClass('scrolled');
+            $('nav.navbar').removeClass('bg-dark');
+            $('nav.navbar').addClass('bg-dark-scrolled');
+
+        }else{
+            $('img.homef-logo').removeClass('scrolled');
+            $('nav.navbar').addClass('bg-dark');
+            $('nav.navbar').removeClass('bg-dark-scrolled');
+        }
+    })
+
 
     // var owl = $("#owl-demo-2");
     //

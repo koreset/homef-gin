@@ -1,0 +1,13 @@
+{{define "newsinglepost"}}
+{{template "basetop" .}}
+<section class="container wrapper">
+    <div class="row">
+        <h1>{{.post.Title}}</h1>
+        <figure>
+            <img src="/public{{(index .post.Images 0).File.URL "original" }}" alt="{{ .post.Title}}" title="{{ .post.Title}}" class="<full-width></full-width>">
+        </figure>
+        <p class="content">{{ .post.Body | unsafeHtml}}</p>
+    </div>
+</section>
+{{ template "basefooter"}}
+{{end}}

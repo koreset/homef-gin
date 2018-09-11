@@ -22,3 +22,9 @@ func DisplayDateV2(s int32) string {
 	return DisplayDate(int64(s))
 }
 
+func TruncateBody(s string) string {
+	if len(s) < 200 {
+		return s
+	}
+	return s[0:200] + "..."
+}

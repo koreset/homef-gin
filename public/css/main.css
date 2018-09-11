@@ -182,6 +182,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 0 1em 0;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    font-family: 'cubano', sans-serif;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {

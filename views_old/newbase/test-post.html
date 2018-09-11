@@ -1,0 +1,7 @@
+{{ define "test-post"}}
+<div class="t-post-item">
+    <img class="img-fluid" src="/public{{(index .Images 0).File.URL}}" alt="">
+    <h3>{{ .Title}}</h3>
+    <p>{{ .Summary}}</p>
+</div>
+{{ end }}

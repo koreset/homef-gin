@@ -199,7 +199,7 @@ func CleanHtmlBody(s string) string {
 }
 
 func RemoveAllTags(s string) string {
-	newmessage, err := sanitize.HTMLAllowing(s, []string{"a"}, []string{"href"})
+	newmessage, err := sanitize.HTMLAllowing(s, []string{}, []string{})
 	if err != nil {
 		panic(err)
 	}

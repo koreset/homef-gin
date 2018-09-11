@@ -1,0 +1,64 @@
+{{ define "content_not_found"}}
+{{ template "head"}}
+{{ template "header_layout"}}
+<!-- _________________________ Finish Header _________________________ -->
+<!-- _________________________ Start Middle _________________________ -->
+<section id="middle" class="error_page">
+    <div class="middle_inner">
+        <!-- _________________________ Start Content _________________________ -->
+        <div class="entry">
+            <div class="error">
+                <div class="error_bg" style="background:rgba(61, 61, 61, 1);">
+                    <div class="error_inner" style=""><h1 class="error_title">404</h1></div>
+                </div>
+            </div>
+        </div>
+        <section class="content_wrap fullwidth">
+            <div class="error">
+                <h2 class="error_subtitle">We&#039;re sorry, but the page you were looking for doesn&#039;t exist.</h2>
+                <div class="search_bar_wrap">
+                    <form method="get">
+                        <p>
+                            <input name="s" placeholder="enter keywords" value="" type="text"/>
+                            <button type="submit" class="cmsms-icon-search-7"></button>
+                        </p>
+                    </form>
+                </div>
+            </div>
+            <!-- _________________________ Finish Content _________________________ -->
+        </section>
+    </div>
+</section>
+<!-- _________________________ Finish Middle _________________________ -->
+<a href="javascript:void(0);" id="slide_top" class="cmsms-icon-up-open-mini"></a>
+</div>
+<!-- _________________________ Finish Main _________________________ -->
+<!-- _________________________ Start Footer _________________________ -->
+<footer id="footer" class="cmsms_color_scheme_footer cmsms_footer_small">
+    <div class="footer_bg">
+        <div class="footer_inner">
+            <div class="social_wrap">
+                <div class="social_wrap_inner">
+                    <ul>
+                        <li><a href="#" class="cmsms-icon-twitter-circled" title="Twitter" target="_blank"></a></li>
+                        <li><a href="#" class="cmsms-icon-facebook-circled" title="Facebook" target="_blank"></a></li>
+                        <li><a href="#" class="cmsms-icon-gplus-circled" title="Google+" target="_blank"></a></li>
+                        <li><a href="#" class="cmsms-icon-vimeo-circled" title="Vimeo" target="_blank"></a></li>
+                        <li><a href="#" class="cmsms-icon-skype-circled" title="Skype" target="_blank"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <span class="copyright">EcoNature &copy; 2015 | All Rights Reserved</span>
+        </div>
+    </div>
+</footer>
+<!-- _________________________ Finish Footer _________________________ -->
+</div>
+<!-- _________________________ Finish Page _________________________ -->
+<script src='/public/js/jsLibraries.min.js'></script>
+<script type='text/javascript' src='/public/js/jqueryLibraries.min.js'></script>
+<script type='text/javascript' src='/public/js/jquery.script.js'></script>
+<script type='text/javascript' src='/public/js/jquery.tweet.min.js'></script>
+</body>
+</html>
+{{ end }}

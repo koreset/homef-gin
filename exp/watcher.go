@@ -20,7 +20,7 @@ func main() {
 
 	// starting at the root of the project, walk each file/directory searching for
 	// directories
-	if err := filepath.Walk("/Users/jome/go/src/github.com/koreset/homef-gin/views", watchDir); err != nil {
+	if err := filepath.Walk("/Users/jome/go/src/github.com/koreset/homef-gin/views_old", watchDir); err != nil {
 		fmt.Println("ERROR", err)
 	}
 

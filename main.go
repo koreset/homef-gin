@@ -55,6 +55,7 @@ func SetupRouter() *gin.Engine {
 	router.GET("/contacts", controllers.Contacts)
 	router.GET("posts/:id", controllers.GetPost)
 	router.GET("publications", controllers.GetPublications)
+	router.GET("/test", controllers.GetTest)
 
 	router.Static("/public", "./public")
 	router.Any("/admin/*resources", gin.WrapH(mux))
@@ -71,6 +72,7 @@ func setupTemplatFuncs() template.FuncMap {
 	funcMaps["stripSummaryTags"] = utils.StripSummaryTags
 	funcMaps["displayDateString"] = utils.DisplayDateString
 	funcMaps["displayDate"] = utils.DisplayDateV2
+	funcMaps["truncateBody"] = utils.TruncateBody
 
 	gtf.Inject(funcMaps)
 	return funcMaps

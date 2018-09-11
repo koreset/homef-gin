@@ -1,0 +1,80 @@
+@import url(font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,700,300");
+@import url("https://p.typekit.net/p.css?s=1&k=gzm2sba&ht=tk&f=15488.15493&a=10711453&app=typekit&e=css");
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+body {
+    padding-top: 0em;
+}
+
+@font-face {
+    font-family: "cubano";
+    src: url("https://use.typekit.net/af/26f0fd/00000000000000003b9afa9c/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"), url("https://use.typekit.net/af/26f0fd/00000000000000003b9afa9c/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"), url("https://use.typekit.net/af/26f0fd/00000000000000003b9afa9c/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "cubano";
+    src: url("https://use.typekit.net/af/a941cf/00000000000000003b9afa9d/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"), url("https://use.typekit.net/af/a941cf/00000000000000003b9afa9d/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"), url("https://use.typekit.net/af/a941cf/00000000000000003b9afa9d/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Nunito", "cubano", "Open Sans", Helvetica, sans-serif;
+}
+
+nav.container {
+    display: flex;
+    justify-content: flex-start;
+    background-color: lightblue;
+}
+
+nav.navbar {
+    background-color: rgba(26, 44, 32, 0.8)
+}
+
+/*.search{*/
+/*margin-left: auto;*/
+/*}*/
+
+.container > div {
+    flex: 1;
+}
+
+img.homef-logo {
+    height: 65px;
+}
+
+#banner {
+    background-image: url("/public/img/overlay.png"), -moz-linear-gradient(45deg, rgba(39, 161, 227, 0.65), rgba(231, 35, 42, 0.65)), url("/public/img/banner-new.jpg");
+    background-image: url("/public/img/overlay.png"), -webkit-linear-gradient(45deg, rgba(39, 161, 227, 0.65), rgba(231, 35, 42, 0.65)), url("/public/img/banner-new.jpg");
+    background-image: url("/public/img/overlay.png"), -ms-linear-gradient(45deg, rgba(39, 161, 227, 0.65), rgba(231, 35, 42, 0.65)), url("/public/img/banner-new.jpg");
+    background-image: url("/public/img/banner-new.jpg");
+    background-position: center center;
+    background-size: auto, cover, cover;
+    background-attachment: fixed, fixed, fixed;
+    background-repeat: repeat, no-repeat, no-repeat;
+    position: relative;
+    min-height: 70vh;
+}
+
+
+.myposts{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.t-post-item{
+    max-width: 512px;
+}
+
+.t-post-item h3{
+    font-size: 1.5rem;
+}
+
+.t-post-item img {
+    width: 100% ;
+}

@@ -1,0 +1,15 @@
+{{define "article-item"}}
+<div class="card">
+    <img class="card-img-top" src="/public{{ (index .Images 0).File.URL }}" alt="Card image cap">
+    <div class="card-body">
+        <a href="/posts/{{ .ID }}" class="post-title"><h5 class="card-title">{{ .Title}}</h5></a>
+
+        <p class="card-text">{{ .Body | stripSummaryTags | truncatechars 150 }}</p>
+    </div>
+    <div class="card-footer">
+        <p class="card-text">
+            <small class="text-muted">{{ .Created | displayDate}}</small>
+        </p>
+    </div>
+</div>
+{{end}}

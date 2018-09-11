@@ -1,0 +1,136 @@
+{{ define "testing"}}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Testing Document</title>
+    <link rel="stylesheet" href="/public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/public/css/main.css">
+    <link rel="stylesheet" href="/public/css/homef.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg fixed-top">
+    <a class="navbar-brand" href="#"><img class="homef-logo" src="/public/img/Homef-Logo.png" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarNavDropdown">
+
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown link
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+<main role="main">
+    <section id="banner">
+        <div class="content">
+            <div class="inner">
+                <header>
+                    <h2>Examining the roots of exploitation of resources, peoples and nations</h2>
+                    <p>Nurturing movements for the recovery of memory, dignity, and harmonious living with Mother
+                        Earth.</p>
+                </header>
+            </div>
+        </div>
+    </section>
+    <section id="programmes">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="/public/img/Fossil-politics.jpg" class="img-fluid" alt="Fossil Politics">
+                </div>
+                <div class="col-md-4">
+                    <img src="/public/img/Sustainablity-Academy.jpg" class="img-fluid" alt="Sustainability Academy">
+                </div>
+                <div class="col-md-4">
+                    <img src="/public/img/Hunger-politics.jpg" class="img-fluid" alt="Hunger Politics">
+                </div>
+            </div>
+        </div>
+    </section>
+    {{/*<section id="three" class="container">*/}}
+        {{/*<div class="inner">*/}}
+            {{/*<header>*/}}
+                {{/*<h2>Latest News</h2>*/}}
+            {{/*</header>*/}}
+            {{/*<div class="posts">*/}}
+            {{/*{{ range .posts}}*/}}
+            {{/*{{template "activity_new_item" .}}*/}}
+        {{/*{{end}}*/}}
+            {{/*</div>*/}}
+        {{/*</div>*/}}
+    {{/*</section>*/}}
+    <section id="other-content">
+        <div class="container">
+            <div class="row myposts">
+            {{range .posts}}
+                {{ template "test-post" .}}
+            {{end}}
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer id="footer">
+    <div class="content">
+        <div class="inner">
+            <section class="about">
+                <h3>Integer vitae sed feugiat</h3>
+                <p>Lorem ipsum dolor sit amet interdum mollis sapien. Sed amet ac lorem ipsum interdum tempus sagittis
+                    lorem tempus.</p>
+                <ul class="actions">
+                    <li><a href="#" class="button">Learn More</a></li>
+                </ul>
+            </section>
+            <ul class="icons bulleted">
+                <li class="icon fa-map-marker">
+                    <h3>Address</h3>
+                    <p>#214 Uselu-Lagos Road, Ugbowo<br/> P.O Box 10577, Benin City, Nigeria</p>
+                </li>
+                <li class="icon fa-phone">
+                    <h3>Phone</h3>
+                    <p>+234 906 975 6927<br/>
+                        +234 817 370 6095
+                    </p>
+                </li>
+                <li class="icon fa-envelope-o">
+                    <h3>Email</h3>
+                    <p><a href="#">home@homef.org</a></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <p class="copyright">&copy; Untitled. All rights reserved.<br/>
+        <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a> | <a href="#">Contact</a></p>
+</footer>
+
+{{/*Scripts*/}}
+<script src="/public/js/jquery.min.js"></script>
+<script src="/public/js/popper.min.js"></script>
+<script src="/public/js/bootstrap.min.js"></script>
+</body>
+</html>
+{{ end }}

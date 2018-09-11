@@ -2,11 +2,11 @@ package models
 
 import (
 	"fmt"
-	"time"
 	"github.com/jinzhu/gorm"
-	"github.com/qor/media/media_library"
 	"github.com/qor/media"
+	"github.com/qor/media/media_library"
 	"github.com/qor/media/oss"
+	"time"
 )
 
 type Link struct {
@@ -55,8 +55,9 @@ type Document struct {
 }
 
 type Post struct {
-	ID        uint   `gorm:"primary_key"`
+	ID        uint `gorm:"primary_key"`
 	Title     string
+	Slug      string
 	Body      string `gorm:"type:longtext"`
 	Summary   string `gorm:"type:longtext"`
 	Images    []Image

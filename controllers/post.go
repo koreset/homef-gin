@@ -20,7 +20,7 @@ func GetPost(c *gin.Context) {
 	post := services.GetPost(postID)
 	payload["post"] = post
 	payload["active"] = "none"
-	c.HTML(http.StatusOK, "single_post_new", payload)
+	c.HTML(http.StatusOK, "singlepost", payload)
 }
 
 func GetPublications(c *gin.Context){

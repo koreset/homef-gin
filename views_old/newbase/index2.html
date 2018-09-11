@@ -1,0 +1,61 @@
+{{define "home_page2"}}
+{{template "basetop"}}
+
+<!-- Banner -->
+<section id="banner">
+    <div class="content">
+        <div class="inner">
+            <header>
+                <h2>Examining the roots of exploitation of resources, peoples and nations</h2>
+                <p>Nurturing movements for the recovery of memory, dignity, and harmonious living with Mother Earth.</p>
+            </header>
+        </div>
+    </div>
+</section>
+<section id="programmes">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="/public/img/Fossil-politics.jpg" class="img-fluid" alt="Fossil Politics">
+            </div>
+            <div class="col-md-4">
+                <img src="/public/img/Sustainablity-Academy.jpg" class="img-fluid" alt="Sustainability Academy">
+            </div>
+            <div class="col-md-4">
+                <img src="/public/img/Hunger-politics.jpg" class="img-fluid" alt="Hunger Politics">
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- Two -->
+<section id="two" class="wrapper cta">
+    <div class="inner">
+        <header>
+            <h2>Who We Are</h2>
+            <ul class="actions">
+                <li><a href="#" class="button big">Know More</a></li>
+            </ul>
+        </header>
+        <p>We are an ecological think tank organisation advocating for environmental and climate justice and food
+            sovereignty in Nigeria and Africa at large</p>
+    </div>
+</section>
+<!-- Three -->
+<section id="three" class="wrapper">
+    <div class="inner">
+        <header>
+            <h2>Latest News</h2>
+        </header>
+        <div class="posts">
+        {{ range .posts}}
+            {{template "activity_new_item" .}}
+        {{end}}
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer -->
+{{ template "basefooter"}}
+{{ end }}

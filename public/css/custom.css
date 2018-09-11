@@ -32,6 +32,10 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
+section {
+    margin-bottom: 20px;
+}
+
 .tk-cubano, h1, h2, h3, h4 {
     font-family: 'cubano', sans-serif;
 }
@@ -68,11 +72,20 @@ span.cmsms-icon-calendar-8, span.cmsms-icon-comment-6 {
 }
 
 .home-banner {
-    background-image: url("/public/img/women-2-pots.jpg");
-    background-size: cover;
+    background: url("/public/img/two-pots-cropped.jpg");
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 32rem;
+    height: 36rem;
+    position: relative;
+}
 
+.footer-bg {
+    background: url("/public/img/two-pots-cropped.jpg") no-repeat center;
+    background-color: rgba(0,0,0,0.7);
+    background-blend-mode: multiply;
+    height: 20rem;
 }
 
 .aboutus-header .jumbtron-fluid {
@@ -127,4 +140,136 @@ span.cmsms-icon-calendar-8, span.cmsms-icon-comment-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     margin-bottom: 1rem;
+}
+
+div.front-item {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16rem;
+}
+
+section#footer {
+    margin-bottom: 0;
+}
+
+#footer h4 {
+    text-align: center;
+    color: #ffbd20;
+    margin-top: 1rem;
+}
+
+section#about-us {
+    background-image: url("/public/img/midway.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: #fff;
+
+}
+
+
+section#about-us h1{
+    color: #ffbd20;
+}
+ul.why-we-are{
+    list-style: none;
+}
+
+ul.why-we-are li{
+    margin-bottom: 4rem;
+}
+
+div.earth img, div.justice img, div.protest img{
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ffffff;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    border-radius: 2rem;
+
+}
+
+img.align-self-center{
+    width:4rem;
+    height: 4rem;
+}
+
+
+div.earth p, div.justice p, div.protest p{
+    width: 100%;
+}
+
+div.earth, div.justice, div.protest{
+    margin-bottom: 2rem;
+}
+
+div.flicker{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+div.flicker img{
+    margin: 0.2rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff;
+}
+
+img.homef-logo{
+    height:75px;
+    -webkit-transition: height 0.35s ease;
+    -moz-transition: height 0.35s ease;
+    -ms-transition: height 0.35s ease;
+    -o-transition: height 0.35s ease;
+    transition: height 0.35s ease;
+}
+
+div.media-body{
+    height: 4rem;
+}
+
+div.media-body p {
+    margin-bottom: 0;
+}
+
+div.media {
+    margin-bottom: 2rem;
+}
+.scrolled{
+    height: 40px !important;
+}
+
+div.about-us-content h1 {
+    margin-top: 3rem;
+}
+div.about-us-content div.container{
+    padding-left: 0;
+}
+
+section.main{
+    margin-top: 8rem;
+}
+
+/* Bootstrap style overrides */
+.bg-dark {
+    background-color: rgba(40, 40, 40, 0.8) !important;
+}
+
+.bg-dark-scrolled{
+    background-color: rgba(0,0,0,0.5) !important;
+}
+
+a.post-title {
+    color: #000000;
+    font-family: 'cubano', sans-serif;
+}
+
+.navbar-nav li.nav-item a.nav-link {
+    color: #ffbd20;
+}
+
+nav.navbar{
+    transition: all 0.35s ease;
 }
